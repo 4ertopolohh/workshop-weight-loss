@@ -1,0 +1,35 @@
+@import '../../../../styles/variables';
+
+.saleSection{
+
+    .container{
+        max-width: $max-width-small;
+        @include flex-center-column;
+        margin-top: 150px;
+
+        .saleSectionName{
+            @include flex-center-column;
+            font-size: 35px;
+            text-align: center;
+            line-height: 66px;
+            letter-spacing: -1%;
+            margin-bottom: 75px;
+
+            .saleSectionTitle{
+                font-weight: 900;
+              
+            }
+
+            .saleSectionSubtitle{
+                color: $color-base-orange;
+                font-weight: 900;
+        
+            }
+        }
+
+        .saleSectionContent{
+            @include flex-between-row;
+            width: 100%;
+        }
+    }
+}

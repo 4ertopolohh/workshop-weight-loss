@@ -1,0 +1,31 @@
+@import '../../styles/variables';
+
+.footerInfo{
+    font-size: 9px;
+    font-weight: 500;
+    color: $color-dark-gray;
+    
+    width: $max-width-big;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .footerInfoLinks{
+        @include flex-between-row;
+
+        width: 225px;
+
+        a{
+            text-decoration: underline;
+            color: $color-dark-gray;
+            font-size: 9px;
+            font-weight: 500;
+            color: $color-dark-gray;
+        }
+    }
+
+    .infoYear{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}

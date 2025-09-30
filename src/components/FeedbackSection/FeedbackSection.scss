@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.feedbackSection{
+
+    .container{
+        @include flex-center-column;
+        max-height: 600px;
+        height: 100%;
+        margin-top: 100px;
+        max-width: $max-width-small;
+    }
+}

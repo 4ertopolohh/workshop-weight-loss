@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.marafonWorksGarantBanner{
+    position: relative;
+    background-color: $color-light-orange;
+    border-radius: 25px;
+    @include flex-between-column;
+    align-items: center;
+    max-width: 402px;
+    max-height: 188px;
+    width: 402px;
+    height: 188px;
+    min-width: 402px;
+    min-height: 188px;
+    border: 2px solid $color-base-orange;
+    h3{
+        font-size: 23px;
+        font-weight: 700;
+        color: $color-white;
+        background-color: $color-base-orange;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    img{
+        position: absolute;
+        max-width: 68px;
+        max-height: 68px;
+        top: -40px;
+        right: 15px;
+    }
+    p{
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 26px;
+        font-family: $font-title;
+        max-width: 362px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+}

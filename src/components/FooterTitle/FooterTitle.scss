@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+
+.footerTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+
+    .footerLogo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footerTitleText{
+        width: 281px;
+        height: 44px;
+        color: $color-white;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+}

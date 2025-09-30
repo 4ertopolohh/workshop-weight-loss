@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.feedbackSendButton{
+    max-width: 512px;
+    width: 100%;
+    height: 62px;
+    background-color: $color-black;
+    border-radius: 20px;
+    @include flex-center-row;
+    color: $color-white;
+    font-family: $font-title;
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -1,0 +1,66 @@
+@import './variables';
+
+.App {
+  font-family: $font-default;
+  background-color: $color-background;
+  color: $color-default-text;
+  margin: 0;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition-style;
+
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-title !important;
+  margin: 0 0 !important;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: $transition-style;
+}
+
+span {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: $max-width-big;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5px;
+  box-sizing: border-box;
+  display: flex;
+}

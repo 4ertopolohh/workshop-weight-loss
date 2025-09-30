@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+.marafonWorksMiniBanners{
+    @include flex-between-row;
+    max-width: $max-width-small;
+    width: 100%;
+    margin-top: 25px;
+
+    .howDoesCollorBanner{
+        img{
+            top: -25px;
+        }
+
+        .subtitle{
+            display: none;
+        }
+
+        p{
+            padding-right: 10px;
+        }
+    }
+}

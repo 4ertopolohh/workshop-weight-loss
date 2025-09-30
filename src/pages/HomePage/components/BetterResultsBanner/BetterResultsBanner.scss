@@ -1,0 +1,19 @@
+@import '../../../../styles/variables';
+
+.betterResultsBanner{
+    background-color: $color-system-gray;
+    border-radius: 20px;
+    max-width: 364px; 
+    max-height: 224px;
+    width: 100%;
+    height: 100%;
+    @include flex-center-column;
+    padding: 15px 15px;
+   
+
+    h3{
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}

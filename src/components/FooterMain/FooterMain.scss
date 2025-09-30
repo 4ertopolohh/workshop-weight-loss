@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.footerMain{
+
+    margin: 20px 0;
+
+    .container{
+        max-width: $max-width-big;
+        width:$max-width-big;
+        flex-direction: row;
+        justify-content: space-between;
+        border-top: 1px solid $color-dark-gray;
+        border-bottom: 1px solid $color-dark-gray;
+        padding: 30px 0;
+    }
+}

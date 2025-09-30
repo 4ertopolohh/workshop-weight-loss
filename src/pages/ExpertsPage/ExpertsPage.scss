@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.experts-page #inDev{
+    @include flex-in-dev;
+    margin: 100px auto;
+}

@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+
+.feedbackLinks{
+    width: 100%;
+    border-radius: 25px;
+    background-color: $color-dark-blue;
+    color: $color-white;
+    height: 84px;
+    @include flex-between-row;
+    margin-top: 25px;
+
+    .container{
+        max-width: $max-width-small - 60px !important;
+        justify-content: space-between !important;
+        flex-direction: row !important;
+        margin: 0 auto !important;
+
+        h3{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+.feedbackLinksSocials{
+    @include flex-center-row;
+
+    .feedbackSocialsListItem{
+        width: 42px;
+        height: 42px;
+
+        a{
+            width: 42px;
+            height: 42px;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .feedbackSocialsListItem + .feedbackSocialsListItem{
+        margin-left: 10px;
+    }
+}

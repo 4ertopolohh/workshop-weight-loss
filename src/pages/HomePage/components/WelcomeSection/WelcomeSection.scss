@@ -1,0 +1,27 @@
+@import '../../../../styles/variables';
+
+.welcomeSection{
+    position: relative;
+    margin-top: 100px;
+
+    .welcomeBackground{
+        position: absolute;
+        right: 0;
+        top: 60%;
+        transform: translateY(-50%);
+        height: 700px; 
+        width: auto; 
+        max-width: 100%;
+        z-index: 1;
+        object-fit: contain;
+    }
+    .container{
+        height: 526px;
+        background-color: $color-system-gray;
+        border-radius: 25px;
+        margin: 25px auto;
+        padding: 75px 75px;
+        flex-direction: column;
+        gap: 15px;
+    }
+}

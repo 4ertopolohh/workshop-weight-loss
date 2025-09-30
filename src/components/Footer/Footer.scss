@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.footer{
+    background-color: $color-black;
+    height: 369px;
+    @include flex-center-column
+}
+
+.footer .container{
+    @include flex-center-column
+}
+

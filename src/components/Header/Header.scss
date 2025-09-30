@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.header {
+    margin-top: 20px;
+    position: fixed;
+    z-index: 10000; 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: $max-width-big;
+    .container{
+        @include flex-between-row;
+
+        .headerNav{
+            @include flex-between-row;
+            width: 824px;
+        }
+    }
+}

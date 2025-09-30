@@ -1,0 +1,71 @@
+@import '../../styles/variables';
+
+.headerNavList{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 653px;
+    height: 56px;
+    border-radius: $border-radius-28;
+    border: 1px solid $color-basic-gray;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    .headerNavListItem{
+        position: relative;
+        padding: 0 20px 0 35px;
+        height: 40px;
+        @include flex-center-row;
+        border-radius: 20px;
+        transition: $transition-style;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $color-base-blue;
+            box-shadow: 0 4px 12px rgba(18, 87, 224, 0.15);
+        }
+
+        &::before{
+            content: var(--nav-icon);
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: $transition-style;
+        }
+
+        .headerNavListLink{
+            font-family: $font-title;
+            font-weight: 500;
+            font-size: 14px;
+            color: $color-default-text;
+            transition: $transition-style;
+            padding: 5px 0;
+        }
+
+        &--active{
+            background-color: $color-dark-blue;
+
+            .headerNavListLink{
+                color: $color-white;
+            }
+
+            &:hover{
+                background-color: $color-dark-blue;
+            }
+
+            &::before{
+                filter: brightness(0) invert(1); 
+            }
+        }
+    }
+}
+
