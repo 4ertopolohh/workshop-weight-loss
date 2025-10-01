@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkworkshop_weight=self.webpackChunkworkshop_weight||[]).push([[349],{1349:(e,s,i)=>{i.r(s),i.d(s,{default:()=>h});var a=i(579);const h=()=>(0,a.jsx)("main",{className:"reviews-page",children:(0,a.jsx)("div",{className:"container",id:"inDev",children:(0,a.jsx)("h1",{children:"\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043e\u0442\u0437\u044b\u0432\u043e\u0432 (\u0432 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0435)"})})})}}]);
+//# sourceMappingURL=349.29aaf5f4.chunk.js.map
