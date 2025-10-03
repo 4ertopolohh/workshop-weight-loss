@@ -1,4 +1,5 @@
 import '../MarafonWorksBigBanner/MarafonWorksBigBanner.scss'
+import '../MarafonWorksBigBanner/MarafonWorksBigBanner1050.scss'
 import MarafonWorksList from '../MarafonWorksList/MarafonWorksList';
 
 const MarafonWorksBigBanner = () => {
@@ -19,7 +20,7 @@ const MarafonWorksBigBanner = () => {
         <div className='marafonWorksBigBanner'>
             <div className='titles'>
                 <div>
-                    <h2>Практикум это алгоритм знаний 👉</h2>
+                    <h2>Практикум это алгоритм знаний</h2>
                     <h5>По физиологии, психологии и нутрициологии</h5>
                 </div>
                 <h6>Поддерживаем и мотивируем на каждом этапе</h6>

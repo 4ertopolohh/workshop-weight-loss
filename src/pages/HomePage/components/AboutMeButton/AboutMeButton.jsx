@@ -3,7 +3,7 @@ import '../AboutMeButton/AboutMeButton.scss'
 const AboutMeButton = ({ onClick }) => {
     return(
         <button className='aboutMeButton' onClick={onClick}>
-            обо мне
+            Обо мне
         </button>
     )
 }

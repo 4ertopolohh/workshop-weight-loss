@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+@media(max-width: 1051px){
+    .feedbackLinks{
+        max-width: $max-width-big-1050;
+
+        .container{
+            max-width: $max-width-big-1050 - 60px !important;
+        }
+    }
+}

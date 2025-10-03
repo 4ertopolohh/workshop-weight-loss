@@ -1,0 +1,34 @@
+@import '../../../../styles/variables';
+
+.FAQTab{
+    max-width: $max-width-small - 100px;
+    width: 100%;
+    @include flex-center-column;
+    border-top: 1px solid $color-system-gray;
+    min-height: 70px;
+    max-height: 300px;
+}
+
+.FAQTabQuestion{
+    @include flex-between-row;
+    width: 100%;
+    height: 70px;
+
+    h5{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.FAQTabAnswer{
+    padding-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    width: 100%;
+
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+    }
+}

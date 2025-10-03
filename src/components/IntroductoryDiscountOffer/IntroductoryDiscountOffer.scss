@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.introductoryDiscountOffer{
+    width: 345px;
+    height: 68px;
+    border-radius: 20px;
+    border: 2px solid $color-base-orange;
+    background-color: $color-system-gray;
+    @include flex-center-row;
+
+    p{
+        font-size: 11px;
+        font-weight: 600;
+        max-width: 309px;
+
+        span{
+            color: $color-base-orange;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+@media (max-width: 1300px){
+    .cookie{
+        max-width: $max-width-big-1300;
+    }
+
+    .cookieDescription{
+        max-width: 900px;
+    }
+}

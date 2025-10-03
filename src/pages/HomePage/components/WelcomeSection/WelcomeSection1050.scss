@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+@media (max-width: 1051px){
+    .welcomeSection .container{
+        max-width: $max-width-big-1050;
+        padding: 50px 50px;
+    }
+    .welcomeBackground{
+        top: 68% !important;
+    }
+}

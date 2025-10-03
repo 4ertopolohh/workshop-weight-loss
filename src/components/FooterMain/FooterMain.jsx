@@ -1,7 +1,11 @@
 import FooterContacts from '../FooterContacts/FooterContacts';
 import '../FooterMain/FooterMain.scss'
+import '../FooterMain/FooterMain1394.scss'
+import '../FooterMain/FooterMain1300.scss'
+import '../FooterMain/FooterMain1212.scss'
+import '../FooterMain/FooterMain1135.scss'
+import '../FooterMain/FooterMain1050.scss'
 import FooterMenu from '../FooterMenu/FooterMenu';
-// import FooterLinks from '../FooterLinks/FooterLinks';
 
 const FooterMain = ({ socials = [], footerMenuItems = [] }) => {
     return(
@@ -9,7 +13,6 @@ const FooterMain = ({ socials = [], footerMenuItems = [] }) => {
             <div className='container'>
                 <FooterContacts socials={socials} />
                 <FooterMenu footerMenuItems={footerMenuItems} />
-                {/* <FooterLinks links={links} /> */}
             </div>
         </div>
     )

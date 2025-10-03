@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.discountOffer{
+    @include flex-center-column;
+    border-radius: 20px;
+    border: 2px solid $color-base-orange;
+    width: 316px;
+    height: 103px;
+    background-color: $color-system-gray;
+
+    .container{
+        @include flex-center-column;
+        align-items: start !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+}
+
+.discountOfferDescription{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $font-title;
+    max-width: 250px;
+
+    span{
+        color: $color-base-orange;
+    }
+}
+
+.discountOfferPrice{
+
+    @include flex-center-row;
+    max-width: 300px;
+    align-items: end;
+    gap: 10px;
+    margin-top: 5px;
+
+    .discountOfferOldPrice{
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    .discountOfferNewPrice{
+        font-size: 30px;
+        font-weight: 700;
+        color: $color-base-orange;
+        line-height: 31px;
+    }
+}

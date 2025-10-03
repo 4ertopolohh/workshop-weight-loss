@@ -1,0 +1,7 @@
+@import '../../../../styles/variables';
+ 
+@media(max-width: 1051px){
+    .allReviewsSection .container{
+        max-width: $max-width-big-1050;
+    }
+}

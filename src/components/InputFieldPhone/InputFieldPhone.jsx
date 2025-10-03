@@ -1,27 +1,25 @@
 import '../InputFieldPhone/InputFieldPhone.scss'
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css'
 import { useState, useEffect } from 'react';
 
 const InputFieldPhone = ({ hasError = false, onPhoneChange, phoneValue }) => {
-    const [phone, setPhone] = useState(phoneValue || '');
+    const [phone, setPhone] = useState(phoneValue || '+7');
 
     useEffect(() => {
-        setPhone(phoneValue || '');
+        setPhone(phoneValue || '+7');
     }, [phoneValue]);
 
-    const handlePhoneChange = (value) => {
+    const handlePhoneChange = (e) => {
+        const value = e.target.value;
         setPhone(value);
         onPhoneChange(value);
     };
 
     return(
         <div className={`formPhoneField ${hasError ? 'error' : ''}`}>
-            <PhoneInput
-                defaultCountry="RU"
+            <input
+                type="tel"
                 value={phone}
                 onChange={handlePhoneChange}
-                international
                 placeholder="Введите номер телефона"
                 className="formInputPhone"
                 required

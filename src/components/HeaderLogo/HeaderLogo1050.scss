@@ -1,0 +1,7 @@
+@import '/src/styles/variables';
+
+@media(max-width: 1051px){
+    .headerLogo{
+        border: 3px solid $color-dark-blue;
+    }
+}

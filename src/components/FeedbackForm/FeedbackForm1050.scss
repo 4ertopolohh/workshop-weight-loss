@@ -1,0 +1,7 @@
+@import '../../styles/variables';
+
+@media(max-width: 1051px){
+    .feedbackForm{
+        max-width: $max-width-big-1050;
+    }
+}

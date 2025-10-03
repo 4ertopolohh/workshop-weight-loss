@@ -1,6 +1,7 @@
 import BetterResultsBanner from '../BetterResultsBanner/BetterResultsBanner';
 import PeoplesResults from '../PeoplesResults/PeoplesResults';
 import '../ResultsSection/ResultsSection.scss'
+import '../ResultsSection/ResultsSection1050.scss'
 import ResultsTitle from '../ResultsTitle/ResultsTitle';
 
 const ResultsSection = () => {

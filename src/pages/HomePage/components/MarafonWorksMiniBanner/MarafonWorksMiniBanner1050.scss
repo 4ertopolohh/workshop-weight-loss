@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 1051px){
+    .marafonWorksMiniBanner{
+        width: 100%;
+        @include flex-between-row;
+        height: 125px;
+        padding-bottom: 0;
+        
+        .miniBannerImage{
+            position:relative;
+            margin-left: 40px !important;
+            max-width: 100px !important;
+            max-height: 100px !important;
+        }
+
+        h6{
+            margin-right: 50px !important;
+            font-size: 21px;
+        }
+    }
+}

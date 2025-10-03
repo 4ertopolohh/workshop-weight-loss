@@ -1,11 +1,11 @@
 import '../HowDoesColorBanner/HowDoesColorBanner.scss'
+import '../HowDoesColorBanner/HowDoesColorBanner1050.scss'
 
 const HowDoesCollorBanner = ({
     baseColor,
     background,
     width,
     height,
-    icon,
     title,
     subtitle = '',
     description,
@@ -41,7 +41,6 @@ const HowDoesCollorBanner = ({
                 <span className='subtitle'>ㅤ  ㅤ  {subtitle}</span>
             </h3>
             <div className='howDoesCollorBannerContent'>
-                <img src={icon} alt="" loading='lazy'/>
                 <p className='description' style={descStyle}>{description}</p>
                 {children}
             </div>

@@ -1,4 +1,5 @@
 import '../PeopleResultBanner/PeopleResultBanner.scss'
+import '../PeopleResultBanner/PeopleResultBanner1135.scss'
 import ResultBannerText from '../ResultBannerText/ResultBannerText'
 import { useRef } from 'react'
 

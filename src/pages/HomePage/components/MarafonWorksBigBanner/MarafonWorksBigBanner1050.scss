@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+@media(max-width:1051px){
+    .marafonWorksBigBanner{
+        justify-content: center !important;
+
+        & .titles{
+            width: 420px !important;
+        }
+    }
+}

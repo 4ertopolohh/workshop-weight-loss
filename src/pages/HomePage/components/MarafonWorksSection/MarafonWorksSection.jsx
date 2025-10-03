@@ -1,25 +1,20 @@
 import '../MarafonWorksSection/MarafonWorksSection.scss'
-// import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import '../MarafonWorksSection/MarafonWorksSection1050.scss'
+import { motion } from 'framer-motion';
 
 import marafonWorks from '../../../../assets/images/pictures/marafonWorks.png'
 import MarafonWorksBigBanner from '../MarafonWorksBigBanner/MarafonWorksBigBanner';
 import MarafonWorksMiniBanners from '../MarafonWorksMiniBanners/MarafonWorksMiniBanners';
-// import AboutMeButton from '../AboutMeButton/AboutMeButton';
-import AboutMePopUp from '../AboutMePopUp/AboutMePopUp';
+import SavingBanner from '../SavingBanner/SavingBanner';
+
+import savingBannerIcon from '../../../../assets/images/pictures/savingBannerIcon.png'
 
 const MarafonWorksSection = () => {
-    // const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
-    // const openPopUp = () => setIsPopUpOpen(true);
-    // const closePopUp = () => setIsPopUpOpen(false);
-
-    // const aboutMePopUpItems = [
-    //     { text: 'Плавный подход — учу снижать вес постепенно и удерживать результат навсегда' },
-    //     { text: 'Вместо диет — работа с пищевыми привычками и мышлением, которые естественным образом остаются навсегда' },
-    //     { text: 'Повышение осознанности питания — без запретов и насилия над собой. Жизнь в новом теле без страха перед едой' },
-    //     { text: 'Учу идти самостоятельно и не зависеть от тренеров и марафонов' },
-    // ];
+    const savingBannerItems = [
+        { text: 'Сэкономите время и десятки тысяч рублей на БАДах, спортивном питании и таблетках для похудения.' },
+        { text: 'По сравнению с комплексными затратами на тренеров, диетологов, нутрициологов и других инструментов, способов и специалистов  помогающих худеть.' }
+    ]
 
     return (
         <section className='marafonWorksSection'>
@@ -35,31 +30,25 @@ const MarafonWorksSection = () => {
                 
                 <div className='marafonWorksAboutMeImage'>
                     <img src={marafonWorks} alt="" loading='lazy' />
-                    {/* <AboutMeButton onClick={openPopUp} /> */}
                 </div>
                 <MarafonWorksBigBanner />
                 <MarafonWorksMiniBanners />
 
-                {/* <AnimatePresence>
-                    {isPopUpOpen && (
-                        <>
-                            <motion.div
-                                className='overlay'
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 0.6 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                                onClick={closePopUp}
-                            />
-
-                            <AboutMePopUp
-                                description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинство из них и сформулировал самый легкий и эффективный'}
-                                items={aboutMePopUpItems}
-                                onClose={closePopUp}
-                            />
-                        </>
-                    )}
-                </AnimatePresence> */}
+                <motion.div
+                    className='savigBannerAnimation'
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                >
+                    <SavingBanner 
+                        height={153}
+                        items={savingBannerItems}
+                        title={'Экономия и доступная цена. '}
+                        icon={savingBannerIcon}
+                        color={'#1257E0'}
+                    />
+                </motion.div>
             </div>
         </section>
     )

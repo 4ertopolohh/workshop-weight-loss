@@ -1,0 +1,8 @@
+@import '../../../../styles/variables';
+
+@media(max-width:1051px){
+    .whoWillHelpSection .container{
+        max-width: $max-width-big-1050;
+        gap: 20px;
+    }
+}

@@ -1,30 +1,41 @@
 import MarafonWorksMiniBanner from '../MarafonWorksMiniBanner/MarafonWorksMiniBanner';
 import '../MarafonWorksMiniBanners/MarafonWorksMiniBanners.scss'
+import '../MarafonWorksMiniBanners/MarafonWorksMiniBanners1050.scss'
+import { useMediaQuery } from 'react-responsive';
 
 import burgerImage from '../../../../assets/images/pictures/burgerImage.png'
 import dumbbelImage from '../../../../assets/images/pictures/dumbbelImage.png'
-import runningImage from '../../../../assets/images/pictures/runningImage.png'
-import MarafonWorksGarantBanner from '../MarafonWorksGarantBanner/MarafonWorksGarantBanner';
 import starEmoji from '../../../../assets/images/pictures/starEmoji.png'
 import HowDoesCollorBanner from '../HowDoesColorBanner/HowDoesColorBanner';
 
+
 const MarafonWorksMiniBanners = () => {
+
+    const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+
     return(
         <div className='marafonWorksMiniBanners'>
-            {/* <MarafonWorksGarantBanner 
-                title={'Даем гарантию!'} 
-                desc={'Если ты не увидишь прогресс за первый месяц — вернём деньги! Без лишних вопросов'} 
-                icon={starEmoji}
-            /> */}
-            <HowDoesCollorBanner 
-                title={'Важно'} 
-                description={'Научим встраивать похудение в свою жизнь, а не подстраивать жизнь под похудение.'} 
-                icon={starEmoji} 
-                baseColor={'#FF6B16'}
-                background={'#FFF4ED'}
-                width={402}
-                height={196}
-            />
+            {isTablet1050 ? (
+                <HowDoesCollorBanner 
+                    title={'Важно!'} 
+                    description={'Научим встраивать похудение в свою жизнь, а не подстраивать жизнь под похудение.'} 
+                    icon={starEmoji} 
+                    baseColor={'#FF6B16'}
+                    background={'#FFF4ED'}
+                    width={'100%'}
+                    height={160}
+                />
+            ) : (
+                <HowDoesCollorBanner 
+                    title={'Важно!'} 
+                    description={'Научим встраивать похудение в свою жизнь, а не подстраивать жизнь под похудение.'} 
+                    icon={starEmoji} 
+                    baseColor={'#FF6B16'}
+                    background={'#FFF4ED'}
+                    width={402}
+                    height={196}
+                />
+            )}
             <MarafonWorksMiniBanner 
                 icon={burgerImage} 
                 text={'С нами сбрасывают лишний вес без запретов и срывов.'}
@@ -33,10 +44,6 @@ const MarafonWorksMiniBanners = () => {
                 icon={dumbbelImage} 
                 text={'Без изнурительных тренировок'}
             />
-            {/* <MarafonWorksMiniBanner 
-                icon={runningImage} 
-                text={'В комфортном темпе'}
-            /> */}
         </div>
     )
 }

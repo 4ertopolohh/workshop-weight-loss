@@ -5,7 +5,8 @@
     font-weight: 500;
     color: $color-dark-gray;
     
-    width: $max-width-big;
+    max-width: $max-width-big;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -27,5 +28,12 @@
     .infoYear{
         margin-top: 5px;
         margin-bottom: 10px;
+    }
+}
+
+.infoDeveloper{
+    a{
+        color: $color-dark-gray;
+        text-decoration: underline;
     }
 }

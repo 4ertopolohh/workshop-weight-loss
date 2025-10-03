@@ -2,6 +2,7 @@ import './App.scss';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { useMediaQuery } from 'react-responsive';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -12,6 +13,13 @@ import homeIcon from './assets/images/icons/homeIcon.svg';
 import reviewsIcon from './assets/images/icons/reviewsIcon.svg';
 import programIcon from './assets/images/icons/programIcon.svg';
 import expertsIcon from './assets/images/icons/expertsIcon.svg';
+import MobileMenu from './components/MobileMenu/MobileMenu';
+
+import mobileHomePage from './assets/images/icons/mobileMenuHomePage.svg'
+import mobileReviewsPage from './assets/images/icons/mobileMenuReviewsPage.svg'
+import mobileIIN from './assets/images/pictures/mobileMenuIIN.png'
+import mobileProgramPage from './assets/images/icons/mobileMenuProgramPage.svg'
+import mobileExpertsPage from './assets/images/icons/mobileMenuExpertsPage.svg'
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
@@ -20,6 +28,7 @@ const ExpertsPage = lazy(() => import('./pages/ExpertsPage/ExpertsPage'));
 
 const App = () => {
   const [showCookie, setShowCookie] = useState(false);
+  const isMobile = useMediaQuery({ maxWidth: 1051 })
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -47,10 +56,23 @@ const App = () => {
     { text: "Бесплатные материалы", link: "/#/experts", img: expertsIcon },
   ];
 
+  const mobileMenuItems = [
+    { icon: mobileHomePage, link: "/", className: "default" },
+    { icon: mobileReviewsPage, link: "/reviews", className: "default" },
+    { icon: mobileIIN, link: "/iin", className: "home" },
+    { icon: mobileProgramPage, link: "/program", className: "default" },
+    { icon: mobileExpertsPage, link: "/experts", className: "default" }
+  ];
+
   return (
     <Router>
       <div className="App">
         <Header navListItems={navListItems} />
+        {isMobile ? (
+          <MobileMenu menuItems={mobileMenuItems}/>
+        ) : (
+          <><div></div></>
+        )}
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route path="/" element={<HomePage />} />

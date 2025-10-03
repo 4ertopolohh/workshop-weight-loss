@@ -23,7 +23,8 @@
 
 .howDoesBanner .container{
     @include flex-center-column;
-    align-items: start;
+    align-items: start !important;
     margin: 0 0;
     margin-top: 20px;
+    gap: 0 !important;
 }

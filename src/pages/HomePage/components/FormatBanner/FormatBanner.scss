@@ -7,7 +7,8 @@
     
     .container{
         @include flex-between-column;
-        align-items: start;
+        align-items: start !important;
+        gap: 0 !important;
         justify-content: space-evenly;
         margin: 0 0;
 

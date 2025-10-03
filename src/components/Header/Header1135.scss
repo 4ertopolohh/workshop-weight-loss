@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+@media (max-width: 1135px){
+    .header .container{
+        max-width: $max-width-big-1135;
+
+        .headerNav{
+            width: 817px;
+        }
+    }
+}

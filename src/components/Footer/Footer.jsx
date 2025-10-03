@@ -1,4 +1,9 @@
 import '../Footer/Footer.scss'
+import '../Footer/Footer1394.scss'
+import '../Footer/Footer1300.scss'
+import '../Footer/Footer1212.scss'
+import '../Footer/Footer1135.scss'
+import '../Footer/Footer1050.scss'
 import FooterMain from '../FooterMain/FooterMain';
 import FooterTitle from '../FooterTitle/FooterTitle';
 

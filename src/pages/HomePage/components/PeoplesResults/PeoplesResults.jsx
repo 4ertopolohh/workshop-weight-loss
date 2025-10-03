@@ -1,8 +1,11 @@
 import '../PeoplesResults/PeoplesResults.scss'
+import '../PeoplesResults/PeoplesResults1135.scss'
+import '../PeoplesResults/PeoplesResults1050.scss'
 import PeopleResultBanner from '../PeopleResultBanner/PeopleResultBanner'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules' // Добавляем Autoplay
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { useRef } from 'react'
+import { useMediaQuery } from 'react-responsive'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -10,12 +13,6 @@ import 'swiper/css/pagination'
 
 import leftArrowBlack from '../../../../assets/images/icons/sliderLeftArrowBlack.svg'
 import rightArrowBlack from '../../../../assets/images/icons/sliderRightArrowBlack.svg'
-
-// import anastasiaAvatar from '../../../../assets/images/pictures/anastasiaAvatar.png'
-// import alekseiAvatar from '../../../../assets/images/pictures/alekseiAvatar.png'
-// import vladimirAvatar from '../../../../assets/images/pictures/vladimirAvatar.png'
-// import elenaAvatar from '../../../../assets/images/pictures/elenaAvatar.png'
-// import kristinaAvatar from '../../../../assets/images/pictures/kristinaAvatar.png'
 
 import anastasiaSlide1 from '../../../../assets/images/pictures/anastasiaSlide1.png'
 import anastasiaSlide2 from '../../../../assets/images/pictures/anastasiaSlide2.png'
@@ -41,12 +38,14 @@ import nikitaSlide1 from '../../../../assets/images/pictures/nikitaSlide1.png'
 
 const PeoplesResults = () => {
     const swiperRef = useRef(null)
+    const isTablet1135 = useMediaQuery({ maxWidth: 1135 })
+    const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
 
     return (
         <div className="peoplesResultsWrapper">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]} 
-                slidesPerView={3}
+                slidesPerView={isTablet1135 ? 2 : 3}
                 spaceBetween={20}
                 loop={true}
                 autoplay={{
@@ -62,7 +61,7 @@ const PeoplesResults = () => {
                     clickable: true,
                 }}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                className="peoplesResultsSwiper"
+                className={`peoplesResultsSwiper ${isTablet1135 ? 'tablet1135' : '', isTablet1050 ? 'tablet1050' : ''}`}
             >
                 <SwiperSlide>
                     <PeopleResultBanner 

@@ -1,0 +1,23 @@
+@import '../../../../styles/variables';
+
+.FAQTabButton{
+    width: 34px;
+    height: 34px;
+    @include flex-center-row;
+    transition: transform 0.3s ease;
+
+    img{
+        width: 34px;
+        height: 34px;
+        border-radius: 17px;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
+    &.open img {
+        transform: rotate(360deg);
+    }
+}

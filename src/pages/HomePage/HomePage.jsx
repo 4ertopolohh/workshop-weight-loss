@@ -1,7 +1,8 @@
 import FeedbackSection from '../../components/FeedbackSection/FeedbackSection';
 import '../HomePage/HomePage.scss'
-import AboutMePopUp from './components/AboutMePopUp/AboutMePopUp';
 import AllReviewsSection from './components/AllReviewsSection/AllReviewsSection';
+import FAQSection from './components/FAQSection/FAQSection';
+import FreeContentSection from './components/FreeContentSection/FreeContentSection';
 import HotOfferSection from './components/HotOfferSection/HotOfferSection';
 import HowDoesSection from './components/HowDoesSection/HowDoesSection';
 import MarafonWorksSection from './components/MarafonWorksSection/MarafonWorksSection';
@@ -23,9 +24,8 @@ const HomePage = () => {
       <WhoWillHelpSection />
       <SaleSection />
       <FeedbackSection />
-      <div className='container' id='inDev'>
-        <h1>В разработке...</h1>
-      </div>
+      <FAQSection />
+      <FreeContentSection />
     </main>
   );
 }

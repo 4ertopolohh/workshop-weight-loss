@@ -1,6 +1,6 @@
 import '../ExpertBanner/ExpertBanner.scss'
 
-const ExpertBanner = ({ color, title, subtitle, image, quotes, quote, description, items = [] }) => {
+const ExpertBanner = ({ color, title, subtitle, image, quotes, quote, description, items = [], children }) => {
 
     const expertBannerStyle = {
         background: color
@@ -16,7 +16,7 @@ const ExpertBanner = ({ color, title, subtitle, image, quotes, quote, descriptio
                 <img src={image} alt="" loading='lazy' className='expertResultImage'/>
                 <div className='expertBannerQuote'>
                     <img src={quotes} alt="" loading='lazy'/>
-                    <p>«{quote}»</p>
+                    <p>«{quote}»<p>{children}</p></p>
                 </div>
                 <p className='expertDescription'>{description}</p>
                 <ul className='expertSkillsList'>

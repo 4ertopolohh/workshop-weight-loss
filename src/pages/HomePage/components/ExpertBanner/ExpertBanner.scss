@@ -11,6 +11,13 @@
         max-width: $max-width-expert-banner !important;
         @include flex-center-column;
         margin: 0 auto !important;
+        gap: 0 !important;
+
+        .aboutMeButton{
+            &:hover{
+                opacity: 0.7;
+            }
+        }
     }
 }
 

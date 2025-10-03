@@ -1,0 +1,8 @@
+@import '../../../../styles/variables';
+
+@media(max-width:1051px){
+    .marafonWorksMiniBanners{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

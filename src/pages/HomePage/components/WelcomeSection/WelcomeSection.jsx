@@ -1,4 +1,9 @@
 import '../WelcomeSection/WelcomeSection.scss'
+import '../WelcomeSection/WelcomeSection1394.scss'
+import '../WelcomeSection/WelcomeSection1300.scss'
+import '../WelcomeSection/WelcomeSection1212.scss'
+import '../WelcomeSection/WelcomeSection1135.scss'
+import '../WelcomeSection/WelcomeSection1050.scss'
 import WelcomeSectionList from '../WelcomeSectionList/WelcomeSectionList';
 import WelcomeSectionTitle from '../WelcomeSectionTitle/WelcomeSectionTitle';
 
@@ -12,11 +17,11 @@ import welcomeBackground from '../../../../assets/images/pictures/welcomeBackgro
 const WelcomeSection = () => {
 
     const welcomeItems = [
-        {text: 'За 12 недель до 12кг', icon: calendarIcon},
-        {text: 'Здоровый подход', icon: heartIcon},
-        {text: 'Без ограничений', icon: toolsIcon},
-        {text: 'Эффективность проверена', icon: gpsIcon},
-        {text: 'Гарантия результата', icon: garantIcon}
+        {text: 'Здоровый подход.', icon: heartIcon},
+        {text: 'Можно есть любую еду.', icon: toolsIcon},
+        {text: 'Без диет и БАДов.', icon: garantIcon},
+        {text: 'За 12 недель до 12кг.', icon: calendarIcon},
+        {text: 'Эффективность проверена.', icon: gpsIcon},
     ]
 
     return(

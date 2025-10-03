@@ -39,7 +39,7 @@
         height: 34px;
     }
 
-    button {
+    .headerButtonLink {
         font-family: $font-title;
         color: $color-white;
         font-weight: 600;
@@ -47,5 +47,10 @@
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 1;
+
+        &:hover{
+            opacity: 1;
+        }
     }
 }

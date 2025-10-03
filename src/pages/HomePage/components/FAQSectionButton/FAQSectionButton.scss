@@ -1,0 +1,18 @@
+@import '../../../../styles/variables';
+
+.FAQSectionButton{
+    font-size: 15px;
+    font-weight: 600;
+    color: $color-text-blue;
+    text-decoration: underline;
+    font-family: $font-title;
+    width: auto;
+    height: 18px;
+    transition: $transition-style;
+    margin-top: 10px;
+    padding: 0 10px;
+
+    &:hover{
+        opacity: 0.7;
+    }
+}

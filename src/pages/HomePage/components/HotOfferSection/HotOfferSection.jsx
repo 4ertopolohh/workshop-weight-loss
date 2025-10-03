@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion'
 import '../HotOfferSection/HotOfferSection.scss'
+import '../HotOfferSection/HotOfferSection1394.scss'
+import '../HotOfferSection/HotOfferSection1300.scss'
+import '../HotOfferSection/HotOfferSection1212.scss'
+import '../HotOfferSection/HotOfferSection1135.scss'
+import '../HotOfferSection/HotOfferSection1050.scss'
 import ButtonScroll from '../ButtonScroll/ButtonScroll';
 
 const HotOfferSection = () => {
@@ -21,7 +26,7 @@ const HotOfferSection = () => {
                     background={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
                     text={'Хочу присоединиться'}
                     color={'#fff'}
-                    pixels={5750}
+                    pixels={6350}
                     direction={'down'}
                     fontWeight={600}
                     fontSize={18}
