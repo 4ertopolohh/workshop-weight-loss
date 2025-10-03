@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/workshop-weight-loss/static/css/main.797b08a3.css",
-    "main.js": "/workshop-weight-loss/static/js/main.12f58937.js",
-    "static/css/467.7ca76772.chunk.css": "/workshop-weight-loss/static/css/467.7ca76772.chunk.css",
-    "static/js/467.9df48fef.chunk.js": "/workshop-weight-loss/static/js/467.9df48fef.chunk.js",
+    "main.css": "/workshop-weight-loss/static/css/main.b38aebf7.css",
+    "main.js": "/workshop-weight-loss/static/js/main.629377cb.js",
+    "static/css/258.23040c7d.chunk.css": "/workshop-weight-loss/static/css/258.23040c7d.chunk.css",
+    "static/js/258.4daa7c8d.chunk.js": "/workshop-weight-loss/static/js/258.4daa7c8d.chunk.js",
     "static/css/349.cfaef94a.chunk.css": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css",
     "static/js/349.29aaf5f4.chunk.js": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js",
     "static/css/121.acfa9984.chunk.css": "/workshop-weight-loss/static/css/121.acfa9984.chunk.css",
@@ -45,6 +45,9 @@
     "static/media/nikitaAvatar.png": "/workshop-weight-loss/static/media/nikitaAvatar.b97e1237279a9d11c67c.png",
     "static/media/burgerImage.png": "/workshop-weight-loss/static/media/burgerImage.780586c49957f75da1da.png",
     "static/media/expertsIcon.svg": "/workshop-weight-loss/static/media/expertsIcon.ab7b2ad4af11047601801fdcf43f3d9f.svg",
+    "static/media/mobileMenuExpertsPage.svg": "/workshop-weight-loss/static/media/mobileMenuExpertsPage.0eee933ad7e8fb8aaa11a2e82c175d28.svg",
+    "static/media/mobileMenuIINActive.svg": "/workshop-weight-loss/static/media/mobileMenuIINActive.2b2a742175e5ddd90cfc8673739a8a2d.svg",
+    "static/media/mobileMenuIIN.svg": "/workshop-weight-loss/static/media/mobileMenuIIN.803d647135af9de86319495a3db6a291.svg",
     "static/media/snowIconWhite.svg": "/workshop-weight-loss/static/media/snowIconWhite.b0e21942afa9d12a442f3ddd7f92dab1.svg",
     "static/media/garantIcon.svg": "/workshop-weight-loss/static/media/garantIcon.8311e410a76f0d6eccbbe63a48c104ce.svg",
     "static/media/clockIconWhite.svg": "/workshop-weight-loss/static/media/clockIconWhite.db61dc935e4775453e1b58527017f0a8.svg",
@@ -56,6 +59,7 @@
     "static/media/individualIcon.svg": "/workshop-weight-loss/static/media/individualIcon.e0fcf18137c46c6c0dc74157728a23db.svg",
     "static/media/calendarIconWhite.svg": "/workshop-weight-loss/static/media/calendarIconWhite.414e5566eeaa704583e845c8dd7db4b0.svg",
     "static/media/userIconWhite.svg": "/workshop-weight-loss/static/media/userIconWhite.0cc52895a59ecba8c1eadf0ecd9de83d.svg",
+    "static/media/mobileMenuHomePage.svg": "/workshop-weight-loss/static/media/mobileMenuHomePage.f3a1fb180a79b7b796123d2b894a7df8.svg",
     "static/media/homeIcon.svg": "/workshop-weight-loss/static/media/homeIcon.1aac12c915e69b5603391f2d72c0c95d.svg",
     "static/media/dumbbellIconBlue.svg": "/workshop-weight-loss/static/media/dumbbellIconBlue.8e0acb0c70655a42b95aacee0379afb6.svg",
     "static/media/dumbbellIconOrange.svg": "/workshop-weight-loss/static/media/dumbbellIconOrange.7c2b00a2e2ec60aaf4344fa2127ae5c8.svg",
@@ -67,10 +71,12 @@
     "static/media/whatsappIcon.svg": "/workshop-weight-loss/static/media/whatsappIcon.553d818c579fc7f6fa631e5b55ecacef.svg",
     "static/media/howDoesSectionTitleLogo.svg": "/workshop-weight-loss/static/media/howDoesSectionTitleLogo.87aa70468f87f8906c559f26dc3fdf04.svg",
     "static/media/calendarIcon.svg": "/workshop-weight-loss/static/media/calendarIcon.0a4fab23f878efd00d4f0999e23c27d8.svg",
+    "static/media/mobileMenuProgramPage.svg": "/workshop-weight-loss/static/media/mobileMenuProgramPage.dc5bc1f894f100716bb83e4f9c2265c0.svg",
     "static/media/headerLogo.svg": "/workshop-weight-loss/static/media/headerLogo.f5df191cdd1d40e10cbe78b29eca1b11.svg",
     "static/media/blueQuotes.svg": "/workshop-weight-loss/static/media/blueQuotes.6f13d36b26b6c11feed7a829b26afbf7.svg",
     "static/media/orangeQuotes.svg": "/workshop-weight-loss/static/media/orangeQuotes.579ecc471efbaa9d7feedec65580a02e.svg",
     "static/media/reviewsIcon.svg": "/workshop-weight-loss/static/media/reviewsIcon.8d61a1390cc6796aac1a1e3032b2975f.svg",
+    "static/media/mobileMenuReviewsPage.svg": "/workshop-weight-loss/static/media/mobileMenuReviewsPage.9467b0b1a79501bf55595e83020214f4.svg",
     "static/media/ruletIcon.svg": "/workshop-weight-loss/static/media/ruletIcon.37210e1a0f96fdb337884409e3ef3766.svg",
     "static/media/volumeOffIconWhite.svg": "/workshop-weight-loss/static/media/volumeOffIconWhite.6f0d9c1c2f0d473eeaa43a7b060303c1.svg",
     "static/media/planIcon.svg": "/workshop-weight-loss/static/media/planIcon.e6a51a5c7426287421be1c43a6feadd9.svg",
@@ -90,10 +96,10 @@
     "static/media/sliderLeftArrowBlack.svg": "/workshop-weight-loss/static/media/sliderLeftArrowBlack.4e566af7b9b2e5e16938babb6d0ce11d.svg",
     "static/media/sliderRightArrow.svg": "/workshop-weight-loss/static/media/sliderRightArrow.a50ca3ebce7d96b6b25210bee17dce46.svg",
     "static/media/checkboxChecked.svg": "/workshop-weight-loss/static/media/checkboxChecked.2c77cf8f67dc36c4e535.svg",
-    "main.797b08a3.css.map": "/workshop-weight-loss/static/css/main.797b08a3.css.map",
-    "main.12f58937.js.map": "/workshop-weight-loss/static/js/main.12f58937.js.map",
-    "467.7ca76772.chunk.css.map": "/workshop-weight-loss/static/css/467.7ca76772.chunk.css.map",
-    "467.9df48fef.chunk.js.map": "/workshop-weight-loss/static/js/467.9df48fef.chunk.js.map",
+    "main.b38aebf7.css.map": "/workshop-weight-loss/static/css/main.b38aebf7.css.map",
+    "main.629377cb.js.map": "/workshop-weight-loss/static/js/main.629377cb.js.map",
+    "258.23040c7d.chunk.css.map": "/workshop-weight-loss/static/css/258.23040c7d.chunk.css.map",
+    "258.4daa7c8d.chunk.js.map": "/workshop-weight-loss/static/js/258.4daa7c8d.chunk.js.map",
     "349.cfaef94a.chunk.css.map": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css.map",
     "349.29aaf5f4.chunk.js.map": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js.map",
     "121.acfa9984.chunk.css.map": "/workshop-weight-loss/static/css/121.acfa9984.chunk.css.map",
@@ -104,7 +110,7 @@
     "25.88afee04.chunk.js.map": "/workshop-weight-loss/static/js/25.88afee04.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.797b08a3.css",
-    "static/js/main.12f58937.js"
+    "static/css/main.b38aebf7.css",
+    "static/js/main.629377cb.js"
   ]
 }
