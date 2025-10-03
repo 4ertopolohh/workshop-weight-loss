@@ -96,7 +96,7 @@ const SaleSection = () => {
                     {isMobile ? (
                         <>
                             <BuyWorkshopBanner 
-                                height={885}
+                                height={895}
                                 backgroundColor={'#FFF4ED'}
                                 previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
                                 title={'Групповой'}
@@ -114,7 +114,7 @@ const SaleSection = () => {
                                 />
                             </BuyWorkshopBanner>
                             <BuyWorkshopBanner 
-                                height={965}
+                                height={975}
                                 backgroundColor={'#F3F8FF'}
                                 previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
                                 title={'Личный'}
@@ -132,7 +132,7 @@ const SaleSection = () => {
                                 />
                             </BuyWorkshopBanner>
                             <BuyWorkshopBanner 
-                                height={585}
+                                height={595}
                                 backgroundColor={'#F7F7F7'}
                                 previewBackground={'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 title={'Самостоятельный'}
@@ -146,7 +146,7 @@ const SaleSection = () => {
                             >
                             </BuyWorkshopBanner>
                             <BuyWorkshopBanner 
-                                height={685}
+                                height={695}
                                 backgroundColor={'#F7F7F7'}
                                 previewBackground={'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 title={'Ознакомительный'}
