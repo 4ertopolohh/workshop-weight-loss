@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/workshop-weight-loss/static/css/main.b67aa150.css",
-    "main.js": "/workshop-weight-loss/static/js/main.4a3134d5.js",
-    "static/css/199.2815e22d.chunk.css": "/workshop-weight-loss/static/css/199.2815e22d.chunk.css",
-    "static/js/199.9cd0617c.chunk.js": "/workshop-weight-loss/static/js/199.9cd0617c.chunk.js",
+    "main.js": "/workshop-weight-loss/static/js/main.10649294.js",
+    "static/css/199.0e2056dd.chunk.css": "/workshop-weight-loss/static/css/199.0e2056dd.chunk.css",
+    "static/js/199.b67616d0.chunk.js": "/workshop-weight-loss/static/js/199.b67616d0.chunk.js",
     "static/css/349.cfaef94a.chunk.css": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css",
     "static/js/349.29aaf5f4.chunk.js": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js",
     "static/css/121.acfa9984.chunk.css": "/workshop-weight-loss/static/css/121.acfa9984.chunk.css",
@@ -101,9 +101,9 @@
     "static/media/sliderRightArrow.svg": "/workshop-weight-loss/static/media/sliderRightArrow.a50ca3ebce7d96b6b25210bee17dce46.svg",
     "static/media/checkboxChecked.svg": "/workshop-weight-loss/static/media/checkboxChecked.2c77cf8f67dc36c4e535.svg",
     "main.b67aa150.css.map": "/workshop-weight-loss/static/css/main.b67aa150.css.map",
-    "main.4a3134d5.js.map": "/workshop-weight-loss/static/js/main.4a3134d5.js.map",
-    "199.2815e22d.chunk.css.map": "/workshop-weight-loss/static/css/199.2815e22d.chunk.css.map",
-    "199.9cd0617c.chunk.js.map": "/workshop-weight-loss/static/js/199.9cd0617c.chunk.js.map",
+    "main.10649294.js.map": "/workshop-weight-loss/static/js/main.10649294.js.map",
+    "199.0e2056dd.chunk.css.map": "/workshop-weight-loss/static/css/199.0e2056dd.chunk.css.map",
+    "199.b67616d0.chunk.js.map": "/workshop-weight-loss/static/js/199.b67616d0.chunk.js.map",
     "349.cfaef94a.chunk.css.map": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css.map",
     "349.29aaf5f4.chunk.js.map": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js.map",
     "121.acfa9984.chunk.css.map": "/workshop-weight-loss/static/css/121.acfa9984.chunk.css.map",
@@ -115,6 +115,6 @@
   },
   "entrypoints": [
     "static/css/main.b67aa150.css",
-    "static/js/main.4a3134d5.js"
+    "static/js/main.10649294.js"
   ]
 }
