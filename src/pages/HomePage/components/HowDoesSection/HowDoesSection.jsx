@@ -148,7 +148,7 @@ const HowDoesSection = () => {
                                         color={'#fff'}
                                         fontSize={18}
                                         fontWeight={600}
-                                        pixels={1700}
+                                        pixels={2500}
                                         direction={'down'}
                                     />
                                 </>

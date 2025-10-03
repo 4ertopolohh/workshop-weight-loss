@@ -1,15 +1,16 @@
 import '../AboutMePopUp/AboutMePopUp.scss'
 import '../AboutMePopUp/AboutMePopUp1300.scss'
+import '../AboutMePopUp/AboutMePopUpMobile.scss'
 import CloseButton from '../CloseButton/CloseButton';
 import { motion } from 'framer-motion';
 
-const AboutMePopUp = ({ description, itemsType = [], itemsAchives = [], onClose, image }) => {
+const AboutMePopUp = ({ description, itemsType = [], itemsAchives = [], onClose, image, isMobile }) => {
     return(
         <motion.div 
             className='aboutMePopUp'
-            initial={{ x: '-100%', opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: '-100%', opacity: 0 }}
+            initial={isMobile ? { y: '100%', opacity: 0 } : { x: '-100%', opacity: 0 }}
+            animate={isMobile ? { y: 0, opacity: 1 } : { x: 0, opacity: 1 }}
+            exit={isMobile ? { y: '100%', opacity: 0 } : { x: '-100%', opacity: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
         >
             <img src={image} alt="" loading='lazy' className='aboutMePopUpBackground'/>
@@ -43,27 +44,6 @@ const AboutMePopUp = ({ description, itemsType = [], itemsAchives = [], onClose,
                 </div>
                 
             </div>
-            {/* <div className='container' id='aboutMePopUpContainer'>
-                <div className='header'>
-                    <h5>Обо мне</h5>
-                    <CloseButton onClick={onClose} />
-                </div>
-                <div className='aboutMePopUpBody'>
-                    <p className='description'>
-                        {description}
-                    </p>
-                    <div className='list'>
-                        <p className='listTitle'>Мой принцип работы:</p>
-                        <ul>
-                            {items.map((item, index) => (
-                                <li key={index} className='item'>
-                                    {item.text}
-                                </li>
-                            ))} 
-                        </ul>
-                    </div>
-                </div>
-            </div> */}
         </motion.div>
     )
 }

@@ -1,3 +1,4 @@
+// WhoWillHelpSection.js
 import ExpertBanner from '../ExpertBanner/ExpertBanner';
 import '../WhoWillHelpSection/WhoWillHelpSection.scss';
 import '../WhoWillHelpSection/WhoWillHelpSection1050.scss';
@@ -122,28 +123,56 @@ const WhoWillHelpSection = () => {
                             text={'Подробнее о экспертах'}
                         />
                     )}
-                    <AnimatePresence>
-                        {isPopUpOpen && (
-                            <>
-                                <motion.div
-                                    className='overlay'
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 0.6 }}
-                                    exit={{ opacity: 0 }}
-                                    transition={{ duration: 0.5 }}
-                                    onClick={closePopUp}
-                                />
+                    {isMobile ? (
+                        <AnimatePresence>
+                            {isPopUpOpen && (
+                                <>
+                                    <motion.div
+                                        className='overlay'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 0.6 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                        onClick={closePopUp}
+                                    />
 
-                                <AboutMePopUp
-                                    description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинство из них и сформулировал самый легкий и эффективный'}
-                                    itemsType={aboutMePopUpItems}
-                                    onClose={closePopUp}
-                                    itemsAchives={aboutMePopUpItemsAchives}
-                                    image={aboutMePopUpBackground}
-                                />
-                            </>
-                        )}
-                    </AnimatePresence>
+                                    <AboutMePopUp
+                                        description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинству из них и сформулировал самый легкий и эффективный'}
+                                        itemsType={aboutMePopUpItems}
+                                        onClose={closePopUp}
+                                        itemsAchives={aboutMePopUpItemsAchives}
+                                        image={aboutMePopUpBackground}
+                                        isMobile={isMobile}
+                                    />
+                                </>
+                            )}
+                        </AnimatePresence>
+                    ) : (
+                        <AnimatePresence>
+                            {isPopUpOpen && (
+                                <>
+                                    <motion.div
+                                        className='overlay'
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 0.6 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                        onClick={closePopUp}
+                                    />
+
+                                    <AboutMePopUp
+                                        description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинству из них и сформулировал самый легкий и эффективный'}
+                                        itemsType={aboutMePopUpItems}
+                                        onClose={closePopUp}
+                                        itemsAchives={aboutMePopUpItemsAchives}
+                                        image={aboutMePopUpBackground}
+                                        isMobile={isMobile}
+                                    />
+                                </>
+                            )}
+                        </AnimatePresence>
+                    )}
+                    
                 </div>
 
             ) : (
@@ -227,11 +256,12 @@ const WhoWillHelpSection = () => {
                                 />
 
                                 <AboutMePopUp
-                                    description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинство из них и сформулировал самый легкий и эффективный'}
+                                    description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинству из них и сформулировал самый легкий и эффективный'}
                                     itemsType={aboutMePopUpItems}
                                     onClose={closePopUp}
                                     itemsAchives={aboutMePopUpItemsAchives}
                                     image={aboutMePopUpBackground}
+                                    isMobile={isMobile}
                                 />
                             </>
                         )}

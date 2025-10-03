@@ -24,6 +24,12 @@
     }
 }
 
+@media(max-width: 401px){
+    .marafonWorksMiniBanner{
+        max-width: $max-width-big-375;
+    }
+}
+
 @media(max-width: 376px){
     .marafonWorksMiniBanner{
         max-width: $max-width-big-375;

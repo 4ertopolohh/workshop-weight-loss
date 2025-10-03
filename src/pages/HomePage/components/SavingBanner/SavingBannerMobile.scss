@@ -30,6 +30,12 @@
     }
 }
 
+@media(max-width:401px){
+    .savingBanner{
+        max-width: $max-width-big-375 !important;
+    }
+}
+
 @media(max-width:376px){
     .savingBanner{
         max-width: $max-width-big-375 !important;

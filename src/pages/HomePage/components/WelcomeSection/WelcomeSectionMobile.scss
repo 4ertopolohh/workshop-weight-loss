@@ -26,6 +26,25 @@
     }
 }
 
+@media (max-width: 401px){
+    .welcomeSection{
+        margin-top: 0;
+
+        .container{
+            max-width: $max-width-big-375 !important;
+            justify-content: center;
+            height: 532px;
+            padding: 0 0 50px 20px !important;
+            margin: 15px auto !important;
+            gap: 30px !important;
+        }
+    } 
+    
+    .welcomeBackground{
+        top: 60% !important;
+    }
+}
+
 @media (max-width: 376px){
     .welcomeSection{
         margin-top: 0;

@@ -24,6 +24,20 @@
     }
 }
 
+@media(max-width:401px){
+    .marafonWorksBigBanner{
+        max-width: $max-width-big-375;
+            max-height: 1000px !important;
+            height: 970px !important;
+
+        & .titles{
+            max-width: $max-width-big-375 - 50px;
+            max-height: 1000px !important;
+            height: 1000px !important;
+        }
+    }
+}
+
 @media(max-width:376px){
     .marafonWorksBigBanner{
         max-width: $max-width-big-375;

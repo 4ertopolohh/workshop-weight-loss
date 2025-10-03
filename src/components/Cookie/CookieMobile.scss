@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+@media(max-width: 451px){
+    .cookie{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: $max-width-big-375;
+        gap: 5px;
+        .cookieDescription{
+            max-width: 90%;
+            width: 100%;
+            @include flex-center-column;
+            p{
+                text-align: center;
+            }
+        }
+    }
+}

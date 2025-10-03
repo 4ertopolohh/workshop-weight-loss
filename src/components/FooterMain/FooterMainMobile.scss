@@ -11,6 +11,15 @@
     
 }
 
+@media (max-width: 401px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }   
+    
+}
+
 @media (max-width: 376px){
     .footerMain {
         .container{

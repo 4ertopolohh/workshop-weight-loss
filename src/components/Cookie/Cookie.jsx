@@ -5,6 +5,7 @@ import '../Cookie/Cookie1212.scss'
 import '../Cookie/Cookie1135.scss'
 import '../Cookie/Cookie1050.scss'
 import '../Cookie/Cookie950.scss'
+import '../Cookie/CookieMobile.scss'
 import CookieButton from '../CookieButton/CookieButton';
 import { motion } from 'framer-motion';
 

@@ -10,6 +10,16 @@
     }
 }
 
+@media(max-width: 401px){
+    .FAQSectionTitle{
+        font-size: 41px;
+        max-width: 300px;
+    }
+    .FAQSection .container{
+        max-width: $max-width-big-375;
+    }
+}
+
 @media(max-width: 376px){
     .FAQSectionTitle{
         font-size: 41px;

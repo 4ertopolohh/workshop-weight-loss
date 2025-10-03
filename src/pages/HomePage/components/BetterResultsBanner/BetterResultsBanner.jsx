@@ -1,5 +1,6 @@
 import BetterResult from '../BetterResult/BetterResult';
 import '../BetterResultsBanner/BetterResultsBanner.scss'
+import '../BetterResultsBanner/BetterResultsBannerMobile.scss'
 
 const BetterResultsBanner = () => {
     return(

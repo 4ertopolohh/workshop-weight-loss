@@ -8,6 +8,18 @@
     }
 }
 
+@media(max-width: 401px){
+    .howDoesSection{
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+
+    .howDoesSectionTitle h1{
+        font-size: 41px !important;
+    }
+}
+
 @media(max-width: 376px){
     .howDoesSection{
         .container{

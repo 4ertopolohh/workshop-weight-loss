@@ -90,7 +90,7 @@ const SaleSection = () => {
                             Погнали!
                         </h1>
                         <p className='saleSectionSubtitle2'>
-                            Выберайте формат участия
+                            Выбирайте формат участия
                         </p>
                     </div>
                     {isMobile ? (

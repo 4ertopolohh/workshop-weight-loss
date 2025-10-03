@@ -30,7 +30,7 @@ const HotOfferSection = () => {
                                 background={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
                                 text={'Хочу присоединиться'}
                                 color={'#fff'}
-                                pixels={6350}
+                                pixels={9350}
                                 direction={'down'}
                                 fontWeight={600}
                                 fontSize={18}

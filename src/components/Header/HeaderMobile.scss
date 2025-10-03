@@ -12,6 +12,18 @@
     }
 }
 
+@media (max-width: 401px){
+    .header {
+        // maxwidth: $max-width-big-375 !important;
+        width: 100% !important;
+
+        .container{
+            width: $max-width-big-375 !important;
+            // width: 100% !important;
+        }
+    }
+}
+
 @media (max-width: 376px){
     .header {
         // maxwidth: $max-width-big-375 !important;

@@ -12,6 +12,15 @@
     }
 }
 
+@media(max-width:401px){
+    .feedbackSection{
+
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+}
+
 @media(max-width:376px){
     .feedbackSection{
 
