@@ -1,4 +1,5 @@
 import '../MarafonWorksList/MarafonWorksList.scss'
+import '../MarafonWorksList/MarafonWorksListMobile.scss'
 
 const MarafonWorksList = ({ marafonWorksItems = [] }) => {
     return(

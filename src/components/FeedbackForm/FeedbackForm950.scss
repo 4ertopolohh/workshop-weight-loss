@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+@media(max-width: 951px){
+    .feedbackForm{
+        max-width: $max-width-big-950;
+        height: 600px !important;
+
+        .container{
+            max-width: $max-width-big-950;
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 15px !important;
+        }
+    }
+
+    .feedbackFormDescription{
+        max-width: 512px;
+    }
+}

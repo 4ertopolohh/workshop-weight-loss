@@ -1,6 +1,8 @@
 import ExpertBanner from '../ExpertBanner/ExpertBanner';
 import '../WhoWillHelpSection/WhoWillHelpSection.scss';
 import '../WhoWillHelpSection/WhoWillHelpSection1050.scss';
+import '../WhoWillHelpSection/WhoWillHelpSection750.scss';
+import '../WhoWillHelpSection/WhoWillHelpSectionMobile.scss';
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
@@ -26,6 +28,7 @@ import AboutMePopUp from '../AboutMePopUp/AboutMePopUp';
 const WhoWillHelpSection = () => {
 
     const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+    const isMobile = useMediaQuery({ maxWidth: 451 })
 
     const nikitaSkillsItems = [
         { text: 'Диплом Нутрициолога МУПП',icon: diplomIconBlue },
@@ -96,16 +99,29 @@ const WhoWillHelpSection = () => {
                         description={'Отвечает за организационные вопросы, мотивацию, помогает и заботится об участниках практикума.'}
                         items={uriSkillsItems}
                     />  
-                    <LinkPageButton
-                        width={322}
-                        height={62}
-                        background={'#000'}
-                        color={'#fff'}
-                        fontSize={18}
-                        fontWeight={600}
-                        page={'/experts'}
-                        text={'Подробнее о экспертах'}
-                    />
+                    {isMobile ? (
+                        <LinkPageButton
+                            width={'100%'}
+                            height={62}
+                            background={'#000'}
+                            color={'#fff'}
+                            fontSize={18}
+                            fontWeight={600}
+                            page={'/experts'}
+                            text={'Подробнее о экспертах'}
+                        />
+                    ) : (
+                        <LinkPageButton
+                            width={322}
+                            height={62}
+                            background={'#000'}
+                            color={'#fff'}
+                            fontSize={18}
+                            fontWeight={600}
+                            page={'/experts'}
+                            text={'Подробнее о экспертах'}
+                        />
+                    )}
                     <AnimatePresence>
                         {isPopUpOpen && (
                             <>
@@ -198,6 +214,28 @@ const WhoWillHelpSection = () => {
                             text={'Подробнее о экспертах'}
                         />
                     </motion.div>
+                    <AnimatePresence>
+                        {isPopUpOpen && (
+                            <>
+                                <motion.div
+                                    className='overlay'
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 0.6 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    onClick={closePopUp}
+                                />
+
+                                <AboutMePopUp
+                                    description={'Вот уже пятый год веду собственный проект по снижению веса и уже помог многим в личной и групповой работе. В мире много способов похудеть, я изучил большинство из них и сформулировал самый легкий и эффективный'}
+                                    itemsType={aboutMePopUpItems}
+                                    onClose={closePopUp}
+                                    itemsAchives={aboutMePopUpItemsAchives}
+                                    image={aboutMePopUpBackground}
+                                />
+                            </>
+                        )}
+                    </AnimatePresence>
                 </div>
 
             )}

@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+
+@media(max-width:651px){
+    .freeContentSectionTitle{
+        width: 100%;
+    }
+
+    .freeContentSectionBanners{
+        // flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+}

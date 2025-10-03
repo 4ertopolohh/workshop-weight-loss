@@ -1,4 +1,5 @@
 import '../AboutMePopUp/AboutMePopUp.scss'
+import '../AboutMePopUp/AboutMePopUp1300.scss'
 import CloseButton from '../CloseButton/CloseButton';
 import { motion } from 'framer-motion';
 

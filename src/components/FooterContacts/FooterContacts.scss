@@ -23,5 +23,16 @@
     }
 }
 
+.footerContactsMobile{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid $color-dark-gray;
+}  
+
 
 

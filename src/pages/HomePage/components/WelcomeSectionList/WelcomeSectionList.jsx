@@ -1,4 +1,5 @@
 import '../WelcomeSectionList/WelcomeSectionList.scss'
+import '../WelcomeSectionList/WelcomeSectionList650.scss'
 
 const WelcomeSectionList = ({ welcomeItems = [] }) => {
     return(

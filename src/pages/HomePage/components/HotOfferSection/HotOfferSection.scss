@@ -3,10 +3,10 @@
 .hotOfferSection{
     z-index: 1000;
     position: relative;
+    background: $color-very-light-orange;
+    border: 2px solid $color-base-orange;
+    border-radius: 20px;
     .container{
-        background: $color-very-light-orange;
-        border: 2px solid $color-base-orange;
-        border-radius: 20px;
         padding: 20px 20px;
         flex-direction: row;
         @include flex-between-row;

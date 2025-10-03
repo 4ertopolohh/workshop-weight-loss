@@ -45,4 +45,5 @@
 .savigBannerAnimation{
     max-width: $max-width-small;
     width: 100%;
+    @include flex-center-row;
 }

@@ -1,5 +1,6 @@
 import FeedbackSection from '../../components/FeedbackSection/FeedbackSection';
 import '../HomePage/HomePage.scss'
+import '../HomePage/HomePage375.scss'
 import AllReviewsSection from './components/AllReviewsSection/AllReviewsSection';
 import FAQSection from './components/FAQSection/FAQSection';
 import FreeContentSection from './components/FreeContentSection/FreeContentSection';

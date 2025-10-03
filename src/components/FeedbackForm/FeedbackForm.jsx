@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
 import '../FeedbackForm/FeedbackForm.scss';
 import '../FeedbackForm/FeedbackForm1050.scss';
+import '../FeedbackForm/FeedbackForm950.scss';
+import '../FeedbackForm/FeedbackFormMobile.scss';
 import { useState, useEffect } from 'react';
 import FeedbackSendButton from '../FeedbackSendButton/FeedbackSendButton';
 import InputFieldName from '../InputFieldName/InputFieldName';
@@ -286,7 +288,7 @@ const FeedbackForm = () => {
                     checked={personalDataAgreement}
                     onChange={(e) => handlePersonalDataAgreement(e.target.checked)}
                   />
-                  <span>Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с условиями договора Оферты</span>
+                  <span id='feedbackFistAgreement'>Нажимая на кнопку, я соглашаюсь на <span id='processingOfPersonalData'><a href="">обработку персональных данных</a></span> и с условиями <span id='offerAgreement'><a href="">договора Оферты</a></span></span>
                 </div>
                 <div className='feedbackFormAgreement' id='newsletter'>
                   <input 
@@ -295,7 +297,7 @@ const FeedbackForm = () => {
                     checked={formData.newsletterAgreement}
                     onChange={(e) => handleNewsletterAgreement(e.target.checked)}
                   />
-                  <span>Я согласен(на) получать информационную и <span><a href="">рекламную рассылку</a></span></span>
+                  <span id='feedbackSecondAgreement'>Я согласен(на) получать информационную и <span><a href="">рекламную рассылку</a></span></span>
                 </div> 
               </div>
               {agreementError && <div className="error-message">Необходимо ваше согласие</div>}

@@ -1,4 +1,5 @@
 import '../FormatBanner/FormatBanner.scss'
+import '../FormatBanner/FormatBannerMobile.scss'
 
 const FormatBanner = ({ title, formatBanneritems = [], width, height, containerWidth, icon }) => {
     return (

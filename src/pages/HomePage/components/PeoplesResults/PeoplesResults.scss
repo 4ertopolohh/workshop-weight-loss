@@ -7,15 +7,25 @@
     .peoplesResultsSwiper {
         width: 100%;
         
-        &.tablet1135 {
-            width: calc(100% - 350px);
-            margin: 0 auto;
-        }
+        // & .tablet1135 {
+        //     width: 300px !important;
+        //     margin: 0 auto;
+        // }
 
-        &.tablet1050 {
-            width: calc(100% - 250px);
-            margin: 0 auto;
-        }
+        // &.tablet1050 {
+        //     width: calc(100% - 250px);
+        //     margin: 0 auto;
+        // }
+
+        // &.tablet850 {
+        //     width: calc(100% - 500px);
+        //     margin: 0 auto;
+        // }
+
+        // &.tablet750 {
+        //     width: 340px;
+        //     margin: 0 auto;
+        // }        
     }
 
     .nav-btn {

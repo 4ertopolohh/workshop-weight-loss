@@ -1,5 +1,7 @@
 import '../MarafonWorksMiniBanner/MarafonWorksMiniBanner.scss'
 import '../MarafonWorksMiniBanner/MarafonWorksMiniBanner1050.scss'
+import '../MarafonWorksMiniBanner/MarafonWorksMiniBanner950.scss'
+import '../MarafonWorksMiniBanner/MarafonWorksMiniBannerMobile.scss'
 
 const MarafonWorksMiniBanner = ({ icon, text }) => {
     return(

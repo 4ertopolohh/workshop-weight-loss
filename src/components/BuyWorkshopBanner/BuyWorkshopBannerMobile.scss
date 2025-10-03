@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+@media(max-width:451px){
+    .buyWorkshopBanner{
+        max-width: 343px !important;
+        width: 100% !important;
+        .buyWorkshopBannerPreview{
+            .container{
+                max-width: 311px !important;
+                width: 100% !important;
+                .buyWorkshopBannerPreviewTitle{
+                    font-size: 25px !important;
+                }
+                .buyWorkshopBannerPreviewList{
+                    li{
+                        font-size: 12px !important;
+                    }
+                }
+                .buyWorkshopBannerPreviewSubtitle{
+                    p{
+                        font-size: 13px !important;
+                    }
+                    h5{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+        .buyWorkshopBannerDescription{
+            .container{
+                max-width: 311px;
+                width: 100%;
+                .buyWorkshopBannerDescriptionList{
+                    li{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+    }
+}

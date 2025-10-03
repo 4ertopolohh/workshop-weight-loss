@@ -1,0 +1,58 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 451px){
+    .expertBanner{
+        max-width: 343px;
+        max-height: 861px;
+        height: 100%;
+        padding: 10px 0 !important;
+        .container{
+            max-width: 311px;
+        }
+    }
+
+    .expertBannerTitle{
+        max-width: 311px !important;
+        width: 100%;
+        h2{
+            width: 100% !important;
+            font-size: 30px !important;
+            flex-wrap: nowrap !important;
+        }
+        P{
+
+        }
+    }
+    .expertResultImage{
+        height: 180px !important;
+        width: auto !important;
+    }
+    .expertBannerQuote{
+        max-width: 331px !important;
+        max-height: 173px !important;
+        width: 100% !important;
+        height: 100% !important;
+        padding: 5px 0;
+        img{
+
+        }
+        p{
+            font-size: 16px !important;
+            width: 303px;
+        }
+    }
+    .expertDescription{
+        max-width: 311px;
+    }
+    .expertSkillsList{
+        max-width: 311px !important;
+        max-height: 300px !important;
+        height: 100%;
+        width: 100%;
+        li{
+            max-width: 300px !important;
+            width: 100% !important;
+            font-size: 14px !important;
+        }
+    }
+}

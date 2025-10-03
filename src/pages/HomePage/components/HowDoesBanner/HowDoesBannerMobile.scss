@@ -1,0 +1,21 @@
+@import '../../../../styles/variables';
+
+@media(max-width:451px){
+    .howDoesBanner{
+        justify-content: center;
+        .container{
+            max-width: 311px !important;
+            max-height: 394px !important;
+            margin: 0 0 !important;
+            gap: 10px !important;
+        }
+    }
+
+    .howDoesBannerTitle{
+        font-size: 20px !important;
+        max-width: 311px;
+    }
+    .howDoesBannerDescription{
+        max-width: 311px;
+    }
+}

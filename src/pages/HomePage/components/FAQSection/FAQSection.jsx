@@ -1,4 +1,7 @@
 import '../FAQSection/FAQSection.scss'
+import '../FAQSection/FAQSection950.scss'
+import '../FAQSection/FAQSection750.scss'
+import '../FAQSection/FAQSectionMobile.scss'
 import FAQSectionButton from '../FAQSectionButton/FAQSectionButton';
 import FAQTab from '../FAQTab/FAQTab';
 import { useState } from 'react';

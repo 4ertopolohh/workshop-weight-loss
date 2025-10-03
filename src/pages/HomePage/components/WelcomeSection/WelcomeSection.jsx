@@ -4,8 +4,15 @@ import '../WelcomeSection/WelcomeSection1300.scss'
 import '../WelcomeSection/WelcomeSection1212.scss'
 import '../WelcomeSection/WelcomeSection1135.scss'
 import '../WelcomeSection/WelcomeSection1050.scss'
+import '../WelcomeSection/WelcomeSection950.scss'
+import '../WelcomeSection/WelcomeSection850.scss'
+import '../WelcomeSection/WelcomeSection750.scss'
+import '../WelcomeSection/WelcomeSection650.scss'
+import '../WelcomeSection/WelcomeSectionMobile.scss'
 import WelcomeSectionList from '../WelcomeSectionList/WelcomeSectionList';
 import WelcomeSectionTitle from '../WelcomeSectionTitle/WelcomeSectionTitle';
+
+import { useMediaQuery } from 'react-responsive';
 
 import calendarIcon from '../../../../assets/images/icons/calendarIcon.svg';
 import heartIcon from '../../../../assets/images/icons/heartIcon.svg';
@@ -13,8 +20,11 @@ import toolsIcon from '../../../../assets/images/icons/toolsIcon.svg';
 import gpsIcon from '../../../../assets/images/icons/gpsIcon.svg';
 import garantIcon from '../../../../assets/images/icons/garantIcon.svg';
 import welcomeBackground from '../../../../assets/images/pictures/welcomeBackground.png';
+import welcomeBackgroundMobile from '../../../../assets/images/pictures/welcomeBackgroundMobile.png';
 
 const WelcomeSection = () => {
+
+    const isMobile = useMediaQuery({ maxWidth: 451 })
 
     const welcomeItems = [
         {text: 'Здоровый подход.', icon: heartIcon},
@@ -31,8 +41,11 @@ const WelcomeSection = () => {
                 <WelcomeSectionTitle textPart1={`Помогаем сбросить вес`} textPart2={'без отката назад!'}/>
                 <WelcomeSectionList welcomeItems={welcomeItems}/>
             </div>
-
-            <img src={welcomeBackground} alt="" loading='lazy' className='welcomeBackground'/>
+            {isMobile ? (
+                <img src={welcomeBackgroundMobile} alt="" loading='lazy' className='welcomeBackground'/>
+            ) : (
+                <img src={welcomeBackground} alt="" loading='lazy' className='welcomeBackground'/>
+            )}
         </section>
     )
 }

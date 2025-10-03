@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+@media(max-width:951px){
+    .marafonWorksBigBanner{
+        justify-content: center !important;
+        height: 700px !important;
+        max-width: $max-width-big-950 - 400;
+
+        & .titles{
+            width: 420px !important;
+            justify-content: space-evenly !important;
+            max-height: 700px !important;
+            height: 700px !important;
+            max-width: 100%;
+            width: 100%;
+
+            h6{
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -5,6 +5,8 @@ import '../FooterMain/FooterMain1300.scss'
 import '../FooterMain/FooterMain1212.scss'
 import '../FooterMain/FooterMain1135.scss'
 import '../FooterMain/FooterMain1050.scss'
+import '../FooterMain/FooterMain950.scss'
+import '../FooterMain/FooterMainMobile.scss'
 import FooterMenu from '../FooterMenu/FooterMenu';
 
 const FooterMain = ({ socials = [], footerMenuItems = [] }) => {

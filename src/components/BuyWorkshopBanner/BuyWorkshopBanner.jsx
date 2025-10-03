@@ -1,6 +1,7 @@
 import LinkPageButton from '../../pages/HomePage/components/LinkPageButton/LinkPageButton'
 import '../BuyWorkshopBanner/BuyWorkshopBanner.scss'
 import '../BuyWorkshopBanner/BuyWorkshopBanner1050.scss'
+import '../BuyWorkshopBanner/BuyWorkshopBannerMobile.scss'
 import { useMediaQuery } from 'react-responsive';
 
 const BuyWorkshopBanner = ({ 
@@ -20,6 +21,7 @@ const BuyWorkshopBanner = ({
 }) => {
 
     const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+    const isMobile = useMediaQuery({ maxWidth: 451 })
 
     const buyWorkshopBannerStyle = {
         height: height,

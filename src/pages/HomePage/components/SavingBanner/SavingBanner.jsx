@@ -1,4 +1,6 @@
 import '../SavingBanner/SavingBanner.scss'
+import '../SavingBanner/SavingBanner950.scss'
+import '../SavingBanner/SavingBannerMobile.scss'
 
 const SavingBanner = ({ height, items=[], title, icon, color }) => {
     

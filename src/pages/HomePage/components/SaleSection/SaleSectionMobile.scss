@@ -1,0 +1,21 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 451px){
+    .saleSection .container{
+        max-width: $max-width-big-450;
+    }
+    .saleSectionName{
+        align-items: start !important;
+        line-height: 40px !important;
+        .saleSectionTitle{
+            font-size: 41px;
+            width: 50%;
+        }
+        .saleSectionSubtitle{
+            font-size: 41px;
+        }
+        // .saleSectionSubtitle2{
+
+        // }   
+    }
+}

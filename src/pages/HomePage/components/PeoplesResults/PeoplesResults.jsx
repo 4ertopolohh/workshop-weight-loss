@@ -1,6 +1,10 @@
 import '../PeoplesResults/PeoplesResults.scss'
 import '../PeoplesResults/PeoplesResults1135.scss'
 import '../PeoplesResults/PeoplesResults1050.scss'
+import '../PeoplesResults/PeoplesResults850.scss'
+import '../PeoplesResults/PeoplesResults750.scss'
+import '../PeoplesResults/PeoplesResults650.scss'
+import '../PeoplesResults/PeoplesResultsMobile.scss'
 import PeopleResultBanner from '../PeopleResultBanner/PeopleResultBanner'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
@@ -40,12 +44,20 @@ const PeoplesResults = () => {
     const swiperRef = useRef(null)
     const isTablet1135 = useMediaQuery({ maxWidth: 1135 })
     const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+    const isTablet850 = useMediaQuery({ maxWidth: 851 })
+    const isTablet750 = useMediaQuery({ maxWidth: 751 })
+
+    const getSlidesPerView = () => {
+        if (isTablet850) return 1
+        if (isTablet1135) return 2
+        return 3
+    }
 
     return (
         <div className="peoplesResultsWrapper">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]} 
-                slidesPerView={isTablet1135 ? 2 : 3}
+                slidesPerView={getSlidesPerView()}
                 spaceBetween={20}
                 loop={true}
                 autoplay={{
@@ -61,7 +73,12 @@ const PeoplesResults = () => {
                     clickable: true,
                 }}
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                className={`peoplesResultsSwiper ${isTablet1135 ? 'tablet1135' : '', isTablet1050 ? 'tablet1050' : ''}`}
+                className={`peoplesResultsSwiper ${
+                    isTablet1135 ? 'tablet1135' : '', 
+                    isTablet1050 ? 'tablet1050' : '', 
+                    isTablet850 ? 'tablet850' : '',
+                    isTablet750 ? 'tablet750' : ''
+                }`}
             >
                 <SwiperSlide>
                     <PeopleResultBanner 

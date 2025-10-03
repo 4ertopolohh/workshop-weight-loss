@@ -1,5 +1,6 @@
 import '../HowDoesColorBanner/HowDoesColorBanner.scss'
 import '../HowDoesColorBanner/HowDoesColorBanner1050.scss'
+import '../HowDoesColorBanner/HowDoesColorBannerMobile.scss'
 
 const HowDoesCollorBanner = ({
     baseColor,

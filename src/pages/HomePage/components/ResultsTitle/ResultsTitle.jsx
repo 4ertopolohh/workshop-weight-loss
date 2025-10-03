@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import '../ResultsTitle/ResultsTitle.scss'
+import '../ResultsTitle/ResultsTitle750.scss'
+import '../ResultsTitle/ResultsTitleMobile.scss'
 
 import resultsPeople from '../../../../assets/images/pictures/resultsPeoples.png'
 

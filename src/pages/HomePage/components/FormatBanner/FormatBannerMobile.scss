@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 751px){
+    .formatBanner{
+        @include flex-center-column;
+        .container{
+            max-width: 311px;
+            max-height: 266px;
+            gap: 10px !important;
+        }
+    }
+}

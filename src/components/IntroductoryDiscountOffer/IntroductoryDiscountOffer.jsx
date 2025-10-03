@@ -1,5 +1,6 @@
 import '../IntroductoryDiscountOffer/IntroductoryDiscountOffer.scss'
 import '../IntroductoryDiscountOffer/IntroductoryDiscountOffer1050.scss'
+import '../IntroductoryDiscountOffer/IntroductoryDiscountOfferMobile.scss'
 
 const IntroductoryDiscountOffer = () => {
     return(

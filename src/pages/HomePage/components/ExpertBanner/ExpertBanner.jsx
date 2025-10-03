@@ -1,4 +1,5 @@
 import '../ExpertBanner/ExpertBanner.scss'
+import '../ExpertBanner/ExpertBannerMobile.scss'
 
 const ExpertBanner = ({ color, title, subtitle, image, quotes, quote, description, items = [], children }) => {
 

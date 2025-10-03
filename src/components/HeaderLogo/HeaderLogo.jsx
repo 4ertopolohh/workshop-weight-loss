@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'; 
 import '../HeaderLogo/HeaderLogo.scss';
 import '../HeaderLogo/HeaderLogo1050.scss';
+import '../HeaderLogo/HeaderLogo375.scss';
 
 const HeaderLogo = ({ logo, text }) => {
     return(

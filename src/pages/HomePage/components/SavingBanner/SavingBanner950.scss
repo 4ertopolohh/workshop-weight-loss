@@ -1,0 +1,17 @@
+@import '../../../../styles/variables';
+
+@media(max-width:951px){
+    .savingBanner{
+        flex-direction: column;
+        height: 320px !important;
+        justify-content: start;
+        max-width: $max-width-big-950;
+        gap: 10px;
+    }
+
+    .savingBannerPreview{
+        width: 100%;
+        height: 50%;
+        border-radius: 25px 25px 0 0;
+    }
+}

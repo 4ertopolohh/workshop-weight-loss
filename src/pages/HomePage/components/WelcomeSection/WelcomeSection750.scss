@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+@media (max-width: 751px){
+    .welcomeSection .container{
+        justify-content: center;
+        height: 375px;
+    }
+    .welcomeBackground{
+        top: 70% !important;
+    }
+}

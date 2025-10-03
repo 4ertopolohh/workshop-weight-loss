@@ -1,0 +1,47 @@
+@import '../../../../styles/variables';
+
+@media (max-width: 451px){
+    #hotOfferSection{
+        @include flex-center-row;
+    }
+
+    .hotOfferSection {
+        width: 343px !important;
+        height: 156px !important;
+
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            height: 100%;
+            width: 100%;
+            max-width: 311px;
+            max-height: 146px;
+            align-items: start;
+            padding: 0 0 !important;
+        }
+    }
+}
+
+@media (max-width: 376px){
+    #hotOfferSection{
+        @include flex-center-row;
+    }
+
+    .hotOfferSection {
+        width: 343px !important;
+        height: 156px !important;
+
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            height: 100%;
+            width: 100%;
+            max-width: 311px;
+            max-height: 146px;
+            align-items: start;
+            padding: 0 0 !important;
+        }
+    }
+}

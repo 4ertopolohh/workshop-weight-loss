@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+@media (max-width: 451px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-450;
+            width: 100% !important;
+            flex-direction: column;
+        }
+    }   
+    
+}
+
+@media (max-width: 376px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }   
+    
+}

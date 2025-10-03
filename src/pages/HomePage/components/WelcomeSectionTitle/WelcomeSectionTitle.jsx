@@ -1,4 +1,7 @@
 import '../WelcomeSectionTitle/WelcomeSectionTitle.scss'
+import '../WelcomeSectionTitle/WelcomeSectionTitle750.scss'
+import '../WelcomeSectionTitle/WelcomeSectionTitle650.scss'
+import '../WelcomeSectionTitle/WelcomeSectionTitleMobile.scss'
 
 const WelcomeSectionTitle = ({ textPart1, textPart2 }) => {
     return(

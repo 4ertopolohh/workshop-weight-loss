@@ -2,6 +2,8 @@ import { motion } from 'framer-motion';
 import FeedbackForm from '../FeedbackForm/FeedbackForm';
 import FeedbackLinks from '../FeedbackLinks/FeedbackLinks';
 import '../FeedbackSection/FeedbackSection.scss'
+import '../FeedbackSection/FeedbackSection950.scss'
+import '../FeedbackSection/FeedbackSectionMobile.scss'
 import { useMediaQuery } from 'react-responsive';
 
 import tgIcon from '../../assets/images/icons/telegramIcon.svg'

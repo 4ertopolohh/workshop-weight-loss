@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 751px){
+    .peoples-prev {
+        display: none;
+    }
+
+    .peoples-next {
+        display: none;
+    }
+}

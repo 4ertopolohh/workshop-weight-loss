@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import '../FeedbackLinks/FeedbackLinks.scss'
 import '../FeedbackLinks/FeedbackLinks1050.scss'
+import '../FeedbackLinks/FeedbackLinks950.scss'
 import { useMediaQuery } from 'react-responsive';
 
 const FeedbackLinks = ({ items = [] }) => {
@@ -31,7 +32,7 @@ const FeedbackLinks = ({ items = [] }) => {
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
                 >
                     <div className='container'>
-                        <h3>Связаться</h3>
+                        <h3>Связаться с нами</h3>
                         <ul className='feedbackLinksSocials'>
                             {items.map((item, index) => (
                                 <li key={index} className='feedbackSocialsListItem'>

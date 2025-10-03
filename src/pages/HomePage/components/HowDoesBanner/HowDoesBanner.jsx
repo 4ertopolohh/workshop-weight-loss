@@ -1,4 +1,5 @@
 import '../HowDoesBanner/HowDoesBanner.scss'
+import '../HowDoesBanner/HowDoesBannerMobile.scss'
 
 const HowDoesBanner = ({ icon, title, description, width, height, containerWidth }) => {
     return(

@@ -1,4 +1,6 @@
 import '../SaleSection/SaleSection.scss'
+import '../SaleSection/SaleSection950.scss'
+import '../SaleSection/SaleSectionMobile.scss'
 import { motion } from 'framer-motion'; 
 import { useMediaQuery } from 'react-responsive';
 
@@ -16,6 +18,7 @@ import IntroductoryDiscountOffer from '../../../../components/IntroductoryDiscou
 const SaleSection = () => {
 
     const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+    const isMobile = useMediaQuery({ maxWidth: 451 })
 
     const individualPreviewList = [
         {text: 'Длительность 12 недель', icon: calendarIconWhite },
@@ -86,76 +89,149 @@ const SaleSection = () => {
                         <h1 className='saleSectionSubtitle'>
                             Погнали!
                         </h1>
+                        <p className='saleSectionSubtitle2'>
+                            Выберайте формат участия
+                        </p>
                     </div>
-                        <BuyWorkshopBanner 
-                            height={750}
-                            backgroundColor={'#FFF4ED'}
-                            previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
-                            title={'Групповой'}
-                            subtitle={'Работа над результатом с'}
-                            subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
-                            itemsPreview={groupPreviewList}
-                            buttonColor={'#FF6B16'}
-                            itemsDescription={groupList}
-                            fullPrice={'30 000'}
-                            monthPrice={'Оплата: 10 000 ₽ в месяц'}
-                        >
-                            <DiscountOffer 
-                                oldPrice={'30 000'}
-                                newPrice={'24 900'}
-                            />
-                        </BuyWorkshopBanner>
+                    {isMobile ? (
+                        <>
+                            <BuyWorkshopBanner 
+                                height={885}
+                                backgroundColor={'#FFF4ED'}
+                                previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                title={'Групповой'}
+                                subtitle={'Работа над результатом с'}
+                                subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
+                                itemsPreview={groupPreviewList}
+                                buttonColor={'#FF6B16'}
+                                itemsDescription={groupList}
+                                fullPrice={'30 000'}
+                                monthPrice={'Оплата: 10 000 ₽ в месяц'}
+                            >
+                                <DiscountOffer 
+                                    oldPrice={'30 000'}
+                                    newPrice={'24 900'}
+                                />
+                            </BuyWorkshopBanner>
+                            <BuyWorkshopBanner 
+                                height={965}
+                                backgroundColor={'#F3F8FF'}
+                                previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                title={'Личный'}
+                                subtitle={'Работа над результатом с'}
+                                subtitleTitle={'Никитой Агаповым'}
+                                itemsPreview={individualPreviewList}
+                                buttonColor={'#1257E0'}
+                                itemsDescription={individualList}
+                                fullPrice={'60 000'}
+                                monthPrice={'Оплата: 20 000 ₽ в месяц'}
+                            >
+                                <DiscountOffer 
+                                    oldPrice={'60 000'}
+                                    newPrice={'49 900'}
+                                />
+                            </BuyWorkshopBanner>
+                            <BuyWorkshopBanner 
+                                height={585}
+                                backgroundColor={'#F7F7F7'}
+                                previewBackground={'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
+                                title={'Самостоятельный'}
+                                subtitle={'База знаний для самостоятельной работы'}
+                                subtitleTitle={''}
+                                itemsPreview={independentPreviewList}
+                                buttonColor={'#000'}
+                                itemsDescription={independentList}
+                                fullPrice={'14 900'}
+                                monthPrice={'Единый платеж'}
+                            >
+                            </BuyWorkshopBanner>
+                            <BuyWorkshopBanner 
+                                height={685}
+                                backgroundColor={'#F7F7F7'}
+                                previewBackground={'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
+                                title={'Ознакомительный'}
+                                subtitle={'Идеально, чтобы понять подходит ли вам метод'}
+                                subtitleTitle={''}
+                                itemsPreview={introductoryPreviewList}
+                                buttonColor={'#000'}
+                                itemsDescription={introductoryList}
+                                fullPrice={'3 900'}
+                                monthPrice={'Единый платеж'}
+                                children2={<IntroductoryDiscountOffer/>}
+                            >
+                            </BuyWorkshopBanner>
+                        </>
+                    ) : (
+                        <>
+                            <BuyWorkshopBanner 
+                                height={850}
+                                backgroundColor={'#FFF4ED'}
+                                previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                title={'Групповой'}
+                                subtitle={'Работа над результатом с'}
+                                subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
+                                itemsPreview={groupPreviewList}
+                                buttonColor={'#FF6B16'}
+                                itemsDescription={groupList}
+                                fullPrice={'30 000'}
+                                monthPrice={'Оплата: 10 000 ₽ в месяц'}
+                            >
+                                <DiscountOffer 
+                                    oldPrice={'30 000'}
+                                    newPrice={'24 900'}
+                                />
+                            </BuyWorkshopBanner>
+                            <BuyWorkshopBanner 
+                                height={840}
+                                backgroundColor={'#F3F8FF'}
+                                previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                title={'Личный'}
+                                subtitle={'Работа над результатом с'}
+                                subtitleTitle={'Никитой Агаповым'}
+                                itemsPreview={individualPreviewList}
+                                buttonColor={'#1257E0'}
+                                itemsDescription={individualList}
+                                fullPrice={'60 000'}
+                                monthPrice={'Оплата: 20 000 ₽ в месяц'}
+                            >
+                                <DiscountOffer 
+                                    oldPrice={'60 000'}
+                                    newPrice={'49 900'}
+                                />
+                            </BuyWorkshopBanner>
+                
+                            <BuyWorkshopBanner 
+                                height={640}
+                                backgroundColor={'#F7F7F7'}
+                                previewBackground={'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
+                                title={'Ознакомительный'}
+                                subtitle={'Идеально, чтобы понять подходит ли вам метод'}
+                                subtitleTitle={''}
+                                itemsPreview={introductoryPreviewList}
+                                buttonColor={'#000'}
+                                itemsDescription={introductoryList}
+                                fullPrice={'3 900'}
+                                monthPrice={'Единый платеж'}
+                                children2={<IntroductoryDiscountOffer/>}
+                            >
+                            </BuyWorkshopBanner>
 
-                        
-                        <BuyWorkshopBanner 
-                            height={840}
-                            backgroundColor={'#F3F8FF'}
-                            previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
-                            title={'Личный'}
-                            subtitle={'Работа над результатом с'}
-                            subtitleTitle={'Никитой Агаповым'}
-                            itemsPreview={individualPreviewList}
-                            buttonColor={'#1257E0'}
-                            itemsDescription={individualList}
-                            fullPrice={'60 000'}
-                            monthPrice={'Оплата: 20 000 ₽ в месяц'}
-                        >
-                            <DiscountOffer 
-                                oldPrice={'60 000'}
-                                newPrice={'49 900'}
-                            />
-                        </BuyWorkshopBanner>
-            
-                        <BuyWorkshopBanner 
-                            height={640}
-                            backgroundColor={'#F7F7F7'}
-                            previewBackground={'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
-                            title={'Ознакомительный'}
-                            subtitle={'Идеально, чтобы понять подходит ли вам метод'}
-                            subtitleTitle={''}
-                            itemsPreview={introductoryPreviewList}
-                            buttonColor={'#000'}
-                            itemsDescription={introductoryList}
-                            fullPrice={'3 900'}
-                            monthPrice={'Единый платеж'}
-                            children2={<IntroductoryDiscountOffer/>}
-                        >
-                        </BuyWorkshopBanner>
-    
-                        <BuyWorkshopBanner 
-                            height={540}
-                            backgroundColor={'#F7F7F7'}
-                            previewBackground={'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
-                            title={'Самостоятельный'}
-                            subtitle={'База знаний для самостоятельной работы'}
-                            subtitleTitle={''}
-                            itemsPreview={independentPreviewList}
-                            buttonColor={'#000'}
-                            itemsDescription={independentList}
-                            fullPrice={'14 900'}
-                            monthPrice={'Единый платеж'}
-                        >
-                        </BuyWorkshopBanner>
+                            <BuyWorkshopBanner 
+                                height={540}
+                                backgroundColor={'#F7F7F7'}
+                                previewBackground={'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
+                                title={'Самостоятельный'}
+                                subtitle={'База знаний для самостоятельной работы'}
+                                subtitleTitle={''}
+                                itemsPreview={independentPreviewList}
+                                buttonColor={'#000'}
+                                itemsDescription={independentList}
+                                fullPrice={'14 900'}
+                                monthPrice={'Единый платеж'}
+                            >
+                            </BuyWorkshopBanner>
+                        </>
+                    )}
                 </div>
             ) : (
                 <div className='container'>

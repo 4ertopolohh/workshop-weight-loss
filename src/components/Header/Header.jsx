@@ -6,6 +6,8 @@ import '../Header/Header1300.scss'
 import '../Header/Header1212.scss'
 import '../Header/Header1135.scss'
 import '../Header/Header1050.scss'
+import '../Header/Header950.scss'
+import '../Header/HeaderMobile.scss'
 import HeaderButton from '../HeaderButton/HeaderButton';
 import HeaderLogo from '../HeaderLogo/HeaderLogo';
 import HeaderNavList from '../HeaderNavList/HeaderNavList';
