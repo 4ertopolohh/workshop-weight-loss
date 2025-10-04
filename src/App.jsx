@@ -17,7 +17,7 @@ import MobileMenu from './components/MobileMenu/MobileMenu';
 
 import mobileHomePage from './assets/images/icons/mobileMenuHomePage.svg'
 import mobileReviewsPage from './assets/images/icons/mobileMenuReviewsPage.svg'
-import mobileIIN from './assets/images/pictures/mobileMenuIIN.png'
+import mobileIIN from './assets/images/pictures/mobileMenuIIN.svg'
 import mobileProgramPage from './assets/images/icons/mobileMenuProgramPage.svg'
 import mobileExpertsPage from './assets/images/icons/mobileMenuExpertsPage.svg'
 
