@@ -52,11 +52,11 @@
 @media(max-width: 401px){
     .feedbackForm{
         max-width: $max-width-big-375;
-        height: 700px !important;
+        height: 750px !important;
 
         .container{
-            max-height: 700px !important;
-            height: 700px !important;
+            max-height: 750px !important;
+            height: 750px !important;
             padding-top: 0;
         }
     }
@@ -93,17 +93,6 @@
 }
 
 @media(max-width: 376px){
-    .feedbackForm{
-        max-width: $max-width-big-375;
-        height: 700px !important;
-
-        .container{
-            max-height: 700px !important;
-            height: 700px !important;
-            padding-top: 0;
-        }
-    }
-
     .feedbackFormDescription{
         max-width: 512px;
     }
