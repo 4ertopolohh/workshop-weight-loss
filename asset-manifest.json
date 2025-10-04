@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/workshop-weight-loss/static/css/main.71217218.css",
-    "main.js": "/workshop-weight-loss/static/js/main.3a2e4492.js",
-    "static/css/199.6c65dcc8.chunk.css": "/workshop-weight-loss/static/css/199.6c65dcc8.chunk.css",
+    "main.js": "/workshop-weight-loss/static/js/main.be991411.js",
+    "static/css/199.f38855c4.chunk.css": "/workshop-weight-loss/static/css/199.f38855c4.chunk.css",
     "static/js/199.b67616d0.chunk.js": "/workshop-weight-loss/static/js/199.b67616d0.chunk.js",
     "static/css/349.cfaef94a.chunk.css": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css",
     "static/js/349.29aaf5f4.chunk.js": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js",
@@ -101,8 +101,8 @@
     "static/media/sliderRightArrow.svg": "/workshop-weight-loss/static/media/sliderRightArrow.a50ca3ebce7d96b6b25210bee17dce46.svg",
     "static/media/checkboxChecked.svg": "/workshop-weight-loss/static/media/checkboxChecked.2c77cf8f67dc36c4e535.svg",
     "main.71217218.css.map": "/workshop-weight-loss/static/css/main.71217218.css.map",
-    "main.3a2e4492.js.map": "/workshop-weight-loss/static/js/main.3a2e4492.js.map",
-    "199.6c65dcc8.chunk.css.map": "/workshop-weight-loss/static/css/199.6c65dcc8.chunk.css.map",
+    "main.be991411.js.map": "/workshop-weight-loss/static/js/main.be991411.js.map",
+    "199.f38855c4.chunk.css.map": "/workshop-weight-loss/static/css/199.f38855c4.chunk.css.map",
     "199.b67616d0.chunk.js.map": "/workshop-weight-loss/static/js/199.b67616d0.chunk.js.map",
     "349.cfaef94a.chunk.css.map": "/workshop-weight-loss/static/css/349.cfaef94a.chunk.css.map",
     "349.29aaf5f4.chunk.js.map": "/workshop-weight-loss/static/js/349.29aaf5f4.chunk.js.map",
@@ -115,6 +115,6 @@
   },
   "entrypoints": [
     "static/css/main.71217218.css",
-    "static/js/main.3a2e4492.js"
+    "static/js/main.be991411.js"
   ]
 }
