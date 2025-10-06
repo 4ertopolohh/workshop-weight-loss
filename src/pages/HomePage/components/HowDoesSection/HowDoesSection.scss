@@ -1,0 +1,63 @@
+@import '../../../../styles/variables';
+
+.howDoesSection{
+    .container{
+        max-width: $max-width-small + 8;
+        margin-top: 150px;
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+
+        .howDoesSectionContent{
+            @include flex-between-row;
+            max-width: $max-width-small;
+            width: 100%;
+        }
+
+        .howDoesSectionContent--banners{
+            @include flex-between-row;
+            max-width: $max-width-small;
+            width: 100%;
+            align-items: end;
+        }
+
+        .howDoesSectionContent--colorBanners{
+            @include flex-between-row;
+            max-width: $max-width-small;
+            width: 100%;
+            align-items: end;
+            margin-top: 15px;
+        }
+    }
+}
+
+.howDoesSectionTitle{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+
+    h1{
+        font-size: 61px;
+        font-weight: 900;
+        max-width: 457px;
+        width: 100%;
+        flex-wrap: nowrap;
+        @include flex-between-row;
+        justify-content: start;
+        gap: 10px;
+        max-height: 75px;
+
+        & .logo{
+            width: 122px;
+            height: 90px;
+            padding-bottom: 15px;
+        }
+
+        & .icon{
+            width: 58px;
+            height: 58px;
+        }
+    }
+}

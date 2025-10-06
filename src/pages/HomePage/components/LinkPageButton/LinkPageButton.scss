@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+
+.linkPageButton{
+    font-family: $font-title;
+    border-radius: 15px;
+    @include flex-center-row;
+    transition: $transition-style;
+
+    &:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}

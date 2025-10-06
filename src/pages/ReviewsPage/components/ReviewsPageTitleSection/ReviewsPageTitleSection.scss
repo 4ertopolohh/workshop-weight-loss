@@ -1,0 +1,14 @@
+@import '../../../../styles/variables';
+
+.reviewsPageTitleSection{
+    .container{
+        max-width: $max-width-small;
+        margin-top: 50px;
+
+        h1{
+            font-size: 61px;
+            font-weight: 900;
+            max-width: 613px;
+        }
+    }
+}

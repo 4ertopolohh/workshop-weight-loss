@@ -1,0 +1,7 @@
+@import '../../../../styles/variables';
+
+@media (max-width: 1135px){
+    .welcomeSection .container{
+        max-width: $max-width-big-1135;
+    }
+}

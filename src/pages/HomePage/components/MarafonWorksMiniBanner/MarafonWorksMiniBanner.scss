@@ -1,0 +1,28 @@
+@import '../../../../styles/variables';
+
+.marafonWorksMiniBanner{
+    width: 317px;
+    height: 176px;
+    border-radius: 25px;
+    background-color: $color-very-light-orange;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: end;
+    flex-direction: row;
+    position: relative;
+    padding-bottom: 20px;
+    .miniBannerImage{
+        max-width: 89px;
+        max-height: 89px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+        max-width: 87%;
+        max-height: 66px;
+        line-height: 22px;  
+    }
+}

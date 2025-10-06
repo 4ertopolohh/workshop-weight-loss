@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+@media (max-width: 451px){
+    .footer{
+        height: 500px;
+        .container{
+            max-width: $max-width-big-450;
+        }
+    } 
+    
+}
+
+@media (max-width: 431px){
+    .footer{
+        .container{
+            max-width: $max-width-big-375 + 20;
+        }
+    } 
+    
+}
+
+@media (max-width: 401px){
+    .footer{
+        .container{
+            max-width: $max-width-big-375;
+        }
+    } 
+    
+}
+
+@media (max-width: 376px){
+    .footer{
+        .container{
+            max-width: $max-width-big-375;
+        }
+    } 
+    
+}

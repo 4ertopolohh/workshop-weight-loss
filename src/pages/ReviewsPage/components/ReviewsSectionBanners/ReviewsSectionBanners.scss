@@ -1,0 +1,6 @@
+@import '../../../../styles/variables';
+
+.reviewsSectionBanners{
+    @include flex-between-row;
+    width: 100%;
+}

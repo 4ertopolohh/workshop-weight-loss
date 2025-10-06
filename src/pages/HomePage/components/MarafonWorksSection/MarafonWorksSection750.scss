@@ -1,0 +1,16 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 751px){
+    .marafonWorksSectionTitle{
+        font-size: 49px;
+    }
+    .marafonWorksAboutMeImage {
+        max-height: 303px !important;
+        width: 100% !important;
+        img{
+            height: 303px !important;
+            width: auto !important;
+        }
+    }
+    
+}

@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.footerSocialsList{
+    @include flex-between-row;
+    max-width: 149px;
+
+    .footerSocialsListItem + .footerSocialsListItem{
+        margin-left: 10px;
+    }
+
+    .footerSocialsIcon{
+        width: 32px;
+        height: 32px;
+    }
+}
+

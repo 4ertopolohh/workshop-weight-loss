@@ -1,0 +1,54 @@
+@import '../../../../styles/variables';
+
+.peopleResultBanner {
+    position: relative;
+    height: 442px;
+    width: 343px;
+
+    .peopleResultSwiper {
+        width: 343px;
+        height: auto;
+    }
+
+    .peopleResultBannerSlide {
+        width: 343px;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+
+        img {
+            width: 34px;
+            height: 34px;
+        }
+
+        &.swiper-button-disabled {
+            opacity: 0.3;
+            cursor: default;
+        }
+    }
+
+    [class^="custom-prev"] {
+        left: 8px;
+    }
+
+    [class^="custom-next"] {
+        right: 8px;
+    }
+
+    .nav-btn-prev {
+        left: 8px !important; 
+    }
+
+    .nav-btn-next {
+        right: 8px !important;
+    }
+}

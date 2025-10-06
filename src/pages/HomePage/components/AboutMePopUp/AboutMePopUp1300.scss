@@ -1,0 +1,16 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 1300px){
+
+    .aboutMePopUp{
+        z-index: 100000;
+    }
+
+    // .aboutMePopUpBody{
+    //     background-color: $color-white;
+    //     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    //     padding: 10px 10px;
+    //     border-radius: 20px;
+    // }
+
+}

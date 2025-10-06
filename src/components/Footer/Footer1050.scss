@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+@media (max-width: 1051px){
+    .footer {
+        margin-bottom: 90px;
+
+        .container{
+            max-width: $max-width-big-1050;
+        }
+    }
+    
+}

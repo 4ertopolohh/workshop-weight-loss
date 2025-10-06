@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+@media (max-width: 451px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-450;
+            width: 100% !important;
+            flex-direction: column;
+        }
+    }   
+    
+}
+
+@media (max-width: 431px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-375 + 20px;
+        }
+    }   
+    
+}
+
+@media (max-width: 401px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }   
+    
+}
+
+@media (max-width: 376px){
+    .footerMain {
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }   
+    
+}

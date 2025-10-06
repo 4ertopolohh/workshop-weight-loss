@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+
+@media(max-width:451px){
+    .feedbackSection{
+
+        .container{
+            max-height: 1000px;
+            height: 100%;
+            margin-top: 100px;
+            max-width: $max-width-big-450;
+        }
+    }
+}
+
+@media(max-width:431px){
+    .feedbackSection{
+
+        .container{
+            max-width: $max-width-big-375 + 20px;
+        }
+    }
+}
+
+@media(max-width:401px){
+    .feedbackSection{
+
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+}
+
+@media(max-width:376px){
+    .feedbackSection{
+
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@mixin font-face-ttRunsTrial($weight, $filename) {
+  @font-face {
+    font-family: 'TTRunsTrial';
+    src: url('../assets/Fonts/ttRunsTrial/#{$filename}.woff2') format('woff2');
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include font-face-ttRunsTrial(400, 'TTRunsTrial-Regular');
+@include font-face-ttRunsTrial(500, 'TTRunsTrial-Medium');
+@include font-face-ttRunsTrial(600, 'TTRunsTrial-DemiBold');
+@include font-face-ttRunsTrial(700, 'TTRunsTrial-Bold');
+@include font-face-ttRunsTrial(800, 'TTRunsTrial-ExtraBold');
+@include font-face-ttRunsTrial(900, 'TTRunsTrial-Black');

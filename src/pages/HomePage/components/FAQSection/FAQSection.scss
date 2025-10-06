@@ -1,0 +1,23 @@
+@import '../../../../styles/variables';
+
+.FAQSection{
+
+    .container{
+        @include flex-center-column;
+        max-width: $max-width-small;
+        width: 100%;
+        margin-top: 150px;
+    }
+}
+
+.FAQSectionTitle{  
+    font-size: 61px;
+    font-weight: 900;
+}
+
+.FAQSectionTabs{
+    margin-top: 50px;
+    max-width: $max-width-small;
+    width: 100%;
+    @include flex-center-column;
+}

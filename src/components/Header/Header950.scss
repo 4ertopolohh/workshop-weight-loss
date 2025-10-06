@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+@media (max-width: 951px){
+    .header {
+        // max-width: $max-width-big-950 !important;
+        width: 100% !important;
+        
+        .container{
+            max-width: $max-width-big-950 !important;
+            width: 100% !important;
+        }
+    }
+}

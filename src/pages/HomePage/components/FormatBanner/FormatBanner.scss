@@ -1,0 +1,49 @@
+@import '../../../../styles/variables';
+
+.formatBanner{
+    background-color: $color-system-gray;
+    border-radius: 20px;
+    @include flex-center-column;
+    
+    .container{
+        @include flex-between-column;
+        align-items: start !important;
+        gap: 0 !important;
+        justify-content: space-evenly;
+        margin: 0 0;
+
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .formatBannerTitle{
+        max-width: 482px;
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .formatBannerList{
+        list-style: disc;
+        padding-left: 20px;
+        max-width: 482px;
+        height: 175px;
+        @include flex-between-column;
+        align-items: start;
+        .formatBannerListItem{
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .formatBannerListItem + .formatBannerListItem{
+            margin-top: 20px;
+        }
+
+        .formatBannerSubtitle{
+            font-size: 12px;
+            font-weight: 500;
+            color: $color-dark-gray;
+        }
+    }
+}

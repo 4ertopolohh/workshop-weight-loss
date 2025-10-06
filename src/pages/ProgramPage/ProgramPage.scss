@@ -1,0 +1,6 @@
+@import '../../styles/variables';
+
+.program-page #inDev{
+    @include flex-in-dev;
+    margin: 100px auto;
+}

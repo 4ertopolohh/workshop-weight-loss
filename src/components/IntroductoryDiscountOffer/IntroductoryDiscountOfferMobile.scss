@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+@media(max-width: 451px){
+    .introductoryDiscountOffer{
+        p{
+            max-width: 90%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+@media (max-width: 1051px){
+    .header {
+        max-width: $max-width-big-1050;
+        width: 100%;
+        display: none;
+
+        .container{
+            max-width: $max-width-big-1050;
+            width: 100%;
+        }
+    }
+}

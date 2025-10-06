@@ -1,0 +1,59 @@
+@import '../../../../styles/variables';
+
+.howDoesCollorBanner{
+    position: relative;
+    border-radius: 25px;
+    @include flex-between-column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    h3{
+        font-size: 23px;
+        font-weight: 700;
+        color: $color-white;
+        width: 100% !important;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        height: 70px;
+        @include flex-center-column;
+        align-items: start;
+
+        .subtitle{
+            font-family: $font-default;
+            font-size: 12px;
+            font-weight: 500;
+            color: $color-system-gray;
+        }
+    }
+
+    .howDoesCollorBannerContent{
+        padding-left: 20px;
+        @include flex-between-column;
+        align-items: start;
+        max-height: 170px;
+        height: 100%;
+
+        img{
+            position: absolute;
+            max-width: 68px;
+            max-height: 68px;
+            top: -25px;
+            right: 15px;
+        }
+        p{
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 26px;
+            font-family: $font-title;
+            max-width: 575px;
+        }
+        .buttonScroll{
+            margin-right: 170px;
+        }
+        .linkPageButton{
+            margin-right: 170px;
+        }
+    }
+}

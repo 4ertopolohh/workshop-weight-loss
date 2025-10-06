@@ -1,0 +1,22 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 751px){
+    .howDoesCollorBannerContent {
+        padding-bottom: 10px;
+
+        .description{
+            font-size: 14px !important;
+            font-weight: 600 !important;
+        }
+    }
+    
+    .howDoesCollorBanner{
+        gap: 15px !important;
+
+        .title{
+            min-height: 60px !important;
+            height: 60px !important;
+            max-height: 60px !important;
+        }
+    }
+}

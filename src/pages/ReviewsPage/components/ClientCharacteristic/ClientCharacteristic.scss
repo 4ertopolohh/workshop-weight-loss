@@ -1,0 +1,20 @@
+@import '../../../../styles/variables';
+
+.clientCharacteristic{
+    @include flex-between-row;
+    border-bottom: 1px solid $color-basic-gray;
+    width: 100%;
+    padding-bottom: 3px;
+
+    span{
+        font-size: 16px;
+    }
+
+    .clientCharacteristicName{
+        font-weight: 500;
+    }
+
+    .clientCharacteristicValue{
+        font-weight: 800;
+    }
+}

@@ -1,0 +1,9 @@
+@import '../../../../styles/variables';
+
+.aboutMeButton{
+    font-size: 14px;
+    color: $color-dark-blue;
+    font-weight: 600;
+    font-family: $font-title;
+    text-decoration: underline;
+}

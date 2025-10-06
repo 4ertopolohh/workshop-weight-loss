@@ -1,0 +1,49 @@
+@import '../../../../styles/variables';
+
+@media(max-width:451px){
+    .savingBanner{
+        flex-direction: column;
+        height: 357px !important;
+        justify-content: start;
+        max-width: $max-width-big-450;
+        width: 100% !important;
+        gap: 10px;
+    }
+
+    .savingBannerDescription{
+        width: 100% !important;
+        max-height: 222px;
+        height: 100%;
+
+        .container{
+            max-width: 311px !important;
+            width: 100% !important;
+
+            ul{
+                width: 100% !important;
+
+                li{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:431px){
+    .savingBanner{
+        max-width: $max-width-big-375 + 20px !important;
+    }
+}
+
+@media(max-width:401px){
+    .savingBanner{
+        max-width: $max-width-big-375 !important;
+    }
+}
+
+@media(max-width:376px){
+    .savingBanner{
+        max-width: $max-width-big-375 !important;
+    }
+}

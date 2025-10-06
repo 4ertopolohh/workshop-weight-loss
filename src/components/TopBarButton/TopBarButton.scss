@@ -1,0 +1,23 @@
+@import '../../styles/variables';
+
+.topBarButton{
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-default-text;
+    position: relative;
+    padding-left: 30px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: url(../../assets/images/icons/topBarArrow.svg); 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

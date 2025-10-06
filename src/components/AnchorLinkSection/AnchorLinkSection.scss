@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+.anchorLinkSection{
+    .container{
+        max-width: $max-width-small;
+        width: 100%;
+        @include flex-center-column;
+        margin: 100px auto;
+    }
+}

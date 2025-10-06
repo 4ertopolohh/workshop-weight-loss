@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.saleBannerAnalog{
+    max-width: 522px;
+    height: 264px;
+    width: 100%;
+    @include flex-between-column;
+}

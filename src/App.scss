@@ -1,0 +1,13 @@
+@import './styles/fonts';
+@import './styles/variables';
+@import './styles/baseStyles';
+
+.App{
+    width: 100%;
+}
+
+@media (max-width: 1394px){
+    .App{
+        overflow: hidden;
+    }
+}

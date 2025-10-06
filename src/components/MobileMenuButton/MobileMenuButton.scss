@@ -1,0 +1,73 @@
+@import '../../styles/variables';
+
+.mobileMenuButton{
+    width: 58px;
+    height: 58px;
+    @include flex-center-column;
+    padding: 0 0;
+    background: url(../../assets/images/pictures/mobileMenuButtonBackground.png);
+    transition: $transition-style;
+    position: relative;
+    overflow: hidden; 
+
+    &:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    img{
+        width: 34px;
+        height: 34px;
+        position: relative; 
+        z-index: 2;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../../assets/images/pictures/mobileMenuButtonBackgroundActive.png);
+        opacity: 0;
+        transition: opacity $transition-style;
+        z-index: 1;
+    }
+    
+    &.default  {
+        opacity: 0.9;
+        
+        &.active::before {
+            opacity: 1;
+        }
+    }
+    
+    &.home {
+        width: 76px;
+        height: 76px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background: url(../../assets/images/pictures/mobileMenuIINActive.svg);
+        margin-bottom: 35px;
+        border-radius: 20px;
+
+        img{
+            width: 76px;
+            height: 76px;
+            border-radius: 20px;
+        }
+        
+        &::before {
+            display: none;
+        }
+        
+        &.active {
+            img{
+                display: none;
+                
+            }
+        }
+    }
+}

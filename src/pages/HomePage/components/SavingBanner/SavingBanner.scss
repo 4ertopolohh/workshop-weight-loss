@@ -1,0 +1,72 @@
+@import '../../../../styles/variables';
+
+.savingBanner{
+    border-radius: 30px;
+    border: 2px solid;
+    max-width: $max-width-small;
+    width: 100%;
+    @include flex-center-row;
+    background-color: $color-system-gray;
+}
+
+.savingBannerPreview{
+    border-radius: 25px 0 0 25px;
+    width: 50%;
+    height: 100%;
+    @include flex-center-row;
+
+    .container{
+        max-width: 489px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 20px !important;
+        margin: 0 auto !important;
+
+        img{
+            width: 118px;
+            height: auto;
+        }
+
+        h3{
+            font-size: 25px;
+            font-weight: 700;
+            color: $color-white;
+            max-width: 320px;
+            line-height: 31px;
+        }
+    }
+}
+
+.savingBannerDescription{
+    width: 50%;
+
+    .container{
+        max-width: 489px !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+
+        ul {
+            display: block; 
+            list-style-type: disc;
+            list-style-position: outside; 
+            padding-left: 15px; 
+
+            li {
+                display: list-item; 
+                font-size: 16px !important;
+                font-weight: 500 !important;
+                font-family: $font-default !important;
+                color: $color-default-text !important;
+                line-height: 23px;
+                padding-left: 0;
+            }
+
+            li + li {
+                margin-top: 5px !important;
+            }
+        }
+    }
+}

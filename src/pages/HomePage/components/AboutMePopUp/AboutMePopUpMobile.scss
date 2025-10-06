@@ -1,0 +1,32 @@
+@import '../../../../styles/variables';
+
+@media(max-width:451px){
+    .aboutMePopUp{
+        height: 80vh;
+        top: auto   ;
+        bottom: 0;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+
+        .aboutMePopUpBackground{
+            border-radius: 25px 25px 0 0;
+        }
+
+        .container{
+            max-width: 90% !important;
+            .header{
+                border-bottom: 1px solid $color-30-opacity-white;
+            }
+
+            .description{
+                max-height: 220px;
+            }
+        }
+    }
+}
+
+@media(max-width:451px){
+    .aboutMePopUp .container .description{
+        max-height: 320px;
+    }
+}

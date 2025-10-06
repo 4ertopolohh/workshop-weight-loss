@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+@media (max-width: 951px){
+    .footerMain {
+        width: 100%;
+        .container{
+            max-width: $max-width-big-950;
+            width: 100% !important;
+        }
+    }   
+    
+}

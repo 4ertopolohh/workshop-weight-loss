@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+.allReviewsSection{
+    .container{
+        // background: url(../../../../assets/images/pictures/allReviewsBackground.svg);
+        background: url(../../../../assets/images/pictures/allReviewsBackground.png);
+        background-color: $color-text-blue;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        max-width: $max-width-small;
+        width: 100%;
+        height: 500px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 25px;
+        padding: 20px 0;
+        margin-top: 75px;
+    }
+}
+
+.allReviewsSectionTitle{
+
+    @include flex-center-column;
+
+    img{
+        height: 64px;
+        width: auto;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        color: $color-white;
+    }
+
+    h1{
+        font-weight: 900;
+        height: 34px;
+        color: $color-white;
+    }
+}

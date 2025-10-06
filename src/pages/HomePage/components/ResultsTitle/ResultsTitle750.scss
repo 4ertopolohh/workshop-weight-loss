@@ -1,0 +1,12 @@
+@import '../../../../styles/variables';
+
+@media(max-width:751px){
+    .resultsTitle h1{
+        font-size: 40px;
+    }
+
+    .resultsTitlePeoples{
+        height: 50px !important;
+        width: auto !important;
+    }
+}

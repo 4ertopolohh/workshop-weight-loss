@@ -1,0 +1,50 @@
+@import '../../../../styles/variables';
+ 
+@media(max-width: 451px){
+    .allReviewsSection .container{
+        max-width: $max-width-big-450;
+        height: 450px !important;  
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover !important;
+        background: url(../../../../assets/images/pictures/allReviewsBackgroundMobile.png);
+        align-items: start;
+        padding: 20px 20px;
+    }
+
+    .allReviewsSectionTitle{
+        align-items: start;
+        max-width: 312px;
+
+        img{
+
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        h1{
+
+        }
+    }
+}
+
+@media(max-width: 431px){
+    .allReviewsSection .container{
+        max-width: $max-width-big-400;
+    }
+}
+
+@media(max-width: 401px){
+    .allReviewsSection .container{
+        max-width: $max-width-big-400;
+    }
+}
+
+@media(max-width: 376px){
+    .allReviewsSection .container{
+        max-width: $max-width-big-375;
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../../../styles/variables';
+
+@media(max-width:451px){
+    .marafonWorksBigBanner{
+        justify-content: center !important;
+        max-height: 863px !important;
+        height: 100% !important;
+        max-width: $max-width-big-450;
+        padding: 30px 0;
+
+        & .titles{
+            width: 100% !important;
+            justify-content: center !important;
+            max-height: 853px !important;
+            height: 100% !important;
+            max-width: $max-width-big-450 - 50px;
+            width: 100%;
+            gap: 30px;
+
+            h6{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:431px){
+    .marafonWorksBigBanner{
+        max-width: $max-width-big-375 + 20px;
+            max-height: 1000px !important;
+            height: 900px !important;
+
+        & .titles{
+            max-width: $max-width-big-375 - 30px;
+            max-height: 1000px !important;
+            height: 1000px !important;
+        }
+    }
+}
+
+@media(max-width:401px){
+    .marafonWorksBigBanner{
+        max-width: $max-width-big-375;
+            max-height: 1000px !important;
+            height: 970px !important;
+
+        & .titles{
+            max-width: $max-width-big-375 - 50px;
+            max-height: 1000px !important;
+            height: 1000px !important;
+        }
+    }
+}
+
+@media(max-width:376px){
+    .marafonWorksBigBanner{
+        max-width: $max-width-big-375;
+            max-height: 1000px !important;
+            height: 970px !important;
+
+        & .titles{
+            max-width: $max-width-big-375 - 50px;
+            max-height: 1000px !important;
+            height: 1000px !important;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.footerMenuList{
+
+    margin-top: 5px;
+    max-width: 391px;
+    width: 100%;
+
+    ul{
+        flex-wrap: wrap;
+        @include flex-between-column;
+        max-height: 115px;
+        max-width: 391px;
+        align-items: start;
+        width: 100%;
+    }
+
+    li + li{
+        margin-top: 5px;
+    }
+
+    .footerMenuLink{
+        font-size: 12px;
+        font-weight: 500;
+        color: $color-white;
+        transition: $transition-style;
+    }
+    
+    .footerMenuLink:hover{
+        color: $color-base-blue;
+    }
+}

@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+
+.cookie{
+    @include flex-between-row;
+    justify-content: space-evenly;
+    max-width: $max-width-big;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    left: 50%;
+    padding: 17px 0;
+    transform: translateX(-50%);
+    bottom: 25px;
+    background-color: $color-system-gray;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    h5{
+        font-weight: 700;
+        font-family: $font-default;
+        font-size: 14px;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 14px;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .cookiesMoreDetails{
+        font-size: 16px;
+        font-weight: 600;
+        font-family: $font-title;
+        text-decoration: underline;
+        color: $color-default-text;
+    }
+}
+
+.privacyPolicy{
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 1100px;
+    width: 100%;
+    color: $color-default-text;
+    text-decoration: underline;
+    font-family: $font-default;
+}

@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+@media (max-width: 1135px){
+    .footerMain .container{
+        max-width: $max-width-big-1135;
+        width: $max-width-big-1135;
+    }
+}

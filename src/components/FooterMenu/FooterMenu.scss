@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.footerMenu{
+    max-width: 391px;
+    width: 100%;
+}
+
+.footerMenuTitle{
+    color: $color-white;
+    font-size: 16px;
+    font-family: $font-default;
+    font-weight: 800;
+}

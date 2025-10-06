@@ -1,0 +1,30 @@
+@import '../../../../styles/variables';
+
+.howDoesBanner{
+    background-color: $color-system-gray;
+    border-radius: 20px;
+    @include flex-center-column;
+    justify-content: start;
+
+    .howDoesBannerIcon{
+        width: 24px;
+        height: 24px;
+    }
+    .howDoesBannerTitle{
+        font-size: 23px;
+        font-weight: 700;
+        margin: 0 0;
+    }
+    .howDoesBannerDescription{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.howDoesBanner .container{
+    @include flex-center-column;
+    align-items: start !important;
+    margin: 0 0;
+    margin-top: 20px;
+    gap: 0 !important;
+}

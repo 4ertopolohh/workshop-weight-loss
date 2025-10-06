@@ -1,0 +1,43 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 451px){
+    .marafonWorksMiniBanner{
+        max-width: $max-width-big-450;
+        width: 100%;
+        @include flex-between-row;
+        height: 82px;
+        padding-bottom: 0;
+        
+        .miniBannerImage{
+            position:relative;
+            margin-left: 10px !important;
+            max-width: 82px !important;
+            max-height: 82px !important;
+            margin-bottom: 20px;
+        }
+
+        h6{
+            margin-right: 20px !important;
+            margin-left: 20px !important;
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 431px){
+    .marafonWorksMiniBanner{
+        max-width: $max-width-big-375 + 20px;
+    }
+}
+
+@media(max-width: 401px){
+    .marafonWorksMiniBanner{
+        max-width: $max-width-big-375;
+    }
+}
+
+@media(max-width: 376px){
+    .marafonWorksMiniBanner{
+        max-width: $max-width-big-375;
+    }
+}

@@ -1,0 +1,42 @@
+@import '../../../../styles/variables';
+
+.saleSection{
+
+    .container{
+        max-width: $max-width-small;
+        width: $max-width-small;
+        @include flex-center-column;
+        margin-top: 150px;
+        width: 100%;
+        gap: 20px;
+
+        .saleSectionName{
+            @include flex-center-column;
+            font-size: 35px;
+            text-align: center;
+            line-height: 66px;
+            letter-spacing: -1%;
+            margin-bottom: 55px;
+
+            .saleSectionTitle{
+                font-weight: 900;
+            }
+
+            .saleSectionSubtitle{
+                color: $color-base-orange;
+                font-weight: 900;
+            }
+
+            .saleSectionSubtitle2{
+                font-size: 20px;
+                font-weight: 500;
+                color: $color-dark-gray
+            }
+        }
+
+        .saleSectionContent{
+            @include flex-between-row;
+            width: 100%;
+        }
+    }
+}

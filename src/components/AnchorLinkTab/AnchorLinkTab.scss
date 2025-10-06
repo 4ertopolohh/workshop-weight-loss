@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.anchorLinkTab{
+    @include flex-between-row;
+    width: 100%;
+    border-top: 1px solid $color-system-gray;
+    border-bottom: 1px solid $color-system-gray;
+    padding: 0 5px;
+    height: 70px;
+
+    h6{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.headerButton {
+    position: relative;
+    width: 155px;
+    height: 56px;
+    border-radius: $border-radius-28;
+    @include flex-center-row;
+    overflow: hidden; 
+    background: $color-base-orange; 
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: linear-gradient(
+            180deg,
+            $color-gradient-orange-light 0%,
+            $color-gradient-orange-dark 100%
+        );
+        opacity: 0;     
+        transition: $transition-style;  
+        z-index: 0;
+    }
+
+    &:hover::before {
+        opacity: 1; 
+    }
+
+    img,
+    button {
+        position: relative;
+        z-index: 1;
+    }
+
+    img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .headerButtonLink {
+        font-family: $font-title;
+        color: $color-white;
+        font-weight: 600;
+        font-size: 16px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

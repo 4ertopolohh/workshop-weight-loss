@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+.reviewsSection{
+    .container{
+        @include flex-center-column;
+        max-width: $max-width-small;
+        width: 100%;
+        gap: 15px;
+        margin-top: 50px;
+    }
+}

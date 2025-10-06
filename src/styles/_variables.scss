@@ -1,0 +1,68 @@
+$font-default: 'Mulish', sans-serif;
+$font-title: 'TTRunsTrial', sans-serif;
+
+$color-background: #ffffff;
+$color-white: #ffffff;
+$color-50-opacity-white: rgba(255, 255, 255, 0.5);
+$color-30-opacity-white: rgba(255, 255, 255, 0.2);
+$color-black: #000;
+$color-light-orange: #FF8433;
+$color-base-orange: #FF6B16;
+$color-default-text: #111214;
+$color-base-blue: #F3F8FF;
+$color-dark-blue: #1257E0;
+$color-text-blue: #2471FF;
+$color-text-light-blue: #67A9FF;
+$color-basic-gray: #D7D8D9;
+$color-dark-gray: #50535B;
+$color-system-gray: #F7F7F7;
+$color-very-light-orange: #FFF4ED;
+$color-gradient-orange-light: #FF8C00;
+$color-gradient-orange-dark: #FF4500;
+$color-red: #ff1c1c;
+
+$opacity-hover: 0.7;    
+$transition-style: all 500ms ease;
+
+$max-width-big: 1392px;
+$max-width-big-1394: 1300px;
+$max-width-big-1300: 1210px;
+$max-width-big-1212: 1130px;
+$max-width-big-1135: 1050px;
+$max-width-big-1050: 950px;
+$max-width-big-950: 900px;
+$max-width-big-450: 420px;
+$max-width-big-400: 370px;
+$max-width-big-375: 343px;
+$max-width-small: 1060px;
+$max-width-buy-banner: 482px;
+$max-width-expert-banner: 500px;
+
+$border-radius-28: 28px;
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin flex-center-row {
+    @include flex(center, center, row);
+}
+
+@mixin flex-center-column {
+    @include flex(center, center, column);
+}
+
+@mixin flex-between-row {
+    @include flex(space-between, center, row);
+}
+
+@mixin flex-between-column {
+    @include flex(space-between, center, column);
+}
+
+@mixin flex-in-dev {
+    @include flex(center, center, row);
+}

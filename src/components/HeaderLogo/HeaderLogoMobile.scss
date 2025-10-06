@@ -1,0 +1,26 @@
+@import '/src/styles/variables';
+
+@media(max-width: 451px){
+    .headerLogo{
+        position: absolute;
+        top: 15px;
+    }
+}
+
+@media(max-width: 376px){
+    .headerLogo{
+        border: 3px solid $color-dark-blue;
+        width: 180px;
+        height: 50px;   
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+        .headerLogoLink{
+            font-size: 16px;
+            font-weight: 600;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

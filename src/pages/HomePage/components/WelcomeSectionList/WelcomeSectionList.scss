@@ -1,0 +1,31 @@
+@import '../../../../styles/variables';
+
+.welcomeListItem{
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-dark-gray;
+    font-family: $font-title;
+
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: var(--list-icon); 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.welcomeListItem + .welcomeListItem{
+    margin-top: 5px;
+}

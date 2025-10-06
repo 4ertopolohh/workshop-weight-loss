@@ -1,0 +1,10 @@
+@import '../../styles/variables';
+
+@media(max-width:451px){
+    .footerContacts{
+        @include flex-between-column;
+        align-items: start;
+        width: 100%; 
+        max-width: $max-width-big-450 !important;
+    }
+}

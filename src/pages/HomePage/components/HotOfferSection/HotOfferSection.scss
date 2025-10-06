@@ -1,0 +1,31 @@
+@import '../../../../styles/variables';
+
+.hotOfferSection{
+    z-index: 1000;
+    position: relative;
+    
+    @include flex-center-row;
+    .container{
+        padding: 20px 20px;
+        flex-direction: row;
+        @include flex-between-row;
+        max-height: 122px;
+        max-width: $max-width-big;
+        background: $color-very-light-orange;
+    border: 2px solid $color-base-orange;
+    border-radius: 20px;
+    }
+}
+
+.hotOfferTitles{
+    h5{
+        font-weight: 600;
+        font-size: 16px;
+        color: $color-base-orange;
+    }
+
+    h3{
+        font-weight: 700;
+        font-size: 27px;
+    }
+}

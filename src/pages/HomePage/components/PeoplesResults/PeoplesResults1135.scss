@@ -1,0 +1,17 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 1135px){
+    .peoplesResultsWrapper{
+        max-width: $max-width-big-1135;
+    }
+    .peoplesResultsSwiper{
+        width: 67% !important;
+    }
+    .peoples-prev {
+        left: 100px !important; 
+    }
+
+    .peoples-next {
+        right: 100px !important;
+    }
+}

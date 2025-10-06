@@ -1,0 +1,49 @@
+@import '../../../../styles/variables';
+
+@media(max-width:451px){
+    .whoWillHelpSectionTitle{
+        font-size: 49px !important;
+    }
+
+    .whoWillHelpSection{
+        .container{
+            max-width: $max-width-big-450;
+        }
+    }
+}
+
+@media(max-width:431px){
+    .whoWillHelpSectionTitle{
+        font-size: 49px !important;
+    }
+
+    .whoWillHelpSection{
+        .container{
+            max-width: $max-width-big-375 + 20px;
+        }
+    }
+}
+
+@media(max-width:401px){
+    .whoWillHelpSectionTitle{
+        font-size: 49px !important;
+    }
+
+    .whoWillHelpSection{
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+}
+
+@media(max-width:376px){
+    .whoWillHelpSectionTitle{
+        font-size: 49px !important;
+    }
+
+    .whoWillHelpSection{
+        .container{
+            max-width: $max-width-big-375;
+        }
+    }
+}

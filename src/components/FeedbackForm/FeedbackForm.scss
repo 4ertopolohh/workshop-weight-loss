@@ -1,0 +1,198 @@
+@import '../../styles/variables';
+
+.feedbackForm{
+    max-width: $max-width-small;
+    width: 100%;
+    background-color: $color-system-gray;
+    border-radius: 25px;
+    height: 422px;
+    padding: 24px 0;
+
+    & .container{
+        max-width: $max-width-small - 20px;
+        max-height: 322px;
+        height: 100%;
+        width: 100%;
+        flex-direction: row !important;
+        align-items: start !important;
+        justify-content: space-between !important;
+        padding: 30px 30px;
+        box-sizing: border-box;
+        margin: 0 auto !important;
+    }
+}
+
+.feedbackFormDescription{
+    @include flex-center-column;
+    align-items: start;
+    max-width: 386px;
+    width: 100%;
+
+    .feedbackFormTitle{
+        @include flex-center-column;
+        align-items: start;
+
+        h4{
+        font-size: 34px;
+        font-weight: 900;
+        margin: 0;
+        }
+
+        #feedbackFormTitleOrange{
+        color: $color-base-orange;
+        }
+
+        #feedbackFormTitleBlue{
+        color: $color-dark-blue;
+        }
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+
+.feedbackFormFields{
+    @include flex-center-column;
+    justify-content: start;
+    max-width: 512px;
+    max-height: 376px;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+
+    input{
+        width: 100%;
+        height: 54px ;
+        border-radius: 20px;
+        border: 1px solid $color-basic-gray;
+        padding-left: 20px;
+        background-color: $color-white;
+        font-family: $font-default;
+        font-size: 16px;
+        font-weight: 500;
+        box-sizing: border-box;
+    }
+}
+
+.feedbackFormCheckboxes{
+    @include flex-between-row;
+    width: 100%;
+
+    .feedbackFormCheckbox{
+        @include flex-center-row;
+        height: 54px;
+        border-radius: 20px;
+        border: 1px solid $color-basic-gray;
+        background-color: $color-white;
+        padding: 0 20px;
+        gap: 5px;
+        transition: all 0.3s ease;
+
+        input{
+            margin: 0 0;
+            width: 24px;
+            height: 24px;
+            transition: all 0.3s ease;
+        }
+
+        span{
+            font-weight: 500;
+            font-weight: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input:checked + span {
+            color: $color-dark-blue;
+            font-weight: 600;
+        }
+
+        input:checked {
+            accent-color: $color-dark-blue;
+        }
+    }
+}
+
+.feedbackFormAgreements{
+    @include flex-center-column;
+    gap: 10px;
+    margin: 5px 0;
+
+    .feedbackFormAgreement{
+        @include flex-between-row;
+        justify-content: start;
+        align-items: start;
+        width: 100%;
+        gap: 5px;
+        padding-left: 10px;
+
+        .agreementCheckBox{
+            width: 18px;
+            height: 18px;
+            margin: 0 0;
+            padding: 0 0;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border-radius: 4px;
+            transition: $transition-style;
+
+            &:hover{
+                border-color: $color-dark-blue;
+            }
+
+            &:checked {
+                background-color: $color-white;
+                border-color: $color-dark-blue;
+                position: relative;
+            }
+
+            &:checked::after {
+                content: url(../../assets/images/icons/checkboxChecked.svg);
+                width: 10px;
+                height: auto;
+                color: white;
+                position: absolute;
+                top: 50%;
+                left: 45%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        span{
+            font-size: 12px;
+            font-weight: 500;
+            text-wrap: wrap;
+            max-width: 488px;
+            max-height: 30px;
+
+            a{
+                font-size: 12px;
+                font-weight: 500;
+                text-decoration: underline;
+                color: $color-default-text;
+            }
+        }
+    }
+}
+
+.error-message {
+    color: $color-red;
+    font-size: 12px;
+    margin-top: 3px;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.feedbackFormCheckbox.error {
+    border: 2px solid $color-red !important;
+}
+
+.feedbackFormAgreement.error {
+    .agreementCheckBox {
+        border: 2px solid $color-red !important;
+    }
+}

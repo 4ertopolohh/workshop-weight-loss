@@ -1,0 +1,7 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 951px){
+    .saleSection .container{
+        max-width: $max-width-big-950;
+    }
+}
