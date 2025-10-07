@@ -1,6 +1,12 @@
-@import '../../../../styles/variables';
+@import '../../styles/variables';
 
-.reviewsPageTitleSection{
+.pageTitle{
+    .container{
+        max-width: $max-width-small;
+    }
+}
+
+.pageTitle{
     .container{
         max-width: $max-width-small;
         margin-top: 50px;

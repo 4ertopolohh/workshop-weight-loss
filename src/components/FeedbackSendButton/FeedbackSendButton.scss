@@ -14,8 +14,13 @@
     font-size: 18px;
     font-weight: 600;
     transition: opacity 0.3s ease;
+    transition: $transition-style;
 
     &.sent {
         opacity: 0.7;
+    }
+
+    &:hover{
+        background-color: $color-dark-blue;
     }
 }

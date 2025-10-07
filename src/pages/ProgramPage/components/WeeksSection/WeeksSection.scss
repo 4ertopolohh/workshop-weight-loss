@@ -1,0 +1,11 @@
+@import '../../../../styles/variables';
+
+.weeksSection{
+    padding-top: 50px;
+    .container{
+        max-width: $max-width-small;
+        @include flex-center-column;
+        gap: 20px;
+        
+    }
+}

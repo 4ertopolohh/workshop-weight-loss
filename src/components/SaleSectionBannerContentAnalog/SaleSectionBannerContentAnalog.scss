@@ -14,6 +14,8 @@
         align-items: start !important;
         margin: 0 0 !important;
         margin: 0 0 !important;
+        height: 174px !important;
+        justify-content: space-between !important;
 
         .header{
             width: 100%;
@@ -91,4 +93,8 @@
             }
         }
     }
+}
+
+.headerTitleWrapper{
+    width: 100%;
 }

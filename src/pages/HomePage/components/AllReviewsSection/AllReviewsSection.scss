@@ -3,11 +3,11 @@
 .allReviewsSection{
     .container{
         // background: url(../../../../assets/images/pictures/allReviewsBackground.svg);
-        background: url(../../../../assets/images/pictures/allReviewsBackground.png);
+        background: url(../../../../assets/images/pictures/allReviewsBackground.jpg);
         background-color: $color-text-blue;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         max-width: $max-width-small;
         width: 100%;
         height: 500px;

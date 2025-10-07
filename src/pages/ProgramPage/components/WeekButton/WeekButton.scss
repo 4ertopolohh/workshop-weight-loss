@@ -1,0 +1,38 @@
+@import '../../../../styles/variables';
+
+.weekButton{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-title;
+    color: $color-text-blue;
+    padding-right: 40px;
+    position: relative;
+    transition: $transition-style;
+
+    &::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 34px;
+        height: 34px;
+        background-image: url(../../../../assets/images/icons/weekCloseArrow.svg); 
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; 
+        transition: $transition-style; 
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+
+    &.weekButton--expanded {
+        color: #FF6B16;
+
+        &::after {
+            background-image: url(../../../../assets/images/icons/weekOpenArrow.svg);
+        }
+    }
+}

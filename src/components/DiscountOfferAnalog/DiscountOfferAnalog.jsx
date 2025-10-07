@@ -1,4 +1,5 @@
 import '../DiscountOfferAnalog/DiscountOfferAnalog.scss'
+import '../DiscountOfferAnalog/DiscountOfferAnalogMobile.scss'
 
 const DiscountOfferAnalog = () => {
     return(

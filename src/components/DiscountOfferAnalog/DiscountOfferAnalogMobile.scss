@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+@media(max-width: 1051px){
+    .discountOfferAnalog{
+        max-width: 147px;
+        max-height: 33px;
+        width: 100%;
+        margin-left: 0;
+
+        p{
+            font-size: 9px;
+            font-weight: 500;
+            width: 100%;
+            max-width: 147px;
+            text-align: start;
+        }
+    }
+}

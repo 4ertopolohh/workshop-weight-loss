@@ -9,7 +9,8 @@ const ButtonScroll = ({
     fontSize,
     fontWeight,
     pixels,
-    direction
+    direction,
+    hoverBackground
 }) => {
     
     const scrollPage = () => {
@@ -24,9 +25,11 @@ const ButtonScroll = ({
         width: width || 'auto',
         height: height || 'auto',
         background: background || 'initial',
+        backgroundColor: background || 'initial',
         color: color || '#000',
         fontSize: fontSize || 14,
-        fontWeight: fontWeight || 400
+        fontWeight: fontWeight || 400,
+        '--hover-background': hoverBackground,
     };
 
     return(
@@ -34,7 +37,7 @@ const ButtonScroll = ({
             style={buttonStyle}
             onClick={scrollPage}
         >
-            {text}
+            <span>{text}</span>
         </button>
     )
 }

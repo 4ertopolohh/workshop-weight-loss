@@ -537,6 +537,7 @@ const HowDoesSection = () => {
                                     fontSize={18}
                                     fontWeight={600}
                                     page="/program" 
+                                    hoverBackground={'linear-gradient(90deg, #4dafff 0%, #0775ebff 100%)'}
                                 />  
                             </HowDoesColorBanner>
                         </motion.div>
@@ -559,13 +560,14 @@ const HowDoesSection = () => {
                                 <ButtonScroll 
                                     width={308}
                                     height={62}
-                                    background={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
+                                    background={'linear-gradient(180deg, #fdae4eff 0%, #f3551cff 100%)'}
                                     text={'Записаться на практикум'}
                                     color={'#fff'}
                                     fontSize={18}
                                     fontWeight={600}
                                     pixels={1700}
                                     direction={'down'}
+                                    hoverBackground={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
                                 />
                             </HowDoesColorBanner>
                         </motion.div>

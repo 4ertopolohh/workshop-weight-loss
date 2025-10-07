@@ -27,13 +27,14 @@ const HotOfferSection = () => {
                             <ButtonScroll 
                                 width={311}
                                 height={62}
-                                background={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
+                                background={'linear-gradient(180deg, #fdae4eff 0%, #f3551cff 100%)'}
                                 text={'Хочу присоединиться'}
                                 color={'#fff'}
                                 pixels={9350}
                                 direction={'down'}
                                 fontWeight={600}
                                 fontSize={18}
+                                hoverBackground={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
                             />
                         </div>
                     </div>
@@ -53,13 +54,14 @@ const HotOfferSection = () => {
                         <ButtonScroll 
                             width={311}
                             height={62}
-                            background={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
+                            background={'linear-gradient(180deg, #fdae4eff 0%, #f3551cff 100%)'}
                             text={'Хочу присоединиться'}
                             color={'#fff'}
                             pixels={6350}
                             direction={'down'}
                             fontWeight={600}
                             fontSize={18}
+                            hoverBackground={'linear-gradient(180deg, #FF8C00 0%, #FF4500 100%)'}
                         />
                     </div>
                 </motion.section>

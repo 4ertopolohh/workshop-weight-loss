@@ -107,6 +107,7 @@ const SaleSection = () => {
                                 itemsDescription={groupList}
                                 fullPrice={'30 000'}
                                 monthPrice={'Оплата: 10 000 ₽ в месяц'}
+                                hoverColor={'#E84F00'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'30 000'}
@@ -121,10 +122,11 @@ const SaleSection = () => {
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
                                 itemsPreview={individualPreviewList}
-                                buttonColor={'#1257E0'}
+                                buttonColor={'#2471FF'}
                                 itemsDescription={individualList}
                                 fullPrice={'60 000'}
                                 monthPrice={'Оплата: 20 000 ₽ в месяц'}
+                                hoverColor={'#1257E0'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'60 000'}
@@ -143,6 +145,7 @@ const SaleSection = () => {
                                 itemsDescription={independentList}
                                 fullPrice={'14 900'}
                                 monthPrice={'Единый платеж'}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
                             <BuyWorkshopBanner 
@@ -158,6 +161,7 @@ const SaleSection = () => {
                                 fullPrice={'3 900'}
                                 monthPrice={'Единый платеж'}
                                 children2={<IntroductoryDiscountOffer/>}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
                         </>
@@ -175,6 +179,7 @@ const SaleSection = () => {
                                 itemsDescription={groupList}
                                 fullPrice={'30 000'}
                                 monthPrice={'Оплата: 10 000 ₽ в месяц'}
+                                hoverColor={'#E84F00'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'30 000'}
@@ -189,10 +194,11 @@ const SaleSection = () => {
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
                                 itemsPreview={individualPreviewList}
-                                buttonColor={'#1257E0'}
+                                buttonColor={'#2471FF'}
                                 itemsDescription={individualList}
                                 fullPrice={'60 000'}
                                 monthPrice={'Оплата: 20 000 ₽ в месяц'}
+                                hoverColor={'#1257E0'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'60 000'}
@@ -213,6 +219,7 @@ const SaleSection = () => {
                                 fullPrice={'3 900'}
                                 monthPrice={'Единый платеж'}
                                 children2={<IntroductoryDiscountOffer/>}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
 
@@ -228,6 +235,7 @@ const SaleSection = () => {
                                 itemsDescription={independentList}
                                 fullPrice={'14 900'}
                                 monthPrice={'Единый платеж'}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
                         </>
@@ -267,6 +275,7 @@ const SaleSection = () => {
                                 itemsDescription={groupList}
                                 fullPrice={'30 000'}
                                 monthPrice={'Оплата: 10 000 ₽ в месяц'}
+                                hoverColor={'#E84F00'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'30 000'}
@@ -289,10 +298,11 @@ const SaleSection = () => {
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
                                 itemsPreview={individualPreviewList}
-                                buttonColor={'#1257E0'}
+                                buttonColor={'#2471FF'}
                                 itemsDescription={individualList}
                                 fullPrice={'60 000'}
                                 monthPrice={'Оплата: 20 000 ₽ в месяц'}
+                                hoverColor={'#1257E0'}
                             >
                                 <DiscountOffer 
                                     oldPrice={'60 000'}
@@ -319,6 +329,7 @@ const SaleSection = () => {
                                 fullPrice={'3 900'}
                                 monthPrice={'Единый платеж'}
                                 children2={<IntroductoryDiscountOffer/>}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
                     </motion.div>
@@ -340,6 +351,7 @@ const SaleSection = () => {
                                 itemsDescription={independentList}
                                 fullPrice={'14 900'}
                                 monthPrice={'Единый платеж'}
+                                hoverColor={'#1257E0'}
                             >
                             </BuyWorkshopBanner>
                     </motion.div>

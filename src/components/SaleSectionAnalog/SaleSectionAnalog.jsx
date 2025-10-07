@@ -52,12 +52,16 @@ const SaleSectionAnalog = () => {
                                 monthPrice = {'Оплата: 10 000 ₽ в месяц'}
                                 backgroundColor = {'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
                                 color = {'#FF6B16'}
+                                hoverColor={'#E84F00'}
+                                children2={
+                                    <SaleBannerSalePrice 
+                                        fullPrice={'30 000'}
+                                        salePrice={'24 900'}
+                                        color={'#FF6B16'}
+                                    />
+                                }
                             >
-                                <SaleBannerSalePrice 
-                                    fullPrice={'30 000'}
-                                    salePrice={'24 900'}
-                                    color={'#FF6B16'}
-                                />
+                                
                             </SaleBannerAnalog>
                         
                             <SaleBannerAnalog 
@@ -67,38 +71,45 @@ const SaleSectionAnalog = () => {
                                 fullPrice = {'60 000'}
                                 monthPrice = {'Оплата: 20 000 ₽ в месяц'}
                                 backgroundColor = {'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
-                                color = {'#1257E0'}
+                                color = {'#2471FF'}
+                                hoverColor={'#1257E0'}
+                                children2={
+                                    <SaleBannerSalePrice 
+                                        fullPrice={'60 000'}
+                                        salePrice={'49 900'}
+                                        color={'#1257E0'}
+                                    />
+                                }
                             >
-                                <SaleBannerSalePrice 
-                                    fullPrice={'60 000'}
-                                    salePrice={'49 900'}
-                                    color={'#1257E0'}
-                                />
                             </SaleBannerAnalog>
                     </div>
                     <div className='saleSectionAnalogContent'>
                         
                             <SaleBannerAnalog 
-                                title = {'Самостоятельный'}
+                                title = {<>{`Самостоя-`}<br />{`тельный`}</>}
                                 items = {independentItems}
                                 description = {'База знаний для самостоятельной работы'}
                                 fullPrice = {'14 900'}
                                 monthPrice = {'Единый платеж'}
                                 backgroundColor = {'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 color = {'#000'}
+                                hoverColor={'#1257E0'}
+                                defaultPriceClass="mobileDefaultPrice"
                             >
                             </SaleBannerAnalog>
                         
                             <SaleBannerAnalog 
-                                title = {'Ознакомительный'}
+                                title = {<>{`Ознакоми-`}<br />{`тельный`}</>}
                                 items = {introductoryItems}
                                 description = {'Идеально, чтобы понять подходит ли вам метод'}
                                 fullPrice = {'3 900'}
                                 monthPrice = {'Единый платеж'}
                                 backgroundColor = {'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 color = {'#000'}
+                                children1={<DiscountOfferAnalog />}
+                                hoverColor={'#1257E0'}
+                                defaultPriceClass="mobileDefaultPrice"
                             >
-                                <DiscountOfferAnalog />
                             </SaleBannerAnalog>
                     </div>
                 </div>
@@ -120,12 +131,15 @@ const SaleSectionAnalog = () => {
                                 monthPrice = {'Оплата: 10 000 ₽ в месяц'}
                                 backgroundColor = {'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
                                 color = {'#FF6B16'}
-                            >
-                                <SaleBannerSalePrice 
-                                    fullPrice={'30 000'}
-                                    salePrice={'24 900'}
-                                    color={'#FF6B16'}
-                                />
+                                hoverColor={'#E84F00'}
+                                children2={
+                                    <SaleBannerSalePrice 
+                                        ullPrice={'30 000'}
+                                        salePrice={'24 900'}
+                                        color={'#FF6B16'}
+                                    />
+                                }
+                            >        
                             </SaleBannerAnalog>
                         </motion.div>
                         <motion.div
@@ -142,13 +156,16 @@ const SaleSectionAnalog = () => {
                                 fullPrice = {'60 000'}
                                 monthPrice = {'Оплата: 20 000 ₽ в месяц'}
                                 backgroundColor = {'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
-                                color = {'#1257E0'}
-                            >
-                                <SaleBannerSalePrice 
-                                    fullPrice={'60 000'}
-                                    salePrice={'49 900'}
-                                    color={'#1257E0'}
-                                />
+                                color = {'#2471FF'}
+                                hoverColor={'#1257E0'}
+                                children2={
+                                    <SaleBannerSalePrice 
+                                        fullPrice={'60 000'}
+                                        salePrice={'49 900'}
+                                        color={'#1257E0'}
+                                    />
+                                }
+                            >     
                             </SaleBannerAnalog>
                         </motion.div>
                     </div>
@@ -168,6 +185,7 @@ const SaleSectionAnalog = () => {
                                 monthPrice = {'Единый платеж'}
                                 backgroundColor = {'linear-gradient(178deg,rgba(255, 136, 0, 1) 0%, rgba(196, 105, 0, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 color = {'#000'}
+                                hoverColor={'#1257E0'}
                             >
                             </SaleBannerAnalog>
                         </motion.div>
@@ -186,8 +204,11 @@ const SaleSectionAnalog = () => {
                                 monthPrice = {'Единый платеж'}
                                 backgroundColor = {'linear-gradient(178deg,rgba(0, 84, 181, 1) 0%, rgba(0, 92, 173, 1) 6%, rgba(0, 0, 0, 1) 68%)'}
                                 color = {'#000'}
+                                hoverColor={'#1257E0'}
+                                children2={
+                                    <DiscountOfferAnalog />
+                                }
                             >
-                                <DiscountOfferAnalog />
                             </SaleBannerAnalog>
                         </motion.div>
                     </div>

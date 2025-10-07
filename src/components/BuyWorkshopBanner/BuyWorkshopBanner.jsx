@@ -17,7 +17,8 @@ const BuyWorkshopBanner = ({
     fullPrice,
     monthPrice,
     children,
-    children2
+    children2,
+    hoverColor
 }) => {
 
     const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
@@ -90,6 +91,7 @@ const BuyWorkshopBanner = ({
                         height={62}
                         page={'/'}
                         text={'Купить'}
+                        hoverBackground={hoverColor}
                     />
                 </div>
             </div>

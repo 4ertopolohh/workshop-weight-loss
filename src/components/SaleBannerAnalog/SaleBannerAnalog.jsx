@@ -11,8 +11,10 @@ const SaleBannerAnalog = ({
     monthPrice,
     backgroundColor,
     color,
-    children
-    // salePrice
+    hoverColor,
+    children1,
+    children2,
+    defaultPriceClass
 }) => {
     return(
         <div className='saleBannerAnalog'>
@@ -23,9 +25,10 @@ const SaleBannerAnalog = ({
                 fullPrice = {fullPrice}
                 monthPrice = {monthPrice}
                 backgroundColor = {backgroundColor}
-                // children = {children}
+                children1={children1}
+                children2={children2}
+                defaultPriceClass={defaultPriceClass}
             >
-                {children}
             </SaleSectionBannerContentAnalog>
             <LinkPageButton 
                 width = {'100%'}
@@ -36,6 +39,8 @@ const SaleBannerAnalog = ({
                 fontSize = {18}
                 fontWeight = {600}
                 page = {'/'}
+                hoverBackground={hoverColor}
+                hoverColor={hoverColor}
             />
         </div>
     )

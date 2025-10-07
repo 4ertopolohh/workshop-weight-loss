@@ -46,6 +46,26 @@
                         font-size: 20px;
                     }
                 }
+
+                .mobileDefaultPrice{
+                    background-color: $color-system-gray;
+                    width: 100%;
+                    border-radius: 10px 10px 23px 23px;
+                    height: 46px;
+                    flex-direction: column-reverse !important;
+                    h5{
+                        font-size: 20px !important;
+                        color: $color-default-text !important;
+                        width: auto !important;
+                        margin-left: 10px !important;
+                    }
+                    p{
+                        font-size: 9px !important;
+                        color: $color-dark-gray !important;
+                        width: auto !important;
+                        margin-left: 10px !important;
+                    }
+                }
             }
         }
     }

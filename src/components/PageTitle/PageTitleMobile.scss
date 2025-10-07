@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+@media(max-width: 1051px){
+    .pageTitle{
+        .container{
+            max-width: $max-width-big-375;
+            margin-top: 50px;
+
+            h1{
+                font-size: 41px !important;
+                font-weight: 900;
+                max-width: $max-width-big-375;
+            }
+        }
+    }
+}

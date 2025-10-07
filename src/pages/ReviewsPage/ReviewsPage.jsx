@@ -1,10 +1,10 @@
 import AnchorLinkSection from '../../components/AnchorLinkSection/AnchorLinkSection';
 import FeedbackSection from '../../components/FeedbackSection/FeedbackSection';
 import NavigatingBar from '../../components/NavigatingBar/NavigatingBar';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import SaleSectionAnalog from '../../components/SaleSectionAnalog/SaleSectionAnalog';
 import TopBarMobile from '../../components/TopBarMobile/TopBarMobile';
 import '../ReviewsPage/ReviewsPage.scss'
-import ReviewsPageTitleSection from './components/ReviewsPageTitleSection/ReviewsPageTitleSection';
 import ReviewsSection from './components/ReviewsSection/ReviewsSection';
 
 import { useMediaQuery } from 'react-responsive';
@@ -26,7 +26,8 @@ const ReviewsPage = () => {
         <div></div>
       )}
       <NavigatingBar items={navItems}/>
-      <ReviewsPageTitleSection text={'Отзывы и результаты'}/>
+      {/* <ReviewsPageTitleSection text={'Отзывы и результаты'}/> */}
+      <PageTitle text={'Отзывы и результаты'}/>
       <ReviewsSection />
       <SaleSectionAnalog />
       <FeedbackSection />

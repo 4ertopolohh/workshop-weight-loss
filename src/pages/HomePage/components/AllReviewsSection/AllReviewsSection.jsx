@@ -76,6 +76,7 @@ const AllReviewsSection = () => {
                         fontSize={18}
                         fontWeight={600}
                         page={'/reviews'}
+                        hoverBackground={'#b9d1efff'}
                     />
                 </div>
             </motion.section>

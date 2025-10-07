@@ -109,6 +109,7 @@ const WhoWillHelpSection = () => {
                             fontWeight={600}
                             page={'/experts'}
                             text={'Подробнее о экспертах'}
+                            hoverBackground={'#2471FF'}
                         />
                     ) : (
                         <LinkPageButton
@@ -120,6 +121,7 @@ const WhoWillHelpSection = () => {
                             fontWeight={600}
                             page={'/experts'}
                             text={'Подробнее о экспертах'}
+                            hoverBackground={'#2471FF'}
                         />
                     )}
                     {isMobile ? (
@@ -240,6 +242,7 @@ const WhoWillHelpSection = () => {
                             fontWeight={600}
                             page={'/experts'}
                             text={'Подробнее о экспертах'}
+                            hoverBackground={'#2471FF'}
                         />
                     </motion.div>
                     <AnimatePresence>

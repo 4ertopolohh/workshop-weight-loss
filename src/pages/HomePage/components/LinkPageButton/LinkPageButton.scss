@@ -1,13 +1,35 @@
 @import '../../../../styles/variables';
 
-.linkPageButton{
+.linkPageButton {
     font-family: $font-title;
     border-radius: 15px;
     @include flex-center-row;
     transition: $transition-style;
+    position: relative;
 
-    &:hover{
-        transform: scale(1.1);
+    span{
+        z-index: 1;
+    }
+    
+    &:hover {
         opacity: 1;
+        
+        // background: var(--hover-background, inherit) !important;
+        // background-color: var(--hover-background, inherit) !important;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        background: var(--hover-background, inherit) !important;
+        opacity: 0;     
+        transition: $transition-style;  
+        z-index: 0;
+    }
+
+    &:hover::before {
+        opacity: 1; 
     }
 }

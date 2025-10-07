@@ -20,7 +20,7 @@ import toolsIcon from '../../../../assets/images/icons/toolsIcon.svg';
 import gpsIcon from '../../../../assets/images/icons/gpsIcon.svg';
 import garantIcon from '../../../../assets/images/icons/garantIcon.svg';
 import welcomeBackground from '../../../../assets/images/pictures/welcomeBackground.png';
-import welcomeBackgroundMobile from '../../../../assets/images/pictures/welcomeBackgroundMobile.svg';
+import welcomeBackgroundMobile from '../../../../assets/images/pictures/welcomeBackgroundMobile.png';
 import HeaderLogo from '../../../../components/HeaderLogo/HeaderLogo'
 import headerLogo from '../../../../assets/images/pictures/headerLogo.svg'
 

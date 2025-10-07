@@ -3,7 +3,8 @@
 .footer{
     background-color: $color-black;
     height: 369px;
-    @include flex-center-column
+    @include flex-center-column;
+    margin-top: 100px;
 }
 
 .footer .container{

@@ -10,15 +10,18 @@ const LinkPageButton = ({
     fontSize,
     fontWeight,
     page,
+    hoverBackground
 }) => {
 
     const buttonStyle = {
         width: width || 'auto',
         height: height || 'auto',
         background: background || 'initial',
+        backgroundColor: background || 'initial',
         color: color || '#000',
         fontSize: fontSize || 14,
-        fontWeight: fontWeight || 400
+        fontWeight: fontWeight || 400,
+        '--hover-background': hoverBackground,
     };
 
     return(
@@ -27,7 +30,7 @@ const LinkPageButton = ({
             className='linkPageButton'
             style={buttonStyle}
         >
-            {text}
+            <span>{text}</span>
         </Link>
     )
 }

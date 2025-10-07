@@ -8,7 +8,9 @@ const SaleSectionBannerContentAnalog = ({
     fullPrice,
     monthPrice,
     backgroundColor,
-    children 
+    children1,
+    children2,
+    defaultPriceClass
 }) => {
 
     const saleSectionBannerContentAnalogStyle = {
@@ -18,7 +20,7 @@ const SaleSectionBannerContentAnalog = ({
     return(
         <div className='saleSectionBannerContentAnalog' style={saleSectionBannerContentAnalogStyle}>
             <div className='container'>
-                <div>
+                <div className='headerTitleWrapper'>
                     <div className='header'>
                         <h5 className='title'>{title}</h5>
                         <ul className='saleSectionBannerContentAnalogList'>
@@ -32,11 +34,12 @@ const SaleSectionBannerContentAnalog = ({
                     <p className='description'>{description}</p>
                 </div>
                 <div className='price'>
-                    <div className='defaultPrice'>
+                    {children1}
+                    <div className={`defaultPrice ${defaultPriceClass || ''}`}>
                         <h5 className='fullPrice'>{fullPrice} ₽</h5>
                         <p className='monthPrice'>{monthPrice}</p>
                     </div>
-                    {children}
+                    {children2}
                 </div>
             </div>
         </div>

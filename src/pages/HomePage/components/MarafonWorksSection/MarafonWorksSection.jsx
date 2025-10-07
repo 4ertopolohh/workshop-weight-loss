@@ -5,7 +5,7 @@ import '../MarafonWorksSection/MarafonWorksSectionMobile.scss'
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 
-import marafonWorks from '../../../../assets/images/pictures/marafonWorks.png'
+import marafonWorks from '../../../../assets/images/pictures/marafonWorks.jpg'
 import marafonWorksMobile from '../../../../assets/images/pictures/marafonWorksMobile.png'
 import MarafonWorksBigBanner from '../MarafonWorksBigBanner/MarafonWorksBigBanner';
 import MarafonWorksMiniBanners from '../MarafonWorksMiniBanners/MarafonWorksMiniBanners';
