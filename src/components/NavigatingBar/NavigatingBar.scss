@@ -23,10 +23,16 @@
 .navigatingBar .container{
     ul{
         li{
-            p{
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 12px;
+            a {
+                text-decoration: none;
+                color: inherit;
+                
+                p{
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 12px;
+                    margin: 0;
+                }
             }
         }
 

@@ -8,22 +8,16 @@ import FeedbackSection from '../../components/FeedbackSection/FeedbackSection';
 import SaleSectionAnalog from '../../components/SaleSectionAnalog/SaleSectionAnalog';
 
 const ProgramPage = () => {
-
-  const navItems = [
-    { text: 'Главная' },
-    { text: 'Программа практикума' }
-  ]
-
   const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
 
   return (
     <main className="program-page">
       {isTablet1050 ? (
-        <TopBarMobile text={'Отзывы'} page={'/'}/>
+        <TopBarMobile text={'Программа'} page={'/'}/>
       ) : (
         <div></div>
       )}
-      <NavigatingBar items={navItems}/>
+      <NavigatingBar />
       <PageTitle text={<>12 модулей<br/>12 недель</>}/>
       <WeeksSection />
       <FeedbackSection />

@@ -13,11 +13,6 @@ const ReviewsPage = () => {
 
   const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
 
-  const navItems = [
-    { text: 'Главная страница' },
-    { text: 'Отзывы' },
-  ]
-
   return (
     <main className="reviews-page">
       {isTablet1050 ? (
@@ -25,8 +20,7 @@ const ReviewsPage = () => {
       ) : (
         <div></div>
       )}
-      <NavigatingBar items={navItems}/>
-      {/* <ReviewsPageTitleSection text={'Отзывы и результаты'}/> */}
+      <NavigatingBar />
       <PageTitle text={'Отзывы и результаты'}/>
       <ReviewsSection />
       <SaleSectionAnalog />

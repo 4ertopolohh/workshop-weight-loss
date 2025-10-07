@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Cookie from './components/Cookie/Cookie';
 import Loader from './components/Loader/Loader';
+import { NavigationProvider } from './contexts/NavigationContext';
 
 import homeIcon from './assets/images/icons/homeIcon.svg';
 import reviewsIcon from './assets/images/icons/reviewsIcon.svg';
@@ -70,21 +71,21 @@ const App = () => {
 
   const navListItems = [
     { text: "Главная", link: "/", img: homeIcon },
-    { text: "Отзывы", link: "/#/reviews", img: reviewsIcon },
-    { text: "Программа практикума", link: "/#/program", img: programIcon },
-    { text: "Эксперты", link: "/#/experts", img: expertsIcon }
-  ];
+    { text: "Отзывы", link: "/reviews", img: reviewsIcon },
+    { text: "Программа практикума", link: "/program", img: programIcon },
+    { text: "Эксперты", link: "/experts", img: expertsIcon }
+];
 
-  const footerMenuItems = [
+const footerMenuItems = [
     { text: "Почему практикум работает ", link: "/", img: homeIcon },
-    { text: "Отзывы и результаты", link: "/#/reviews", img: reviewsIcon },
-    { text: "Программа практикума", link: "/#/program", img: programIcon },
-    { text: "Эксперты практикума", link: "/#/experts", img: expertsIcon },
-    { text: "Вопросы и ответы", link: "/#/experts", img: expertsIcon },
-    { text: "Стоимость", link: "/#/experts", img: expertsIcon },
-    { text: "Обратная связь", link: "/#/experts", img: expertsIcon },
-    { text: "Бесплатные материалы", link: "/#/experts", img: expertsIcon },
-  ];
+    { text: "Отзывы и результаты", link: "/reviews", img: reviewsIcon },
+    { text: "Программа практикума", link: "/program", img: programIcon },
+    { text: "Эксперты практикума", link: "/experts", img: expertsIcon },
+    { text: "Вопросы и ответы", link: "/experts", img: expertsIcon },
+    { text: "Стоимость", link: "/experts", img: expertsIcon },
+    { text: "Обратная связь", link: "/experts", img: expertsIcon },
+    { text: "Бесплатные материалы", link: "/experts", img: expertsIcon },
+];
 
   const mobileMenuItems = [
     { icon: mobileHomePage, link: "/", className: "default" },
@@ -96,27 +97,29 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
-        <Header navListItems={navListItems} />
-        {isMobile ? (
-          <MobileMenu menuItems={mobileMenuItems}/>
-        ) : (
-          <><div></div></>
-        )}
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/reviews" element={<ReviewsPage />} />
-            <Route path="/program" element={<ProgramPage />} />
-            <Route path="/experts" element={<ExpertsPage />} />
-            <Route path="*" element={<HomePage />} />
-          </Routes>
-        </Suspense>
-        <AnimatePresence>
-          {showCookie && <Cookie onAccept={() => setShowCookie(false)} />}
-        </AnimatePresence>
-        <Footer footerMenuItems={footerMenuItems} />
-      </div>
+      <NavigationProvider>
+        <div className="App">
+          <Header navListItems={navListItems} />
+          {isMobile ? (
+            <MobileMenu menuItems={mobileMenuItems}/>
+          ) : (
+            <><div></div></>
+          )}
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="/program" element={<ProgramPage />} />
+              <Route path="/experts" element={<ExpertsPage />} />
+              <Route path="*" element={<HomePage />} />
+            </Routes>
+          </Suspense>
+          <AnimatePresence>
+            {showCookie && <Cookie onAccept={() => setShowCookie(false)} />}
+          </AnimatePresence>
+          <Footer footerMenuItems={footerMenuItems} />
+        </div>
+      </NavigationProvider>
     </Router>
   );
 }

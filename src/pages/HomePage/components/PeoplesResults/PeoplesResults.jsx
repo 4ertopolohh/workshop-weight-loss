@@ -24,6 +24,7 @@ import anastasiaSlide3 from '../../../../assets/images/pictures/anastasiaSlide3.
 
 import alekseiSlide1 from '../../../../assets/images/pictures/alekseiSlide1.png'
 import alekseiSlide2 from '../../../../assets/images/pictures/alekseiSlide2.png'
+import alekseiSlide3 from '../../../../assets/images/pictures/alekseiSlide3.png'
 
 import vladimirSlide1 from '../../../../assets/images/pictures/vladimirSlide1.png'
 import vladimirSlide2 from '../../../../assets/images/pictures/vladimirSlide2.png'
@@ -91,7 +92,7 @@ const PeoplesResults = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <PeopleResultBanner 
-                        slides={[alekseiSlide1, alekseiSlide2]}
+                        slides={[alekseiSlide1, alekseiSlide2, alekseiSlide3]}
                         name={'Алексей'} 
                         weight={'12,5'} 
                         age={'37 лет'} 
