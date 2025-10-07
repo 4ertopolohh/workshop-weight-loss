@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/workshop-weight-loss/static/css/main.d840d10a.css",
-    "main.js": "/workshop-weight-loss/static/js/main.315aa769.js",
-    "static/css/192.c5b0b8b4.chunk.css": "/workshop-weight-loss/static/css/192.c5b0b8b4.chunk.css",
-    "static/js/192.affd6649.chunk.js": "/workshop-weight-loss/static/js/192.affd6649.chunk.js",
+    "main.js": "/workshop-weight-loss/static/js/main.05bb3497.js",
+    "static/css/447.e116e208.chunk.css": "/workshop-weight-loss/static/css/447.e116e208.chunk.css",
+    "static/js/447.0867d5bf.chunk.js": "/workshop-weight-loss/static/js/447.0867d5bf.chunk.js",
     "static/css/840.1754d8b7.chunk.css": "/workshop-weight-loss/static/css/840.1754d8b7.chunk.css",
     "static/js/840.29357ff0.chunk.js": "/workshop-weight-loss/static/js/840.29357ff0.chunk.js",
-    "static/css/546.2db472a5.chunk.css": "/workshop-weight-loss/static/css/546.2db472a5.chunk.css",
-    "static/js/546.04b5abfe.chunk.js": "/workshop-weight-loss/static/js/546.04b5abfe.chunk.js",
+    "static/css/210.ef800f93.chunk.css": "/workshop-weight-loss/static/css/210.ef800f93.chunk.css",
+    "static/js/210.0791a31f.chunk.js": "/workshop-weight-loss/static/js/210.0791a31f.chunk.js",
     "static/css/33.4f6a550b.chunk.css": "/workshop-weight-loss/static/css/33.4f6a550b.chunk.css",
     "static/js/33.3c29e51f.chunk.js": "/workshop-weight-loss/static/js/33.3c29e51f.chunk.js",
     "static/js/453.83d53e86.chunk.js": "/workshop-weight-loss/static/js/453.83d53e86.chunk.js",
@@ -164,13 +164,13 @@
     "static/media/checkboxChecked.svg": "/workshop-weight-loss/static/media/checkboxChecked.2c77cf8f67dc36c4e535.svg",
     "static/media/navBarArrow.svg": "/workshop-weight-loss/static/media/navBarArrow.3ee1a2d50069ebc383c4.svg",
     "main.d840d10a.css.map": "/workshop-weight-loss/static/css/main.d840d10a.css.map",
-    "main.315aa769.js.map": "/workshop-weight-loss/static/js/main.315aa769.js.map",
-    "192.c5b0b8b4.chunk.css.map": "/workshop-weight-loss/static/css/192.c5b0b8b4.chunk.css.map",
-    "192.affd6649.chunk.js.map": "/workshop-weight-loss/static/js/192.affd6649.chunk.js.map",
+    "main.05bb3497.js.map": "/workshop-weight-loss/static/js/main.05bb3497.js.map",
+    "447.e116e208.chunk.css.map": "/workshop-weight-loss/static/css/447.e116e208.chunk.css.map",
+    "447.0867d5bf.chunk.js.map": "/workshop-weight-loss/static/js/447.0867d5bf.chunk.js.map",
     "840.1754d8b7.chunk.css.map": "/workshop-weight-loss/static/css/840.1754d8b7.chunk.css.map",
     "840.29357ff0.chunk.js.map": "/workshop-weight-loss/static/js/840.29357ff0.chunk.js.map",
-    "546.2db472a5.chunk.css.map": "/workshop-weight-loss/static/css/546.2db472a5.chunk.css.map",
-    "546.04b5abfe.chunk.js.map": "/workshop-weight-loss/static/js/546.04b5abfe.chunk.js.map",
+    "210.ef800f93.chunk.css.map": "/workshop-weight-loss/static/css/210.ef800f93.chunk.css.map",
+    "210.0791a31f.chunk.js.map": "/workshop-weight-loss/static/js/210.0791a31f.chunk.js.map",
     "33.4f6a550b.chunk.css.map": "/workshop-weight-loss/static/css/33.4f6a550b.chunk.css.map",
     "33.3c29e51f.chunk.js.map": "/workshop-weight-loss/static/js/33.3c29e51f.chunk.js.map",
     "453.83d53e86.chunk.js.map": "/workshop-weight-loss/static/js/453.83d53e86.chunk.js.map",
@@ -179,6 +179,6 @@
   },
   "entrypoints": [
     "static/css/main.d840d10a.css",
-    "static/js/main.315aa769.js"
+    "static/js/main.05bb3497.js"
   ]
 }
