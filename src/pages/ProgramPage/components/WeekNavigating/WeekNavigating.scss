@@ -1,0 +1,69 @@
+@import '../../../../styles/variables';
+
+.weekNavigating{
+    width: 42px;
+    position: fixed;
+    left: 70px;
+    top: 17%;
+    z-index: 100;
+    transition: opacity 0.9s ease, visibility 0.9s ease;
+
+    &--fixed {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--absolute {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    ul{
+        width: 100%;
+        @include flex-center-column;
+
+        li{
+            button{
+                width: 34px;
+                height: 34px;
+                border-radius: 17px;
+                background: $color-base-blue;
+                font-size: 14px;
+                font-weight: 500;
+                color: $color-text-blue;
+                @include flex-center-row;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: none;
+
+                &:hover {
+                    background: $color-text-blue;
+                    color: $color-white;
+
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+
+                &.active {
+                    background: $color-text-blue;
+                    color: $color-white;
+
+                    img {
+                        filter: brightness(0) invert(1);
+                    }
+                }
+
+                img{
+                    width: 24px;
+                    height: 24px;
+                    transition: filter 0.3s ease;
+                }
+            }
+        }
+
+        li + li{
+            margin-top: 2px;
+        }
+    }
+}

@@ -1,10 +1,12 @@
 import Week from '../Week/Week';
 import '../WeeksSection/WeeksSection.scss'
+import { forwardRef } from 'react';
 
 import clockIcon from '../../../../assets/images/icons/clockIconWhite.svg'
 import videoIcon from '../../../../assets/images/icons/videoIcon.svg'
+import WeekQuote from '../WeekQuote/WeekQuote';
 
-const WeeksSection = () => {
+const WeeksSection = forwardRef((props, ref) => {
 
     const itemsPrev = [
         { text: 'Онлайн', icon: videoIcon },
@@ -302,18 +304,23 @@ const WeeksSection = () => {
         { text: 'Бонус для каждого участника потока.' },
         { text: 'Домашние задания на последок.' },
     ]
+
     return(
-        <section className='weeksSection'>
+        <section className='weeksSection' ref={ref}>
             <div className='container'>
                 <Week 
+                    weekNumber={1}
                     previewTitle = {'Неделя 1'}
                     itemsHeader = {itemsHeaderWeek1}
-                    quote = {'Приветственный вводный эфир с основателями: куратором практикума Юрием Горшковым и с опытным экспертом по похудению Никитой Агаповым, который будет вести до результата всех участников потока'}
+                    quote = {''}
                     itemsPrev = {itemsPrev}
                     itemsDesc = {itemsDescWeek1}
                     height={838}
-                />
+                >
+                    <WeekQuote text={'Приветственный вводный эфир с основателями: куратором практикума Юрием Горшковым и с опытным экспертом по похудению Никитой Агаповым, который будет вести до результата всех участников потока'}/>
+                </Week>
                 <Week 
+                    weekNumber={2}
                     previewTitle = {'Неделя 2'}
                     itemsHeader = {itemsHeaderWeek2}
                     quote = {''}
@@ -322,6 +329,7 @@ const WeeksSection = () => {
                     height={866}
                 />
                 <Week 
+                    weekNumber={3}
                     previewTitle = {'Неделя 3'}
                     itemsHeader = {itemsHeaderWeek3}
                     quote = {''}
@@ -330,6 +338,7 @@ const WeeksSection = () => {
                     height={855}
                 />
                 <Week 
+                    weekNumber={4}
                     previewTitle = {'Неделя 4'}
                     itemsHeader = {itemsHeaderWeek4}
                     quote = {''}
@@ -338,6 +347,7 @@ const WeeksSection = () => {
                     height={893}
                 />
                 <Week 
+                    weekNumber={5}
                     previewTitle = {'Неделя 5'}
                     itemsHeader = {itemsHeaderWeek5}
                     quote = {''}
@@ -346,6 +356,7 @@ const WeeksSection = () => {
                     height={958}
                 />
                 <Week 
+                    weekNumber={6}
                     previewTitle = {'Неделя 6'}
                     itemsHeader = {itemsHeaderWeek6}
                     quote = {''}
@@ -354,6 +365,7 @@ const WeeksSection = () => {
                     height={728}
                 />
                 <Week 
+                    weekNumber={7}
                     previewTitle = {'Неделя 7'}
                     itemsHeader = {itemsHeaderWeek7}
                     quote = {''}
@@ -362,6 +374,7 @@ const WeeksSection = () => {
                     height={525}
                 />
                 <Week 
+                    weekNumber={8}
                     previewTitle = {'Неделя 8'}
                     itemsHeader = {itemsHeaderWeek8}
                     quote = {''}
@@ -370,6 +383,7 @@ const WeeksSection = () => {
                     height={686}
                 />
                 <Week 
+                    weekNumber={9}
                     previewTitle = {'Неделя 9'}
                     itemsHeader = {itemsHeaderWeek9}
                     quote = {''}
@@ -378,6 +392,7 @@ const WeeksSection = () => {
                     height={567}
                 />
                 <Week 
+                    weekNumber={10}
                     previewTitle = {'Неделя 10'}
                     itemsHeader = {itemsHeaderWeek10}
                     quote = {''}
@@ -386,6 +401,7 @@ const WeeksSection = () => {
                     height={594}
                 />
                 <Week 
+                    weekNumber={11}
                     previewTitle = {'Неделя 11'}
                     itemsHeader = {itemsHeaderWeek11}
                     quote = {''}
@@ -394,6 +410,7 @@ const WeeksSection = () => {
                     height={636}
                 />
                 <Week 
+                    weekNumber={12}
                     previewTitle = {'Неделя 12'}
                     itemsHeader = {itemsHeaderWeek12}
                     quote = {''}
@@ -402,6 +419,7 @@ const WeeksSection = () => {
                     height={843}
                 />
                 <Week 
+                    weekNumber={13}
                     previewTitle = {'Выпускной эфир с участниками проекта'}
                     itemsHeader = {itemsHeaderWeekFinal}
                     quote = {''}
@@ -412,6 +430,6 @@ const WeeksSection = () => {
             </div>
         </section>
     )
-}
+})
 
 export default WeeksSection;

@@ -38,8 +38,17 @@ import kristinaSlide1 from '../../../../assets/images/pictures/kristinaSlide1.pn
 import kristinaSlide2 from '../../../../assets/images/pictures/kristinaSlide2.png'
 
 import uriSlide1 from '../../../../assets/images/pictures/uriSlide1.png'
+import uriSlide2 from '../../../../assets/images/pictures/uriSlide2.png'
+import uriSlide3 from '../../../../assets/images/pictures/uriSlide3.png'
 
 import nikitaSlide1 from '../../../../assets/images/pictures/nikitaSlide1.png'
+
+import marinaSlide1 from '../../../../assets/images/pictures/marinaSlide1.png'
+import marinaSlide2 from '../../../../assets/images/pictures/marinaSlide2.png'
+
+import olegSlide1 from '../../../../assets/images/pictures/olegSlide1.png'
+import olegSlide2 from '../../../../assets/images/pictures/olegSlide2.png'
+
 
 const PeoplesResults = () => {
     const swiperRef = useRef(null)
@@ -128,7 +137,7 @@ const PeoplesResults = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <PeopleResultBanner 
-                        slides={[uriSlide1]}
+                        slides={[uriSlide1, uriSlide2, uriSlide3]}
                         name={'Юрий'} 
                         weight={'31'} 
                         age={'43 года'} 
@@ -142,6 +151,24 @@ const PeoplesResults = () => {
                         weight={'14'} 
                         age={'25 лет'} 
                         review={'Я вкладывал и продолжаю вкладывать время, усилия и деньги в этот проект, потому, что он реально помогает людям'}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PeopleResultBanner 
+                        slides={[olegSlide1, olegSlide2]}
+                        name={'Олег'} 
+                        weight={'12,5'} 
+                        age={'49 лет'} 
+                        review={'Я вкладывал и продолжаю вкладывать время, усилия и деньги в этот проект, потому, что он реально помогает людям'}
+                    />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <PeopleResultBanner 
+                        slides={[marinaSlide1, marinaSlide2]}
+                        name={'Марина'} 
+                        weight={'10'} 
+                        age={'36 лет'} 
+                        review={'Я получила ровно то, чего и хотела. Минус килограммы и улучшение отражения в зеркале - как неизбежные последствия.'}
                     />
                 </SwiperSlide>
             </Swiper>

@@ -1,14 +1,16 @@
 import '../Week/Week.scss'
 import WeekButton from '../WeekButton/WeekButton';
-import { useState } from 'react';
+import { useState, forwardRef } from 'react';
 
-const Week = ({
+const Week = forwardRef(({
+    weekNumber,
     previewTitle,
     itemsPrev = [],
     itemsDesc = [],
     itemsHeader = [],
-    height
-}) => {
+    height,
+    children
+}, ref) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const weekStyle = {
@@ -25,7 +27,12 @@ const Week = ({
     }
 
     return(
-        <div className='week' style={weekStyle}>
+        <div 
+            className='week' 
+            style={weekStyle}
+            data-week-number={weekNumber}
+            ref={ref}
+        >
             <div className='weekPreview'>
                 <div className='container'>
                     <h4 className={`title ${getTitleClassName()}`}>{previewTitle}</h4>
@@ -51,13 +58,16 @@ const Week = ({
                         </ul>
                     </div>
                     {isExpanded && (
-                        <ol className='weekDescriptionList'>
-                            {itemsDesc.map((item, index) => (
-                                <li key={index}>
-                                    {item.text}
-                                </li>
-                            ))} 
-                        </ol>
+                        <>
+                            {children}
+                            <ol className='weekDescriptionList'>
+                                {itemsDesc.map((item, index) => (
+                                    <li key={index}>
+                                        {item.text}
+                                    </li>
+                                ))} 
+                            </ol>
+                        </>
                     )}
                     <WeekButton 
                         isExpanded={isExpanded} 
@@ -67,6 +77,6 @@ const Week = ({
             </div>
         </div>
     )
-}
+})
 
 export default Week;
