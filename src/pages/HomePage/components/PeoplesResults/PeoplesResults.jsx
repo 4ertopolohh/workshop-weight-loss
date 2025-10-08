@@ -112,7 +112,7 @@ const PeoplesResults = () => {
                     <PeopleResultBanner 
                         slides={[vladimirSlide1, vladimirSlide2, vladimirSlide3]}
                         name={'Владимир'} 
-                        weight={'8,1'} 
+                        weight={'8'} 
                         age={'43 года'} 
                         review={'Я по весу уже меньше, чем планировал. Скоро сформулирую вопросы, как дальше тормозить похудение)) Спасибо, очень...'}
                     />
@@ -166,7 +166,7 @@ const PeoplesResults = () => {
                     <PeopleResultBanner 
                         slides={[marinaSlide1, marinaSlide2]}
                         name={'Марина'} 
-                        weight={'10'} 
+                        weight={'4,5'} 
                         age={'36 лет'} 
                         review={'Я получила ровно то, чего и хотела. Минус килограммы и улучшение отражения в зеркале - как неизбежные последствия.'}
                     />

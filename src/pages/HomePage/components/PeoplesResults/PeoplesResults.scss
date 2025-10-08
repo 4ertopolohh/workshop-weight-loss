@@ -57,7 +57,9 @@
     }
 
     .peoples-pagination {
-        width: 130px !important;
+        max-width: 300px !important;
+        width: max-content !important;
+        padding: 0 5px !important;
         height: 20px !important;
         background: $color-system-gray !important;
         border-radius: 10px !important;

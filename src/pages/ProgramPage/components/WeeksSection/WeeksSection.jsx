@@ -1,6 +1,8 @@
 import Week from '../Week/Week';
 import '../WeeksSection/WeeksSection.scss'
+import '../WeeksSection/WeeksSectionMobile.scss'
 import { forwardRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 import clockIcon from '../../../../assets/images/icons/clockIconWhite.svg'
 import videoIcon from '../../../../assets/images/icons/videoIcon.svg'
@@ -305,9 +307,135 @@ const WeeksSection = forwardRef((props, ref) => {
         { text: 'Домашние задания на последок.' },
     ]
 
+    const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
+
     return(
         <section className='weeksSection' ref={ref}>
-            <div className='container'>
+            
+            {isTablet1050 ? (
+                <div className='container'>
+                <Week 
+                    weekNumber={1}
+                    previewTitle = {'Неделя 1'}
+                    itemsHeader = {itemsHeaderWeek1}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek1}
+                    height={1350}
+                >
+                    <WeekQuote text={'Приветственный вводный эфир с основателями: куратором практикума Юрием Горшковым и с опытным экспертом по похудению Никитой Агаповым, который будет вести до результата всех участников потока'}/>
+                </Week>
+                <Week 
+                    weekNumber={2}
+                    previewTitle = {'Неделя 2'}
+                    itemsHeader = {itemsHeaderWeek2}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek2}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={3}
+                    previewTitle = {'Неделя 3'}
+                    itemsHeader = {itemsHeaderWeek3}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek3}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={4}
+                    previewTitle = {'Неделя 4'}
+                    itemsHeader = {itemsHeaderWeek4}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek4}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={5}
+                    previewTitle = {'Неделя 5'}
+                    itemsHeader = {itemsHeaderWeek5}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek5}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={6}
+                    previewTitle = {'Неделя 6'}
+                    itemsHeader = {itemsHeaderWeek6}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek6}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={7}
+                    previewTitle = {'Неделя 7'}
+                    itemsHeader = {itemsHeaderWeek7}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek7}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={8}
+                    previewTitle = {'Неделя 8'}
+                    itemsHeader = {itemsHeaderWeek8}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek8}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={9}
+                    previewTitle = {'Неделя 9'}
+                    itemsHeader = {itemsHeaderWeek9}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek9}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={10}
+                    previewTitle = {'Неделя 10'}
+                    itemsHeader = {itemsHeaderWeek10}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek10}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={11}
+                    previewTitle = {'Неделя 11'}
+                    itemsHeader = {itemsHeaderWeek11}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek11}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={12}
+                    previewTitle = {'Неделя 12'}
+                    itemsHeader = {itemsHeaderWeek12}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeek12}
+                    height={1550}
+                />
+                <Week 
+                    weekNumber={13}
+                    previewTitle = {'Выпускной эфир с участниками проекта'}
+                    itemsHeader = {itemsHeaderWeekFinal}
+                    quote = {''}
+                    itemsPrev = {itemsPrev}
+                    itemsDesc = {itemsDescWeekFinal}
+                    height={1550}
+                />
+            </div>
+            ) : (
+                <div className='container'>
                 <Week 
                     weekNumber={1}
                     previewTitle = {'Неделя 1'}
@@ -428,6 +556,8 @@ const WeeksSection = forwardRef((props, ref) => {
                     height={383}
                 />
             </div>
+            )}
+            
         </section>
     )
 })

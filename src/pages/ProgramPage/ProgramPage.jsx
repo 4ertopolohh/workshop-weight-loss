@@ -33,12 +33,12 @@ const ProgramPage = () => {
   return (
     <main className="program-page">
       {isTablet1050 ? (
-        <TopBarMobile text={'Программа'} page={'/'}/>
+        <TopBarMobile text={'Программа практикума'} page={'/'}/>
       ) : (
         <div></div>
       )}
       <NavigatingBar />
-      <PageTitle text={<>12 модулей<br/>12 недель</>}/>
+      <PageTitle text={<>12 недель<br/>12 модулей</>}/>
       <WeekNavigating items={weekItems} weeksSectionRef={weeksSectionRef} />
       <WeeksSection ref={weeksSectionRef} />
       <FeedbackSection />
@@ -48,3 +48,8 @@ const ProgramPage = () => {
 }
 
 export default ProgramPage;
+
+
+
+
+

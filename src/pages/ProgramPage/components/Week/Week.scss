@@ -4,15 +4,17 @@
     max-width: $max-width-small;
     width: 100%;
     @include flex-center-row;
+    align-items: start;
     height: auto;
-    max-height: 958px;
+    // max-height: 958px;
     border-radius: 25px;
     background: $color-system-gray;
+    background: linear-gradient(to right, $color-dark-blue 237px, $color-system-gray 237px);
     overflow: hidden;
 
     .weekPreview{
         min-height: 150px; 
-        height: 100%;
+        height: 100% !important;
         width: 239px;
         background: $color-dark-blue;
         border-radius: 25px 0 0 25px;
@@ -72,7 +74,7 @@
     .weekDescription{
         width: 821px;
         background: $color-system-gray;
-        border-radius: 25px 25px 25px 25px;
+        border-radius: 0 25px 25px 0;
         height: 100%;
         @include flex-center-column;
 

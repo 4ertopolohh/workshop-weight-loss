@@ -1,4 +1,5 @@
 import '../WeekQuote/WeekQuote.scss'
+import '../WeekQuote/WeekQuoteMobile.scss'
 import blueQuotes from '../../../../assets/images/icons/blueQuotes.svg'
 
 const WeekQuote = ({ text }) => {

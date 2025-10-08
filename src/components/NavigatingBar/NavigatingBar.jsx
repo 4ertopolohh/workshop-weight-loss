@@ -1,4 +1,5 @@
 import '../NavigatingBar/NavigatingBar.scss'
+import '../NavigatingBar/NavigatingBarMobile.scss'
 import { Link, useLocation } from 'react-router-dom';
 import { useNavigation } from '../../contexts/NavigationContext';
 

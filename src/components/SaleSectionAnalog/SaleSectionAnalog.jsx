@@ -50,7 +50,7 @@ const SaleSectionAnalog = () => {
                                 description = {'Работа над результатом с Никитой Агаповым и Юрием  Горшковым'}
                                 fullPrice = {'30 000'}
                                 monthPrice = {'Оплата: 10 000 ₽ в месяц'}
-                                backgroundColor = {'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                backgroundColor = {'linear-gradient(220deg, #ea7100ff 0%, #ff9436ff 50%, #FF4E00 100%)'}
                                 color = {'#FF6B16'}
                                 hoverColor={'#E84F00'}
                                 children2={
@@ -70,7 +70,7 @@ const SaleSectionAnalog = () => {
                                 description = {'Работа над результатом индивидуально с Никитой Агаповым'}
                                 fullPrice = {'60 000'}
                                 monthPrice = {'Оплата: 20 000 ₽ в месяц'}
-                                backgroundColor = {'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                backgroundColor = {'linear-gradient(220deg, #1E5BFF 0%, #6fa6ffff 50%, #006BFF 100%)'}
                                 color = {'#2471FF'}
                                 hoverColor={'#1257E0'}
                                 children2={
@@ -129,7 +129,7 @@ const SaleSectionAnalog = () => {
                                 description = {'Работа над результатом с Никитой Агаповым и Юрием  Горшковым'}
                                 fullPrice = {'30 000'}
                                 monthPrice = {'Оплата: 10 000 ₽ в месяц'}
-                                backgroundColor = {'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                backgroundColor = {'linear-gradient(220deg, #ea7100ff 0%, #ff9436ff 50%, #FF4E00 100%)'}
                                 color = {'#FF6B16'}
                                 hoverColor={'#E84F00'}
                                 children2={
@@ -155,7 +155,7 @@ const SaleSectionAnalog = () => {
                                 description = {'Работа над результатом индивидуально с Никитой Агаповым'}
                                 fullPrice = {'60 000'}
                                 monthPrice = {'Оплата: 20 000 ₽ в месяц'}
-                                backgroundColor = {'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                backgroundColor = {'linear-gradient(220deg, #1E5BFF 0%, #6fa6ffff 50%, #006BFF 100%)'}
                                 color = {'#2471FF'}
                                 hoverColor={'#1257E0'}
                                 children2={

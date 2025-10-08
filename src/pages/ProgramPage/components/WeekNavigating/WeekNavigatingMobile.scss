@@ -1,0 +1,56 @@
+@media (max-width: 1051px) {
+    .weekNavigating {
+        width: 100% !important;
+        left: 0 !important;
+        position: relative;
+        background: white;
+        padding: 10px 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        &--fixed {
+            position: fixed !important;
+            top: 45px !important;
+            left: 0 !important;
+            width: 100% !important;
+            transform: translateY(0);
+            opacity: 1 !important;
+            visibility: visible !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        &--absolute {
+            position: relative !important;
+            transform: translateY(0);
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+
+        &--hidden {
+            transform: translateY(-100%);
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }
+
+        ul {
+            flex-direction: row !important;
+            justify-content: space-evenly !important;
+            margin: 0;
+            padding: 0 0;
+
+            li {
+                button {
+                    width: 27px;
+                    height: 27px;
+                    font-size: 12px;
+                }
+            }
+
+            li + li {
+                margin-top: 0 !important;
+                margin-left: 2px !important;
+            }
+        }
+    }
+}

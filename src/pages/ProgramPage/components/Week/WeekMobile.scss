@@ -1,0 +1,45 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 1051px){
+    .week{
+        flex-direction: column !important;
+        width: 100%;
+        max-height: 2058px;
+        background: linear-gradient(to bottom, $color-dark-blue 50%, transparent 50%);
+
+
+        .weekPreview{
+            width: 100% !important;
+            border-radius: 0px;
+            min-height: 83px;
+            height: fit-content !important;
+
+            .container{
+                align-items: start !important;
+                max-width: $max-width-big-1050 !important;
+                width: 90% !important;
+                gap: 5px !important;
+
+                .weekPreviewList{
+                    justify-content: start !important;
+                    gap: 10px !important;
+                }
+            }
+        }
+
+        .weekDescription{
+            width: 100% !important;
+            max-width: none !important;
+            border-radius: 0px;
+
+            .container{
+                max-width: $max-width-big-1050 !important;
+                width: 90% !important;
+
+                .weekDescriptionList{
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

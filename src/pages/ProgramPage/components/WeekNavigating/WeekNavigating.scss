@@ -1,11 +1,11 @@
 @import '../../../../styles/variables';
 
-.weekNavigating{
+.weekNavigating {
     width: 42px;
     position: fixed;
     left: 70px;
     top: 17%;
-    z-index: 100;
+    z-index: 1000;
     transition: opacity 0.9s ease, visibility 0.9s ease;
 
     &--fixed {
@@ -18,12 +18,12 @@
         visibility: hidden;
     }
 
-    ul{
+    ul {
         width: 100%;
         @include flex-center-column;
 
-        li{
-            button{
+        li {
+            button {
                 width: 34px;
                 height: 34px;
                 border-radius: 17px;
@@ -54,7 +54,15 @@
                     }
                 }
 
-                img{
+                &.notActive {
+                    background: $color-base-blue;
+                    color: $color-text-blue;
+                    img {
+                        filter: none;
+                    }
+                }
+
+                img {
                     width: 24px;
                     height: 24px;
                     transition: filter 0.3s ease;
@@ -62,7 +70,7 @@
             }
         }
 
-        li + li{
+        li + li {
             margin-top: 2px;
         }
     }
