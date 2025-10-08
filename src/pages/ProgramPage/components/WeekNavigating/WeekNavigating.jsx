@@ -82,7 +82,7 @@ const WeekNavigating = ({items, weeksSectionRef}) => {
 
             const isSectionVisible = weeksSectionRect.bottom > 100 && weeksSectionRect.top < window.innerHeight;
 
-            if (navTop <= 45 && 
+            if (navTop <= 90 && 
                 isSectionVisible && 
                 scrollY >= initialPositionRef.current) {
                 setIsFixed(true);
