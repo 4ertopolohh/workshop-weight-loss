@@ -89,7 +89,7 @@ const BuyWorkshopBanner = ({
                         color={'#fff'}
                         width={'100%'}
                         height={62}
-                        page={'/'}
+                        page={'/pay'}
                         text={'Купить'}
                         hoverBackground={hoverColor}
                     />
