@@ -91,7 +91,7 @@ const footerMenuItems = [
   const mobileMenuItems = [
     { icon: mobileHomePage, link: "/", className: "default" },
     { icon: mobileReviewsPage, link: "/reviews", className: "default" },
-    { icon: mobileIIN, link: "/iin", className: "home" },
+    { icon: mobileIIN, link: "/i-in", className: "home" },
     { icon: mobileProgramPage, link: "/program", className: "default" },
     { icon: mobileExpertsPage, link: "/experts", className: "default" }
   ];

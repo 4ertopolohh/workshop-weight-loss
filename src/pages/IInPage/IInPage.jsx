@@ -19,7 +19,7 @@ const IInPage = () => {
     return(
         <main className='i-in-page'>
             {isTablet1050 ? (
-                <TopBarMobile text={'Я в деле'} page={'/'}/>
+                <TopBarMobile text={'Я в деле!'} page={'/'}/>
             ) : (
                 <div></div>
             )}
