@@ -28,7 +28,7 @@ const Header = ({ navListItems = [] }) => {
                 {isDesktop && (
                     <nav className='headerNav'>
                         <HeaderNavList navListItems={navListItems}/>
-                        <HeaderButton text={'Я в деле!'} page="/#/program"/>
+                        <HeaderButton text={'Я в деле!'} page="/i-in"/>
                     </nav>
                 )}
             </div>

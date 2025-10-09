@@ -48,6 +48,8 @@ export const NavigationProvider = ({ children }) => {
         return { text: 'Программа практикума', link: '/program' };
       case '/experts':
         return { text: 'Эксперты', link: '/experts' };
+      case '/i-in':
+        return { text: 'Я в деле!', link: '/i-in' };
       default:
         return { text: 'Главная страница', link: '/' };
     }

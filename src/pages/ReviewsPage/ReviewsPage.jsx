@@ -1,4 +1,5 @@
 import AnchorLinkSection from '../../components/AnchorLinkSection/AnchorLinkSection';
+import AnchorLinkTab from '../../components/AnchorLinkTab/AnchorLinkTab';
 import FeedbackSection from '../../components/FeedbackSection/FeedbackSection';
 import NavigatingBar from '../../components/NavigatingBar/NavigatingBar';
 import PageTitle from '../../components/PageTitle/PageTitle';
@@ -10,6 +11,11 @@ import ReviewsSection from './components/ReviewsSection/ReviewsSection';
 import { useMediaQuery } from 'react-responsive';
 
 const ReviewsPage = () => {
+
+  const anchorItems = [
+    { text: 'Как проходит практикум', page: '/', sectionId: 'howDoesSection' },
+    { text: 'Вопросы и ответы', page: '/', sectionId: 'FAQSection' }
+  ];
 
   const isTablet1050 = useMediaQuery({ maxWidth: 1051 })
 
@@ -25,7 +31,7 @@ const ReviewsPage = () => {
       <ReviewsSection />
       <SaleSectionAnalog />
       <FeedbackSection />
-      <AnchorLinkSection />
+      <AnchorLinkSection items={anchorItems}/>
     </main>
   );
 }

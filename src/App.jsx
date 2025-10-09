@@ -26,6 +26,7 @@ const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const ReviewsPage = lazy(() => import('./pages/ReviewsPage/ReviewsPage'));
 const ProgramPage = lazy(() => import('./pages/ProgramPage/ProgramPage'));
 const ExpertsPage = lazy(() => import('./pages/ExpertsPage/ExpertsPage'));
+const IInPage = lazy(() => import('./pages/IInPage/IInPage'));
 
 const App = () => {
   const [showCookie, setShowCookie] = useState(false);
@@ -112,6 +113,7 @@ const footerMenuItems = [
               <Route path="/program" element={<ProgramPage />} />
               <Route path="/experts" element={<ExpertsPage />} />
               <Route path="*" element={<HomePage />} />
+              <Route path='/i-in' element={<IInPage />}/>
             </Routes>
           </Suspense>
           <AnimatePresence>

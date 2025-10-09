@@ -1,5 +1,18 @@
 @import '../../styles/variables';
 
+.headerButtonLink {
+    display: inline-block;
+    text-decoration: none;
+    
+    // Увеличиваем область кликабельности
+    padding: 10px;
+    margin: -10px;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+
 .headerButton {
     position: relative;
     width: 155px;
@@ -28,29 +41,23 @@
         opacity: 1; 
     }
 
-    img,
-    button {
-        position: relative;
-        z-index: 1;
+    &.active::before {
+        opacity: 1; 
     }
 
     img {
         width: 34px;
         height: 34px;
+        z-index: 1;
+        position: relative;
     }
 
-    .headerButtonLink {
+    span {
         font-family: $font-title;
         color: $color-white;
         font-weight: 600;
         font-size: 16px;
-        background: none;
-        border: none;
-        cursor: pointer;
         z-index: 1;
-
-        &:hover{
-            opacity: 1;
-        }
+        position: relative;
     }
 }

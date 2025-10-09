@@ -1,15 +1,18 @@
 import '../HeaderButton/HeaderButton.scss'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import fireLogo from '../../assets/images/icons/fireLogo.svg'
 
 const HeaderButton = ({ text, page = '/' }) => {
+    const location = useLocation();
+    const isActive = location.pathname === page;
+
     return(
-        <div className='headerButton'>
-            <img src={fireLogo} alt="Fire Icon" loading='lazy'/>
-            <Link to={page} className='headerButtonLink'>
-                { text }
-            </Link>
-        </div>
+        <Link to={page} className="headerButtonLink">
+            <div className={`headerButton ${isActive ? 'active' : ''}`}>
+                <img src={fireLogo} alt="Fire Icon" loading='lazy'/>
+                <span>{ text }</span>
+            </div>
+        </Link>
     )
 }
 

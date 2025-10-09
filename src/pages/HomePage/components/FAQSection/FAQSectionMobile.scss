@@ -14,6 +14,10 @@
     .FAQSection .container{
         max-width: $max-width-big-375 + 20px;
     }
+
+    .FAQSectionTitle{
+        text-align: start;
+    }
 }
 
 @media(max-width: 401px){

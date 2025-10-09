@@ -1,0 +1,13 @@
+@import '../../styles/variables';
+
+.i-in-page #inDev{
+    @include flex-in-dev;
+    margin: 100px auto;
+}
+
+.i-in-page .saleSection .container {
+    margin-top: 50px;
+    .saleSectionName{
+        display: none;
+    }
+}

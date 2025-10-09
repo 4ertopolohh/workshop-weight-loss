@@ -2,20 +2,18 @@ import '../AnchorLinkSection/AnchorLinkSection.scss'
 import '../AnchorLinkSection/AnchorLinkSectionMobile.scss'
 import AnchorLinkTab from '../AnchorLinkTab/AnchorLinkTab';
 
-const AnchorLinkSection = () => {
+const AnchorLinkSection = ({items = []}) => {
     return(
         <section className='anchorLinkSection'>
             <div className='container'>
-                <AnchorLinkTab 
-                    text={'Как проходит практикум'}
-                    page="/"
-                    sectionId="howDoesSection"
-                />
-                <AnchorLinkTab 
-                    text={'Вопросы и ответы'}
-                    page="/"
-                    sectionId="FAQSection"
-                />
+                {items.map((item, index) => (
+                    <AnchorLinkTab 
+                        key={index}
+                        text={item.text}
+                        page={item.page}
+                        sectionId={item.sectionId}
+                    />
+                ))}
             </div>
         </section>
     )

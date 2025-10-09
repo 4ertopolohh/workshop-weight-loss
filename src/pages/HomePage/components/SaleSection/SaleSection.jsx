@@ -98,7 +98,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={895}
                                 backgroundColor={'#FFF4ED'}
-                                previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                previewBackground={'linear-gradient(220deg, #ea7100ff 0%, #ff9436ff 50%, #FF4E00 100%)'}
                                 title={'Групповой'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
@@ -117,7 +117,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={975}
                                 backgroundColor={'#F3F8FF'}
-                                previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                previewBackground={'linear-gradient(220deg, #1E5BFF 0%, #6fa6ffff 50%, #006BFF 100%)'}
                                 title={'Личный'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
@@ -170,7 +170,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={850}
                                 backgroundColor={'#FFF4ED'}
-                                previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                previewBackground={'linear-gradient(220deg, #ea7100ff 0%, #ff9436ff 50%, #FF4E00 100%)'}
                                 title={'Групповой'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
@@ -189,7 +189,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={840}
                                 backgroundColor={'#F3F8FF'}
-                                previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                previewBackground={'linear-gradient(220deg, #1E5BFF 0%, #6fa6ffff 50%, #006BFF 100%)'}
                                 title={'Личный'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
@@ -266,7 +266,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={450}
                                 backgroundColor={'#FFF4ED'}
-                                previewBackground={'linear-gradient(135deg, #FF7A00 0%, #FF8C29 50%, #FF4E00 100%)'}
+                                previewBackground={'linear-gradient(220deg, #ea7100ff 0%, #ff9436ff 50%, #FF4E00 100%)'}
                                 title={'Групповой'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым и Юрием Горшковым'}
@@ -293,7 +293,7 @@ const SaleSection = () => {
                             <BuyWorkshopBanner 
                                 height={531}
                                 backgroundColor={'#F3F8FF'}
-                                previewBackground={'linear-gradient(135deg, #1E5BFF 0%, #2E7DFF 50%, #006BFF 100%)'}
+                                previewBackground={'linear-gradient(220deg, #1E5BFF 0%, #6fa6ffff 50%, #006BFF 100%)'}
                                 title={'Личный'}
                                 subtitle={'Работа над результатом с'}
                                 subtitleTitle={'Никитой Агаповым'}
