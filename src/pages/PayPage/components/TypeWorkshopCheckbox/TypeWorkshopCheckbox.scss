@@ -1,0 +1,95 @@
+@import '../../../../styles/variables';
+
+.typeWorkshopCheckbox{
+    height: 55px;
+    width: 100%;
+    background-color: $color-base-blue;
+    border-radius: 20px;
+    @include flex-center-row;
+    cursor: pointer;
+    transition: $transition-style;
+
+    &:hover {
+        background-color: lighten($color-base-blue, 3%);
+    }
+
+    &.error {
+        border: 1px solid $color-base-orange;
+    }
+}
+
+.payFormCheckboxContainer{
+    width: 95%;
+    height: 37px;
+    @include flex-center-row;
+    align-items: start !important;
+    justify-content: start !important;
+    gap: 9px;
+}
+
+.customCheckbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    .checkboxInput {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        background-color: $color-white;
+        border: 1px solid $color-basic-gray;
+        border-radius: 50%;
+        transition: border-color 0.2s ease; 
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: $color-text-blue;
+            transform: translate(-50%, -50%);
+            transition: all 0.1s ease;
+        }
+    }
+
+    .checkboxInput:checked + .checkmark {
+        border-color: $color-basic-gray;
+        
+        &::before {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+.payFormCheckboxDescription{
+    @include flex-center-column;
+    align-items: start !important;
+
+    .payFormCheckboxTitle{
+        font-size: 20px !important;
+        font-weight: 800 !important;
+        font-family: $font-default !important;
+        height: 21px;
+    }
+
+    .payFormCheckboxSubtitle{
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        color: $color-dark-gray !important;
+    }
+}

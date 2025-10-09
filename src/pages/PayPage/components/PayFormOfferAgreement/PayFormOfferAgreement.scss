@@ -1,0 +1,74 @@
+@import '../../../../styles/variables';
+
+.payFormOfferAgreement{
+    @include flex-center-row;
+    gap: 8px;
+    cursor: pointer;
+
+    &.error {
+        .checkmarkSquare {
+            border-color: $color-base-orange !important;
+        }
+    }
+
+    .customCheckboxSquare {
+        position: relative;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+
+        .checkboxInput {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        .checkmarkSquare {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: $color-white;
+            border: 1px solid $color-dark-gray;
+            border-radius: 5px; 
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                content: url(../../../../assets/images/icons/checkboxChecked.svg);
+                position: absolute;
+                width: 10px;
+                height: 8px;
+                top: -1px;
+                left: 3px;
+                transition: all 0.2s ease;
+                opacity: 0;
+            }
+        }
+
+        .checkboxInput:checked + .checkmarkSquare {
+            border-color: $color-text-blue;
+            background-color: $color-white;
+            
+            &::after {
+                border-color: $color-text-blue;
+                opacity: 1;
+            }
+        }
+    }
+
+    p{
+        font-size: 12px;
+        font-weight: 500;
+
+        span a{
+            text-decoration: underline;
+            color: $color-default-text;
+        }
+    }
+}

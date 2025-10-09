@@ -1,0 +1,75 @@
+@import '../../../../styles/variables';
+
+.payForm{
+    width: 846px;
+    height: fit-content;
+    padding-top: 20px;
+
+    .container{
+        flex-direction: column !important;
+        align-items: start !important;
+        justify-content: center !important;
+        gap: 25px !important;
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+        max-width: 846px !important;
+        position: relative;
+
+        .closeButton{
+            position: absolute;
+            top: -20px;
+            right: 0;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .payFormTitle{
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        .payFormElement{
+            @include flex-center-column;
+            align-items: start !important;
+            width: 100%;
+            gap: 5px;
+
+            .payFormContent{
+                @include flex-center-row;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .payFormCheckboxesCashTypeContent{
+                @include flex-center-row;
+                width: auto;
+            }
+
+            &.cash{
+                .payFormFieldTitle{
+                    color: $color-default-text !important;
+                }
+            }
+
+            &.agreements{
+                gap: 10px;
+            }
+        }
+
+        .payFormDescription{
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: 1px solid $color-basic-gray;
+            width: 100%;
+            padding-bottom: 25px;
+        }
+
+        .payFormAgreements{
+            @include flex-center-column;
+            align-items: start !important;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import '../../../../styles/variables';
+
+.payFormFieldTitle{
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-dark-gray;
+    font-family: $font-default !important;
+    margin-bottom: 5px;
+}

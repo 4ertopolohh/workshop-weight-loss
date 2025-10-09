@@ -1,0 +1,70 @@
+@import '../../../../styles/variables';
+
+.TypeCashCheckbox{
+    height: 28px;
+    width: auto;
+    @include flex-between-row;
+    gap: 12px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: $transition-style;
+
+    &.error {
+        border: 1px solid $color-base-orange;
+    }
+
+    img{
+        height: 28px;
+        width: auto;
+    }
+}
+
+.customCheckbox {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    .checkboxInput {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        background-color: $color-white;
+        border: 1px solid $color-basic-gray;
+        border-radius: 50%;
+        transition: $transition-style;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: $color-text-blue;
+            transition: $transition-style;
+        }
+    }
+
+    .checkboxInput:checked + .checkmark {
+        border-color: $color-text-blue;
+        
+        &::after {
+            display: block;
+        }
+    }
+}

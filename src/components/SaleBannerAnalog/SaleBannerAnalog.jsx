@@ -38,7 +38,7 @@ const SaleBannerAnalog = ({
                 color = {'#fff'}
                 fontSize = {18}
                 fontWeight = {600}
-                page = {'/'}
+                page = {'/pay'}
                 hoverBackground={hoverColor}
                 hoverColor={hoverColor}
             />
