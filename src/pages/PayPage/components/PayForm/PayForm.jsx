@@ -1,5 +1,6 @@
 import CloseButton from '../../../HomePage/components/CloseButton/CloseButton';
 import '../PayForm/PayForm.scss'
+import '../PayForm/PayFormMobile.scss'
 import PayFormButton from '../PayFormButton/PayFormButton';
 import PayFormFieldTitle from '../PayFormFieldTitle/PayFormFieldTitle';
 import PayFormInputFieldName from '../PayFormInputFieldName/PayFormInputFieldName';
@@ -25,7 +26,6 @@ const PayForm = () => {
     const [email, setEmail] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
     
-    // Состояния для ошибок
     const [errors, setErrors] = useState({
         workshop: false,
         payment: false,
@@ -37,14 +37,12 @@ const PayForm = () => {
         email: false
     });
 
-    // Состояния для текстов ошибок
     const [errorMessages, setErrorMessages] = useState({
         name: '',
         phone: '',
         email: ''
     });
 
-    // Цены в зависимости от выбранного формата
     const getPaymentOptions = () => {
         if (selectedWorkshop === 'personal') {
             return {
@@ -97,7 +95,6 @@ const PayForm = () => {
 
     const paymentOptions = getPaymentOptions();
 
-    // Сбрасываем выбор оплаты при изменении формата участия
     useEffect(() => {
         setSelectedPayment(null);
     }, [selectedWorkshop]);
@@ -121,7 +118,6 @@ const PayForm = () => {
                 email: ''
             };
 
-            // Проверка имени
             if (!name.trim()) {
                 newErrors.name = true;
                 newErrorMessages.name = 'Обязательное поле';
@@ -133,7 +129,6 @@ const PayForm = () => {
                 newErrorMessages.name = 'Только буквы и пробелы';
             }
 
-            // Проверка телефона
             const phoneDigits = phone.replace(/\D/g, '');
             if (!phoneDigits) {
                 newErrors.phone = true;
@@ -143,7 +138,6 @@ const PayForm = () => {
                 newErrorMessages.phone = 'Некорректный номер';
             }
 
-            // Проверка email
             if (!email) {
                 newErrors.email = true;
                 newErrorMessages.email = 'Обязательное поле';

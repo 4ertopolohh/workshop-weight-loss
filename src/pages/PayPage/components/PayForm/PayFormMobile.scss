@@ -1,0 +1,30 @@
+@import '../../../../styles/variables';
+
+@media(max-width: 861px){
+    .payForm{
+        width: 776px;
+    }
+}
+
+@media(max-width: 791px){
+    .payForm{
+        width: 681px;
+    }
+
+    .payFormContent{
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+}
+
+@media(max-width: 651px){
+    .payForm{
+        width: $max-width-big-400;
+    }
+}
+
+@media(max-width: 376px){
+    .payForm{
+        width: $max-width-big-375;
+    }
+}

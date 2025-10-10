@@ -1,7 +1,8 @@
 @import '../../../../styles/variables';
 
 .typeWorkshopCheckbox{
-    height: 55px;
+    min-height: 55px;
+    height: fit-content;
     width: 100%;
     background-color: $color-base-blue;
     border-radius: 20px;
@@ -20,7 +21,8 @@
 
 .payFormCheckboxContainer{
     width: 95%;
-    height: 37px;
+    min-height: 37px;
+    height: fit-content;
     @include flex-center-row;
     align-items: start !important;
     justify-content: start !important;
