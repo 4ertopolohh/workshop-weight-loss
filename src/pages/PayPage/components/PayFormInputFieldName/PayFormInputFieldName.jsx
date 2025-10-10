@@ -1,4 +1,5 @@
 import '../PayFormInputFieldName/PayFormInputFieldName.scss'
+import '../PayFormInputFieldName/PayFormInputFieldNameMobile.scss'
 
 const PayFormInputFieldName = ({ value, onChange }) => {
     return(
