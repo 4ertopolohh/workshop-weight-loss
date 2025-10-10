@@ -26,6 +26,14 @@
 @media(max-width: 431px){
     .payForm{
         width: $max-width-big-375;
+
+        .container{
+
+            .payFormTitle{
+                width: 100%;
+                text-align: center;
+            }
+        }
     }
 }
 

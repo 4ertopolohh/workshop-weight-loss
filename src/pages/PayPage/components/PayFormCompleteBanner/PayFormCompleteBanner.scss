@@ -1,0 +1,39 @@
+@import '../../../../styles/variables';
+
+.payFormCompleteBanner{
+    width: 100%;
+    background-color: $color-system-gray;
+    border-radius: 20px;
+    @include flex-center-row;
+    min-height: 57px;
+    height: fit-content;
+
+    .container{
+        width: 93% !important;
+        gap: 0 !important;
+        padding: 0 0 !important;
+        margin: 0 0 !important;
+        min-height: 32px !important;
+        height: fit-content !important;
+
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            color: $color-dark-gray;
+        }
+
+        h5{
+            font-size: 20px;
+            font-weight: 800;
+            height: fit-content;
+            font-family: $font-default !important;
+
+            span{
+                font-size: 16px;
+                font-weight: 500;
+                color: $color-dark-gray;
+                // text-decoration: line-through;
+            }
+        }
+    }
+}

@@ -1,9 +1,13 @@
 import '../PayFormButton/PayFormButton.scss'
 
-const PayFormButton = ({ isActive }) => {
+const PayFormButton = ({ isActive, onClick, text }) => {
     return(
-        <button className={`payFormButton ${isActive ? 'active' : ''}`}>
-            {isActive ? 'Оплатить' : 'Не указаны данные'}
+        <button 
+            className={`payFormButton ${isActive ? 'active' : ''}`}
+            onClick={onClick}
+            disabled={!isActive}
+        >
+            {text}
         </button>
     )
 }

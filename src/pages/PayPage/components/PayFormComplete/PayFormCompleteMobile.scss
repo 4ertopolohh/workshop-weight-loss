@@ -1,0 +1,28 @@
+@media(max-width: 871px){
+    .payFormComplete{
+        width: 90%;
+
+        .payFormTitle{
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .payFormCompleteContent{
+        flex-direction: column !important;
+    }
+
+    
+}
+
+@media(max-width: 451px){
+    .payFormComplete{
+
+        .payFormTitle{
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
+}

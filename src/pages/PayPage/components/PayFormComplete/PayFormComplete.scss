@@ -1,0 +1,88 @@
+@import '../../../../styles/variables';
+
+.payFormComplete{
+    max-width: 846px;
+    width: 100%;
+    height: fit-content;
+    padding-top: 20px;
+    margin-top: 75px;
+
+    .container{
+        flex-direction: column !important;
+        align-items: start !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        margin: 0 0 !important;
+        padding: 0 0 !important;
+        max-width: 846px !important;
+        position: relative;
+
+        .closeButton{
+            position: absolute;
+            top: -20px;
+            right: 0;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .payFormTitle{
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+        .payFormCompleteContent{
+            width: 100%;
+            @include flex-between-row;
+            gap: 10px;
+        }
+    }
+
+    .feedbackLinks{
+        width: 100%;
+        border-radius: 25px;
+        background-color: $color-dark-blue;
+        color: $color-white;
+        height: 84px;
+        @include flex-between-row;
+        margin-top: 25px;
+
+        .container{
+            width: 95% !important;
+            justify-content: space-between !important;
+            flex-direction: row !important;
+            margin: 0 auto !important;
+            align-items: center !important;
+
+            h3{
+                font-size: 18px;
+                font-weight: 600;
+                height: 22px !important;
+            }
+        }
+    }
+
+    .feedbackLinksSocials{
+        @include flex-center-row;
+
+        .feedbackSocialsListItem{
+            width: 42px;
+            height: 42px;
+
+            a{
+                width: 42px;
+                height: 42px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .feedbackSocialsListItem + .feedbackSocialsListItem{
+            margin-left: 10px;
+        }
+    }
+}

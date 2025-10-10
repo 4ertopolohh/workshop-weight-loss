@@ -15,7 +15,7 @@ import TypeWorkshopCheckbox, { WorkshopProvider } from '../TypeWorkshopCheckbox/
 import uMoneyPreview from '../../../../assets/images/pictures/uMoneyPreview.png'
 import { useState, useEffect } from 'react';
 
-const PayForm = () => {
+const PayForm = ({ onPaymentSuccess }) => { // Добавлен пропс
     const [selectedWorkshop, setSelectedWorkshop] = useState(null);
     const [selectedPayment, setSelectedPayment] = useState(null);
     const [selectedCash, setSelectedCash] = useState(null);
@@ -163,6 +163,83 @@ const PayForm = () => {
         setIsFormValid(validateForm());
     }, [selectedWorkshop, selectedPayment, selectedCash, isOfferAgreed, isPrivacyAgreed, name, phone, email]);
 
+    const handlePayment = () => {
+        // Собираем данные о выбранных опциях
+        const selectedData = {
+            workshop: {
+                type: selectedWorkshop,
+                title: getWorkshopTitle(selectedWorkshop),
+                subtitle: getWorkshopSubtitle(selectedWorkshop)
+            },
+            payment: {
+                type: selectedPayment,
+                title: selectedPayment === 'full' ? paymentOptions.full.title : paymentOptions.installment.title,
+                subtitle: selectedPayment === 'full' ? paymentOptions.full.subtitle : paymentOptions.installment.subtitle,
+                fullPrice: selectedPayment === 'full' ? paymentOptions.full.fullPrice : paymentOptions.installment.fullPrice
+            }
+        };
+
+        // Здесь будет логика оплаты
+        // Пока просто имитируем успешную оплату
+        if (onPaymentSuccess) {
+            onPaymentSuccess(selectedData);
+        }
+    };
+
+    // Вспомогательные функции для получения названий форматов
+    const getWorkshopTitle = (workshopType) => {
+        switch(workshopType) {
+            case 'group': return 'Групповой';
+            case 'personal': return 'Личный';
+            case 'self': return 'Самостоятельный';
+            case 'intro': return 'Ознакомительный';
+            default: return '';
+        }
+    };
+
+    const getWorkshopSubtitle = (workshopType) => {
+        switch(workshopType) {
+            case 'group': return 'Старт 15 сентября';
+            case 'personal': return 'Старт в любое время по согласованию';
+            case 'self': return 'Материалы и задания для самостоятельного изучения';
+            case 'intro': return '3 видео урока';
+            default: return '';
+        }
+    };
+
+    const getButtonText = () => {
+    if (!isFormValid) {
+        return 'Не указаны данные';
+    }
+
+    // Проверяем, что выбран способ оплаты
+    if (!selectedPayment) {
+        return 'Выберите способ оплаты';
+    }
+
+    let price = '';
+    let paymentType = '';
+
+    if (selectedPayment === 'full') {
+        price = paymentOptions.full.title;
+        paymentType = 'единовременно';
+    } else if (selectedPayment === 'installment') {
+        // Проверяем, что installment существует (для самостоятельного и ознакомительного его нет)
+        if (paymentOptions.installment) {
+            price = paymentOptions.installment.title;
+            paymentType = 'в рассрочку';
+        } else {
+            // Если рассрочки нет, используем полную оплату
+            price = paymentOptions.full.title;
+            paymentType = 'единовременно';
+        }
+    }
+
+    const workshopType = getWorkshopTitle(selectedWorkshop);
+
+    return `К оплате ${price}₽`;
+};
+
     return(
         <div className='payForm'>
             <div className='container'>
@@ -239,7 +316,7 @@ const PayForm = () => {
                                 fullPrice={paymentOptions.full.fullPrice}
                                 value="full"
                                 hasError={errors.payment}
-                                priceClass={paymentOptions.full.fullPrice ? "price" : "text"} // Добавлено
+                                priceClass={paymentOptions.full.fullPrice ? "price" : "text"}
                             />
                             {paymentOptions.showInstallment && (
                                 <TypePaymentCheckbox 
@@ -248,7 +325,7 @@ const PayForm = () => {
                                     fullPrice={paymentOptions.installment.fullPrice}
                                     value="installment"
                                     hasError={errors.payment}
-                                    priceClass={paymentOptions.installment.fullPrice.includes('/') ? "text" : "price"} // Добавлено
+                                    priceClass={paymentOptions.installment.fullPrice.includes('/') ? "text" : "price"}
                                 />
                             )}
                         </div>
@@ -283,7 +360,11 @@ const PayForm = () => {
                         hasError={errors.privacy}
                     />
                 </div>
-                <PayFormButton isActive={isFormValid} />
+                <PayFormButton 
+                    isActive={isFormValid} 
+                    onClick={handlePayment} 
+                    text={getButtonText()}
+                />
             </div>
         </div>
     )
